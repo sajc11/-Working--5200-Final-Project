@@ -1,10 +1,22 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, useMemo } from 'react';
 import * as d3 from "d3";
-import { useInView } from "react-intersection-observer";
-import { useTheme } from "@mui/material/styles";
-import { seaLevelChartColors } from "../../theme/themeUtils";
-import { useResizeObserver } from "../../hooks/useResizeObserver";
+
 import "./ChartStyles.css";
+import { 
+  useTheme, 
+  Box, 
+  ToggleButton, 
+  ToggleButtonGroup,
+  FormControl,
+  InputLabel,
+  Select,
+  MenuItem,
+  Typography,
+  Button,
+} from '@mui/material';
+  
+import { seaLevelChartColors } from "../../theme/themeUtils";
+import { createTooltip, showTooltip, hideTooltip } from "../../utils/tooltipUtils";
 
 const SeaLevelChart = () => {
     const svgRef = useRef();
@@ -115,21 +127,7 @@ const SeaLevelChart = () => {
             .ease(d3.easeCubic)
             .attr("stroke-dashoffset", 0);
 
-        let tooltip = d3.select(wrapperRef.current).select(".tooltip");
-        if (tooltip.empty()) {
-            tooltip = d3.select(wrapperRef.current)
-                .append("div")
-                .attr("class", "tooltip")
-                .style("opacity", 0)
-                .style("position", "absolute")
-                .style("pointer-events", "none")
-                .style("background-color", colors.tooltipBg)
-                .style("color", colors.tooltipText)
-                .style("padding", "6px 10px")
-                .style("border-radius", "4px")
-                .style("font-size", "0.85rem")
-                .style("transition", "opacity 0.3s ease");
-        }
+        const tooltip = createTooltip(theme);
 
         svg.selectAll("circle")
             .data(data)
@@ -142,22 +140,14 @@ const SeaLevelChart = () => {
                     .style("transition", "r 0.2s ease")
                     .on("mouseover", function(event, d) {
                         d3.select(this).transition().duration(200).attr("r", 8);
-                        tooltip.transition().duration(200).style("opacity", 1);
-                        const rect = wrapperRef.current.getBoundingClientRect();
-                        tooltip
-                            .html(`<strong>${country}</strong><br/>Year: ${d.year}<br/>Sea Level: ${d.value.toFixed(1)} mm`)
-                            .style("left", `${event.clientX - rect.left + 10}px`)
-                            .style("top", `${event.clientY - rect.top - 40}px`);
+                        showTooltip(tooltip, event, `<strong>${country}</strong><br/>Year: ${d.year}<br/>Sea Level: ${d.value.toFixed(1)} mm`);
                     })
                     .on("mousemove", function(event) {
-                        const rect = wrapperRef.current.getBoundingClientRect();
-                        tooltip
-                            .style("left", `${event.clientX - rect.left + 10}px`)
-                            .style("top", `${event.clientY - rect.top - 40}px`);
+                        showTooltip(tooltip, event);
                     })
                     .on("mouseout", function() {
                         d3.select(this).transition().duration(200).attr("r", 4);
-                        tooltip.transition().duration(300).style("opacity", 0);
+                        hideTooltip(tooltip);
                     })
                     .on("click", (event, d) => {
                         setClickedPoints(prev => {
@@ -187,23 +177,35 @@ const SeaLevelChart = () => {
               <h3 style={{ fontFamily: "var(--font-header)", margin: 0 }}>
                 Sea Level Rise Over Time
               </h3>
-              <div className="controls" style={{ display: "flex", gap: "1rem" }}>
-                  <label style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-                      Country:
-                      <select value={country} onChange={(e) => setCountry(e.target.value)}>
-                          <option>Bangladesh</option>
-                          <option>Maldives</option>
-                          <option>Philippines</option>
-                      </select>
-                  </label>
-                  <label style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-                      Metric:
-                      <select value={metric} onChange={(e) => setMetric(e.target.value)}>
-                          <option>Reconstruction Obs</option>
-                          <option>Satellite Altimetry</option>
-                      </select>
-                  </label>
-              </div>
+              <Box sx={{ display: "flex", gap: 2 }}>
+                <FormControl size="small" sx={{ minWidth: 160 }}>
+                  <InputLabel id="country-select-label">Country</InputLabel>
+                  <Select
+                    labelId="country-select-label"
+                    id="country-select"
+                    value={country}
+                    label="Country"
+                    onChange={(e) => setCountry(e.target.value)}
+                  >
+                    <MenuItem value="Bangladesh">Bangladesh</MenuItem>
+                    <MenuItem value="Maldives">Maldives</MenuItem>
+                    <MenuItem value="Philippines">Philippines</MenuItem>
+                  </Select>
+                </FormControl>
+                <FormControl size="small" sx={{ minWidth: 180 }}>
+                  <InputLabel id="metric-select-label">Metric</InputLabel>
+                  <Select
+                    labelId="metric-select-label"
+                    id="metric-select"
+                    value={metric}
+                    label="Metric"
+                    onChange={(e) => setMetric(e.target.value)}
+                  >
+                    <MenuItem value="Reconstruction Obs">Reconstruction Obs</MenuItem>
+                    <MenuItem value="Satellite Altimetry">Satellite Altimetry</MenuItem>
+                  </Select>
+                </FormControl>
+              </Box>
             </div>
             <svg ref={svgRef} style={{ width: "100%", height: "400px" }} />
             {/* Clicked points display remains unchanged */}

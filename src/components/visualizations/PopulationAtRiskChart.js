@@ -1,15 +1,23 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, useMemo } from 'react';
 import * as d3 from "d3";
-import { useResizeObserver } from "../../hooks/useResizeObserver";
-import { useTheme } from "../../theme/ThemeContext";
-import { populationChartColors } from "../../theme/themeUtils";
-import data from "../../data/processed_full_country.json";
+
 import "./ChartStyles.css";
-import {
-  createTooltip,
-  showTooltip,
-  hideTooltip
-} from "../../utils/tooltipUtils";
+import { 
+  useTheme, 
+  Box, 
+  ToggleButton, 
+  ToggleButtonGroup,
+  FormControl,
+  InputLabel,
+  Select,
+  MenuItem,
+  Typography
+} from '@mui/material';
+import { populationChartColors } from "../../theme/themeUtils";
+import { createTooltip, showTooltip, hideTooltip } from "../../utils/tooltipUtils";
+
+import data from "../../data/processed_full_country.json";
+
 
 const cities = ["Bangladesh", "Maldives", "Philippines"];
 
@@ -130,46 +138,51 @@ const PopulationAtRiskChart = () => {
   }, [width, selectedCities, theme]);
 
   return (
-    <div ref={wrapperRef} className="chart-container chart-card">
-      <div className="controls">
-        <label htmlFor="scenario-select" style={{ marginRight: "10px" }}>Scenario:</label>
-        <select
-          id="scenario-select"
-          value={scenario}
-          onChange={(e) => setScenario(e.target.value)}
-          style={{
-            backgroundColor: colors.controlBg,
-            color: colors.controlText,
-            border: `1px solid ${colors.controlBorder}`,
-            borderRadius: "4px",
-            padding: "4px 8px",
-            marginRight: "20px",
-          }}
-        >
-          <option value="baseline">Baseline</option>
-          <option value="scenario1">Scenario 1</option>
-          <option value="scenario2">Scenario 2</option>
-        </select>
-        <label>Toggle Cities:</label>
+    <Box ref={wrapperRef} className="chart-container chart-card">
+      <Box sx={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: 2, mb: 2 }}>
+        <FormControl size="small" sx={{ minWidth: 150 }}>
+          <InputLabel id="scenario-select-label">Scenario</InputLabel>
+          <Select
+            labelId="scenario-select-label"
+            id="scenario-select"
+            value={scenario}
+            label="Scenario"
+            onChange={(e) => setScenario(e.target.value)}
+            sx={{
+              backgroundColor: colors.controlBg,
+              color: colors.controlText,
+              border: `1px solid ${colors.controlBorder}`,
+              borderRadius: "4px"
+            }}
+          >
+            <MenuItem value="baseline">Baseline</MenuItem>
+            <MenuItem value="scenario1">Scenario 1</MenuItem>
+            <MenuItem value="scenario2">Scenario 2</MenuItem>
+          </Select>
+        </FormControl>
+
+        <Typography variant="body1" sx={{ mr: 1 }}>Toggle Cities:</Typography>
         {cities.map((city, index) => (
-          <label key={city} style={{ marginLeft: "10px" }}>
-            <input
-              type="checkbox"
-              checked={index < stepIndex}
-              onChange={() => {
-                if (index + 1 === stepIndex) {
-                  setStepIndex(stepIndex - 1);
-                } else if (index + 1 === stepIndex - 1) {
-                  setStepIndex(stepIndex + 1);
-                }
-              }}
-            />
+          <ToggleButton
+            key={city}
+            value={city}
+            selected={index < stepIndex}
+            onChange={() => {
+              if (index + 1 === stepIndex) {
+                setStepIndex(stepIndex - 1);
+              } else if (index + 1 === stepIndex - 1) {
+                setStepIndex(stepIndex + 1);
+              }
+            }}
+            size="small"
+            sx={{ textTransform: 'none' }}
+          >
             {city}
-          </label>
+          </ToggleButton>
         ))}
-      </div>
+      </Box>
       <svg ref={svgRef} width="100%" height="400" />
-    </div>
+    </Box>
   );
 };
 

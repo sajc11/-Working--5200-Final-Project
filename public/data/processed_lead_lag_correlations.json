@@ -1,0 +1,1388 @@
+[
+    {
+      "Country": "Bangladesh",
+      "Lag": -5,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Net Migration",
+      "Correlation": -0.5403
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": -4,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Net Migration",
+      "Correlation": -0.5665
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": -3,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Net Migration",
+      "Correlation": -0.5285
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": -2,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Net Migration",
+      "Correlation": -0.533
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": -1,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Net Migration",
+      "Correlation": -0.4569
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": 0,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Net Migration",
+      "Correlation": -0.3953
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": 1,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Net Migration",
+      "Correlation": -0.307
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": 2,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Net Migration",
+      "Correlation": -0.329
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": 3,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Net Migration",
+      "Correlation": -0.2691
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": 4,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Net Migration",
+      "Correlation": -0.3443
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": 5,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Net Migration",
+      "Correlation": -0.1724
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": -5,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Population",
+      "Correlation": 0.5549
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": -4,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Population",
+      "Correlation": 0.554
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": -3,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Population",
+      "Correlation": 0.5528
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": -2,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Population",
+      "Correlation": 0.5509
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": -1,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Population",
+      "Correlation": 0.5481
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": 0,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Population",
+      "Correlation": 0.5987
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": 1,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Population",
+      "Correlation": 0.5778
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": 2,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Population",
+      "Correlation": 0.5734
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": 3,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Population",
+      "Correlation": 0.5236
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": 4,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Population",
+      "Correlation": 0.5948
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": 5,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Population",
+      "Correlation": 0.6236
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": -5,
+      "Predictor": "Sea Level (mm)",
+      "Target": "GDP",
+      "Correlation": 0.353
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": -4,
+      "Predictor": "Sea Level (mm)",
+      "Target": "GDP",
+      "Correlation": 0.349
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": -3,
+      "Predictor": "Sea Level (mm)",
+      "Target": "GDP",
+      "Correlation": 0.3414
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": -2,
+      "Predictor": "Sea Level (mm)",
+      "Target": "GDP",
+      "Correlation": 0.3502
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": -1,
+      "Predictor": "Sea Level (mm)",
+      "Target": "GDP",
+      "Correlation": 0.3843
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": 0,
+      "Predictor": "Sea Level (mm)",
+      "Target": "GDP",
+      "Correlation": 0.4598
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": 1,
+      "Predictor": "Sea Level (mm)",
+      "Target": "GDP",
+      "Correlation": 0.4479
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": 2,
+      "Predictor": "Sea Level (mm)",
+      "Target": "GDP",
+      "Correlation": 0.4349
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": 3,
+      "Predictor": "Sea Level (mm)",
+      "Target": "GDP",
+      "Correlation": 0.3901
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": 4,
+      "Predictor": "Sea Level (mm)",
+      "Target": "GDP",
+      "Correlation": 0.5233
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": 5,
+      "Predictor": "Sea Level (mm)",
+      "Target": "GDP",
+      "Correlation": 0.5857
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": -5,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Net Migration",
+      "Correlation": 0.3877
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": -4,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Net Migration",
+      "Correlation": 0.3629
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": -3,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Net Migration",
+      "Correlation": 0.35
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": -2,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Net Migration",
+      "Correlation": 0.3421
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": -1,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Net Migration",
+      "Correlation": 0.3275
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": 0,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Net Migration",
+      "Correlation": 0.3482
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": 1,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Net Migration",
+      "Correlation": 0.3704
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": 2,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Net Migration",
+      "Correlation": 0.4047
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": 3,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Net Migration",
+      "Correlation": 0.4434
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": 4,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Net Migration",
+      "Correlation": 0.4865
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": 5,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Net Migration",
+      "Correlation": 0.5309
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": -5,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Population",
+      "Correlation": -0.7148
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": -4,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Population",
+      "Correlation": -0.7199
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": -3,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Population",
+      "Correlation": -0.7372
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": -2,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Population",
+      "Correlation": -0.7576
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": -1,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Population",
+      "Correlation": -0.7781
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": 0,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Population",
+      "Correlation": -0.7974
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": 1,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Population",
+      "Correlation": -0.8032
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": 2,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Population",
+      "Correlation": -0.8074
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": 3,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Population",
+      "Correlation": -0.8097
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": 4,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Population",
+      "Correlation": -0.812
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": 5,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Population",
+      "Correlation": -0.8142
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": -5,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "GDP",
+      "Correlation": -0.4546
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": -4,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "GDP",
+      "Correlation": -0.4406
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": -3,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "GDP",
+      "Correlation": -0.4401
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": -2,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "GDP",
+      "Correlation": -0.4426
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": -1,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "GDP",
+      "Correlation": -0.4464
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": 0,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "GDP",
+      "Correlation": -0.4587
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": 1,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "GDP",
+      "Correlation": -0.4694
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": 2,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "GDP",
+      "Correlation": -0.4727
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": 3,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "GDP",
+      "Correlation": -0.4717
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": 4,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "GDP",
+      "Correlation": -0.4716
+    },
+    {
+      "Country": "Bangladesh",
+      "Lag": 5,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "GDP",
+      "Correlation": -0.472
+    },
+    {
+      "Country": "Maldives",
+      "Lag": -5,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Net Migration",
+      "Correlation": 0.8123
+    },
+    {
+      "Country": "Maldives",
+      "Lag": -4,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Net Migration",
+      "Correlation": 0.8097
+    },
+    {
+      "Country": "Maldives",
+      "Lag": -3,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Net Migration",
+      "Correlation": 0.8111
+    },
+    {
+      "Country": "Maldives",
+      "Lag": -2,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Net Migration",
+      "Correlation": 0.713
+    },
+    {
+      "Country": "Maldives",
+      "Lag": -1,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Net Migration",
+      "Correlation": 0.5744
+    },
+    {
+      "Country": "Maldives",
+      "Lag": 0,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Net Migration",
+      "Correlation": 0.3477
+    },
+    {
+      "Country": "Maldives",
+      "Lag": 1,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Net Migration",
+      "Correlation": 0.1025
+    },
+    {
+      "Country": "Maldives",
+      "Lag": 2,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Net Migration",
+      "Correlation": 0.014
+    },
+    {
+      "Country": "Maldives",
+      "Lag": 3,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Net Migration",
+      "Correlation": 0.0193
+    },
+    {
+      "Country": "Maldives",
+      "Lag": 4,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Net Migration",
+      "Correlation": 0.0988
+    },
+    {
+      "Country": "Maldives",
+      "Lag": 5,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Net Migration",
+      "Correlation": 0.1702
+    },
+    {
+      "Country": "Maldives",
+      "Lag": -5,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Population",
+      "Correlation": 0.8131
+    },
+    {
+      "Country": "Maldives",
+      "Lag": -4,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Population",
+      "Correlation": 0.8163
+    },
+    {
+      "Country": "Maldives",
+      "Lag": -3,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Population",
+      "Correlation": 0.8192
+    },
+    {
+      "Country": "Maldives",
+      "Lag": -2,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Population",
+      "Correlation": 0.8235
+    },
+    {
+      "Country": "Maldives",
+      "Lag": -1,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Population",
+      "Correlation": 0.8289
+    },
+    {
+      "Country": "Maldives",
+      "Lag": 0,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Population",
+      "Correlation": 0.829
+    },
+    {
+      "Country": "Maldives",
+      "Lag": 1,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Population",
+      "Correlation": 0.8171
+    },
+    {
+      "Country": "Maldives",
+      "Lag": 2,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Population",
+      "Correlation": 0.7799
+    },
+    {
+      "Country": "Maldives",
+      "Lag": 3,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Population",
+      "Correlation": 0.7753
+    },
+    {
+      "Country": "Maldives",
+      "Lag": 4,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Population",
+      "Correlation": 0.7391
+    },
+    {
+      "Country": "Maldives",
+      "Lag": 5,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Population",
+      "Correlation": 0.7114
+    },
+    {
+      "Country": "Maldives",
+      "Lag": -5,
+      "Predictor": "Sea Level (mm)",
+      "Target": "GDP",
+      "Correlation": 0.8221
+    },
+    {
+      "Country": "Maldives",
+      "Lag": -4,
+      "Predictor": "Sea Level (mm)",
+      "Target": "GDP",
+      "Correlation": 0.8412
+    },
+    {
+      "Country": "Maldives",
+      "Lag": -3,
+      "Predictor": "Sea Level (mm)",
+      "Target": "GDP",
+      "Correlation": 0.8601
+    },
+    {
+      "Country": "Maldives",
+      "Lag": -2,
+      "Predictor": "Sea Level (mm)",
+      "Target": "GDP",
+      "Correlation": 0.8137
+    },
+    {
+      "Country": "Maldives",
+      "Lag": -1,
+      "Predictor": "Sea Level (mm)",
+      "Target": "GDP",
+      "Correlation": 0.7574
+    },
+    {
+      "Country": "Maldives",
+      "Lag": 0,
+      "Predictor": "Sea Level (mm)",
+      "Target": "GDP",
+      "Correlation": 0.7893
+    },
+    {
+      "Country": "Maldives",
+      "Lag": 1,
+      "Predictor": "Sea Level (mm)",
+      "Target": "GDP",
+      "Correlation": 0.8149
+    },
+    {
+      "Country": "Maldives",
+      "Lag": 2,
+      "Predictor": "Sea Level (mm)",
+      "Target": "GDP",
+      "Correlation": 0.7899
+    },
+    {
+      "Country": "Maldives",
+      "Lag": 3,
+      "Predictor": "Sea Level (mm)",
+      "Target": "GDP",
+      "Correlation": 0.7904
+    },
+    {
+      "Country": "Maldives",
+      "Lag": 4,
+      "Predictor": "Sea Level (mm)",
+      "Target": "GDP",
+      "Correlation": 0.6576
+    },
+    {
+      "Country": "Maldives",
+      "Lag": 5,
+      "Predictor": "Sea Level (mm)",
+      "Target": "GDP",
+      "Correlation": 0.689
+    },
+    {
+      "Country": "Maldives",
+      "Lag": -5,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Net Migration",
+      "Correlation": -0.1617
+    },
+    {
+      "Country": "Maldives",
+      "Lag": -4,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Net Migration",
+      "Correlation": -0.1611
+    },
+    {
+      "Country": "Maldives",
+      "Lag": -3,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Net Migration",
+      "Correlation": -0.1716
+    },
+    {
+      "Country": "Maldives",
+      "Lag": -2,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Net Migration",
+      "Correlation": -0.1827
+    },
+    {
+      "Country": "Maldives",
+      "Lag": -1,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Net Migration",
+      "Correlation": -0.0868
+    },
+    {
+      "Country": "Maldives",
+      "Lag": 0,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Net Migration",
+      "Correlation": -0.0428
+    },
+    {
+      "Country": "Maldives",
+      "Lag": 1,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Net Migration",
+      "Correlation": -0.021
+    },
+    {
+      "Country": "Maldives",
+      "Lag": 2,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Net Migration",
+      "Correlation": -0.0474
+    },
+    {
+      "Country": "Maldives",
+      "Lag": 3,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Net Migration",
+      "Correlation": -0.0575
+    },
+    {
+      "Country": "Maldives",
+      "Lag": 4,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Net Migration",
+      "Correlation": -0.051
+    },
+    {
+      "Country": "Maldives",
+      "Lag": 5,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Net Migration",
+      "Correlation": -0.0448
+    },
+    {
+      "Country": "Maldives",
+      "Lag": -5,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Population",
+      "Correlation": -0.1884
+    },
+    {
+      "Country": "Maldives",
+      "Lag": -4,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Population",
+      "Correlation": -0.2263
+    },
+    {
+      "Country": "Maldives",
+      "Lag": -3,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Population",
+      "Correlation": -0.2918
+    },
+    {
+      "Country": "Maldives",
+      "Lag": -2,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Population",
+      "Correlation": -0.3524
+    },
+    {
+      "Country": "Maldives",
+      "Lag": -1,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Population",
+      "Correlation": -0.3976
+    },
+    {
+      "Country": "Maldives",
+      "Lag": 0,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Population",
+      "Correlation": -0.4328
+    },
+    {
+      "Country": "Maldives",
+      "Lag": 1,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Population",
+      "Correlation": -0.3835
+    },
+    {
+      "Country": "Maldives",
+      "Lag": 2,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Population",
+      "Correlation": -0.3494
+    },
+    {
+      "Country": "Maldives",
+      "Lag": 3,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Population",
+      "Correlation": -0.3376
+    },
+    {
+      "Country": "Maldives",
+      "Lag": 4,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Population",
+      "Correlation": -0.3269
+    },
+    {
+      "Country": "Maldives",
+      "Lag": 5,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Population",
+      "Correlation": -0.3171
+    },
+    {
+      "Country": "Maldives",
+      "Lag": -5,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "GDP",
+      "Correlation": -0.2303
+    },
+    {
+      "Country": "Maldives",
+      "Lag": -4,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "GDP",
+      "Correlation": -0.2409
+    },
+    {
+      "Country": "Maldives",
+      "Lag": -3,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "GDP",
+      "Correlation": -0.2004
+    },
+    {
+      "Country": "Maldives",
+      "Lag": -2,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "GDP",
+      "Correlation": -0.2282
+    },
+    {
+      "Country": "Maldives",
+      "Lag": -1,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "GDP",
+      "Correlation": -0.2737
+    },
+    {
+      "Country": "Maldives",
+      "Lag": 0,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "GDP",
+      "Correlation": -0.2993
+    },
+    {
+      "Country": "Maldives",
+      "Lag": 1,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "GDP",
+      "Correlation": -0.2298
+    },
+    {
+      "Country": "Maldives",
+      "Lag": 2,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "GDP",
+      "Correlation": -0.1811
+    },
+    {
+      "Country": "Maldives",
+      "Lag": 3,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "GDP",
+      "Correlation": -0.1659
+    },
+    {
+      "Country": "Maldives",
+      "Lag": 4,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "GDP",
+      "Correlation": -0.1552
+    },
+    {
+      "Country": "Maldives",
+      "Lag": 5,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "GDP",
+      "Correlation": -0.1435
+    },
+    {
+      "Country": "Philippines",
+      "Lag": -5,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Net Migration",
+      "Correlation": -0.3682
+    },
+    {
+      "Country": "Philippines",
+      "Lag": -4,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Net Migration",
+      "Correlation": -0.1094
+    },
+    {
+      "Country": "Philippines",
+      "Lag": -3,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Net Migration",
+      "Correlation": -0.0297
+    },
+    {
+      "Country": "Philippines",
+      "Lag": -2,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Net Migration",
+      "Correlation": 0.2441
+    },
+    {
+      "Country": "Philippines",
+      "Lag": -1,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Net Migration",
+      "Correlation": 0.2104
+    },
+    {
+      "Country": "Philippines",
+      "Lag": 0,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Net Migration",
+      "Correlation": 0.0664
+    },
+    {
+      "Country": "Philippines",
+      "Lag": 1,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Net Migration",
+      "Correlation": 0.2519
+    },
+    {
+      "Country": "Philippines",
+      "Lag": 2,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Net Migration",
+      "Correlation": -0.0653
+    },
+    {
+      "Country": "Philippines",
+      "Lag": 3,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Net Migration",
+      "Correlation": 0.0061
+    },
+    {
+      "Country": "Philippines",
+      "Lag": 4,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Net Migration",
+      "Correlation": -0.1327
+    },
+    {
+      "Country": "Philippines",
+      "Lag": 5,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Net Migration",
+      "Correlation": -0.2943
+    },
+    {
+      "Country": "Philippines",
+      "Lag": -5,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Population",
+      "Correlation": 0.6241
+    },
+    {
+      "Country": "Philippines",
+      "Lag": -4,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Population",
+      "Correlation": 0.6227
+    },
+    {
+      "Country": "Philippines",
+      "Lag": -3,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Population",
+      "Correlation": 0.6231
+    },
+    {
+      "Country": "Philippines",
+      "Lag": -2,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Population",
+      "Correlation": 0.6253
+    },
+    {
+      "Country": "Philippines",
+      "Lag": -1,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Population",
+      "Correlation": 0.6288
+    },
+    {
+      "Country": "Philippines",
+      "Lag": 0,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Population",
+      "Correlation": 0.6669
+    },
+    {
+      "Country": "Philippines",
+      "Lag": 1,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Population",
+      "Correlation": 0.6395
+    },
+    {
+      "Country": "Philippines",
+      "Lag": 2,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Population",
+      "Correlation": 0.6171
+    },
+    {
+      "Country": "Philippines",
+      "Lag": 3,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Population",
+      "Correlation": 0.5869
+    },
+    {
+      "Country": "Philippines",
+      "Lag": 4,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Population",
+      "Correlation": 0.6205
+    },
+    {
+      "Country": "Philippines",
+      "Lag": 5,
+      "Predictor": "Sea Level (mm)",
+      "Target": "Population",
+      "Correlation": 0.6258
+    },
+    {
+      "Country": "Philippines",
+      "Lag": -5,
+      "Predictor": "Sea Level (mm)",
+      "Target": "GDP",
+      "Correlation": 0.5136
+    },
+    {
+      "Country": "Philippines",
+      "Lag": -4,
+      "Predictor": "Sea Level (mm)",
+      "Target": "GDP",
+      "Correlation": 0.5426
+    },
+    {
+      "Country": "Philippines",
+      "Lag": -3,
+      "Predictor": "Sea Level (mm)",
+      "Target": "GDP",
+      "Correlation": 0.5363
+    },
+    {
+      "Country": "Philippines",
+      "Lag": -2,
+      "Predictor": "Sea Level (mm)",
+      "Target": "GDP",
+      "Correlation": 0.5481
+    },
+    {
+      "Country": "Philippines",
+      "Lag": -1,
+      "Predictor": "Sea Level (mm)",
+      "Target": "GDP",
+      "Correlation": 0.5578
+    },
+    {
+      "Country": "Philippines",
+      "Lag": 0,
+      "Predictor": "Sea Level (mm)",
+      "Target": "GDP",
+      "Correlation": 0.641
+    },
+    {
+      "Country": "Philippines",
+      "Lag": 1,
+      "Predictor": "Sea Level (mm)",
+      "Target": "GDP",
+      "Correlation": 0.6014
+    },
+    {
+      "Country": "Philippines",
+      "Lag": 2,
+      "Predictor": "Sea Level (mm)",
+      "Target": "GDP",
+      "Correlation": 0.5696
+    },
+    {
+      "Country": "Philippines",
+      "Lag": 3,
+      "Predictor": "Sea Level (mm)",
+      "Target": "GDP",
+      "Correlation": 0.5135
+    },
+    {
+      "Country": "Philippines",
+      "Lag": 4,
+      "Predictor": "Sea Level (mm)",
+      "Target": "GDP",
+      "Correlation": 0.5747
+    },
+    {
+      "Country": "Philippines",
+      "Lag": 5,
+      "Predictor": "Sea Level (mm)",
+      "Target": "GDP",
+      "Correlation": 0.5921
+    },
+    {
+      "Country": "Philippines",
+      "Lag": -5,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Net Migration",
+      "Correlation": 0.2166
+    },
+    {
+      "Country": "Philippines",
+      "Lag": -4,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Net Migration",
+      "Correlation": 0.2027
+    },
+    {
+      "Country": "Philippines",
+      "Lag": -3,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Net Migration",
+      "Correlation": 0.2372
+    },
+    {
+      "Country": "Philippines",
+      "Lag": -2,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Net Migration",
+      "Correlation": 0.2649
+    },
+    {
+      "Country": "Philippines",
+      "Lag": -1,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Net Migration",
+      "Correlation": 0.3054
+    },
+    {
+      "Country": "Philippines",
+      "Lag": 0,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Net Migration",
+      "Correlation": 0.317
+    },
+    {
+      "Country": "Philippines",
+      "Lag": 1,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Net Migration",
+      "Correlation": 0.2277
+    },
+    {
+      "Country": "Philippines",
+      "Lag": 2,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Net Migration",
+      "Correlation": 0.1816
+    },
+    {
+      "Country": "Philippines",
+      "Lag": 3,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Net Migration",
+      "Correlation": 0.0852
+    },
+    {
+      "Country": "Philippines",
+      "Lag": 4,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Net Migration",
+      "Correlation": 0.0089
+    },
+    {
+      "Country": "Philippines",
+      "Lag": 5,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Net Migration",
+      "Correlation": -0.0165
+    },
+    {
+      "Country": "Philippines",
+      "Lag": -5,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Population",
+      "Correlation": -0.7846
+    },
+    {
+      "Country": "Philippines",
+      "Lag": -4,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Population",
+      "Correlation": -0.7866
+    },
+    {
+      "Country": "Philippines",
+      "Lag": -3,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Population",
+      "Correlation": -0.7881
+    },
+    {
+      "Country": "Philippines",
+      "Lag": -2,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Population",
+      "Correlation": -0.7885
+    },
+    {
+      "Country": "Philippines",
+      "Lag": -1,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Population",
+      "Correlation": -0.7861
+    },
+    {
+      "Country": "Philippines",
+      "Lag": 0,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Population",
+      "Correlation": -0.786
+    },
+    {
+      "Country": "Philippines",
+      "Lag": 1,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Population",
+      "Correlation": -0.7825
+    },
+    {
+      "Country": "Philippines",
+      "Lag": 2,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Population",
+      "Correlation": -0.7778
+    },
+    {
+      "Country": "Philippines",
+      "Lag": 3,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Population",
+      "Correlation": -0.7743
+    },
+    {
+      "Country": "Philippines",
+      "Lag": 4,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Population",
+      "Correlation": -0.774
+    },
+    {
+      "Country": "Philippines",
+      "Lag": 5,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "Population",
+      "Correlation": -0.7742
+    },
+    {
+      "Country": "Philippines",
+      "Lag": -5,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "GDP",
+      "Correlation": -0.5607
+    },
+    {
+      "Country": "Philippines",
+      "Lag": -4,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "GDP",
+      "Correlation": -0.5683
+    },
+    {
+      "Country": "Philippines",
+      "Lag": -3,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "GDP",
+      "Correlation": -0.5818
+    },
+    {
+      "Country": "Philippines",
+      "Lag": -2,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "GDP",
+      "Correlation": -0.5949
+    },
+    {
+      "Country": "Philippines",
+      "Lag": -1,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "GDP",
+      "Correlation": -0.6075
+    },
+    {
+      "Country": "Philippines",
+      "Lag": 0,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "GDP",
+      "Correlation": -0.6224
+    },
+    {
+      "Country": "Philippines",
+      "Lag": 1,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "GDP",
+      "Correlation": -0.6277
+    },
+    {
+      "Country": "Philippines",
+      "Lag": 2,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "GDP",
+      "Correlation": -0.6302
+    },
+    {
+      "Country": "Philippines",
+      "Lag": 3,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "GDP",
+      "Correlation": -0.6344
+    },
+    {
+      "Country": "Philippines",
+      "Lag": 4,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "GDP",
+      "Correlation": -0.6416
+    },
+    {
+      "Country": "Philippines",
+      "Lag": 5,
+      "Predictor": "Urban Population Growth (%)",
+      "Target": "GDP",
+      "Correlation": -0.6463
+    }
+  ]

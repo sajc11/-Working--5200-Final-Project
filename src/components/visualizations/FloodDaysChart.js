@@ -1,7 +1,21 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, useMemo } from 'react';
 import * as d3 from "d3";
-import { useInView } from "react-intersection-observer";
+
 import "./ChartStyles.css";
+import { 
+  useTheme, 
+  Box, 
+  ToggleButton, 
+  ToggleButtonGroup,
+  FormControl,
+  InputLabel,
+  Select,
+  MenuItem,
+  Typography
+} from '@mui/material';
+
+import { floodDaysChartColors } from "../../theme/themeUtils";
+import { createTooltip,  showTooltip,  hideTooltip } from "../../utils/tooltipUtils";
 
 const FloodDaysChart = () => {
   const svgRef = useRef();
@@ -11,6 +25,9 @@ const FloodDaysChart = () => {
   const [severity, setSeverity] = useState("Major");
   const [clickedPoints, setClickedPoints] = useState([]);
   const { ref: inViewRef, inView } = useInView({ triggerOnce: true });
+
+  const theme = useTheme();
+  const colors = floodDaysChartColors(theme);
 
   const setRefs = (node) => {
     wrapperRef.current = node;
@@ -52,7 +69,7 @@ const FloodDaysChart = () => {
     const color = d3
       .scaleOrdinal()
       .domain(countries)
-      .range(["#0077b6", "#f77f00"]);
+      .range(countries.map(c => colors.floodLines[c] || "#999"));
 
     svg
       .append("g")
@@ -71,7 +88,7 @@ const FloodDaysChart = () => {
       .attr("text-anchor", "middle")
       .attr("x", width / 2)
       .attr("y", height - 10)
-      .attr("fill", "black")
+      .attr("fill", colors.axisText)
       .style("font-size", "14px")
       .text("Year");
 
@@ -81,7 +98,7 @@ const FloodDaysChart = () => {
       .attr("class", "axis-label")
       .attr("text-anchor", "middle")
       .attr("transform", `translate(15,${height / 2}) rotate(-90)`)
-      .attr("fill", "black")
+      .attr("fill", colors.axisText)
       .style("font-size", "14px")
       .text("Flood Days");
 
@@ -113,20 +130,7 @@ const FloodDaysChart = () => {
         .attr("stroke-dashoffset", 0);
 
       // Tooltip setup
-      let tooltip = d3.select(wrapperRef.current).select(".tooltip-" + country);
-      if (tooltip.empty()) {
-        tooltip = d3
-          .select(wrapperRef.current)
-          .append("div")
-          .attr("class", "tooltip tooltip-" + country)
-          .style("opacity", 0)
-          .style("position", "absolute")
-          .style("pointer-events", "none");
-      } else {
-        tooltip
-          .style("position", "absolute")
-          .style("pointer-events", "none");
-      }
+      const tooltip = createTooltip(theme);
 
       svg
         .selectAll(`circle-${country}`)
@@ -134,32 +138,21 @@ const FloodDaysChart = () => {
         .join("circle")
         .attr("cx", (d) => x(+d.Year))
         .attr("cy", (d) => y(+d["Flood Days"]))
-        .attr("r", 4)
+        .attr("r", colors.pointRadius.normal)
         .attr("fill", color(country))
         .on("mouseover", function (event, d) {
           d3.select(this)
             .transition()
             .duration(200)
-            .attr("r", 8);
-          tooltip.transition().duration(200).style("opacity", 1);
-          // Calculate position relative to chart container
-          const container = wrapperRef.current.getBoundingClientRect();
-          // event.clientX/Y are relative to viewport
-          const left = event.clientX - container.left + 10;
-          const top = event.clientY - container.top - 28;
-          tooltip
-            .html(
-              `<strong>${d.Country}</strong><br/>Year: ${d.Year}<br/>${severity} Flood Days: ${d["Flood Days"]}`
-            )
-            .style("left", `${left}px`)
-            .style("top", `${top}px`);
+            .attr("r", colors.pointRadius.hover);
+          showTooltip(tooltip, event, `<strong>${d.Country}</strong><br/>Year: ${d.Year}<br/>${severity} Flood Days: ${d["Flood Days"]}`);
         })
         .on("mouseout", function () {
           d3.select(this)
             .transition()
             .duration(200)
-            .attr("r", 4);
-          tooltip.transition().duration(300).style("opacity", 0);
+            .attr("r", colors.pointRadius.normal);
+          hideTooltip(tooltip);
         })
         .on("click", (event, d) => {
           setClickedPoints((prev) => [...prev, d]);
@@ -191,31 +184,19 @@ const FloodDaysChart = () => {
         }}
       >
         <h3 style={{ margin: 0 }}>High Tide Flood Days Over Time</h3>
-        <div className="severity-options" style={{ display: "flex", alignItems: "center" }}>
+        <ToggleButtonGroup
+          value={severity}
+          exclusive
+          onChange={(e, value) => value && setSeverity(value)}
+          size="small"
+          sx={{ ml: 2 }}
+        >
           {["Minor", "Moderate", "Major"].map((level) => (
-            <label
-              key={level}
-              style={{
-                marginLeft: "1rem",
-                fontFamily: "var(--font-header)",
-                fontSize: "1rem",
-                display: "flex",
-                alignItems: "center",
-                gap: "0.4em",
-              }}
-            >
-              <input
-                type="radio"
-                name="severity"
-                value={level}
-                checked={severity === level}
-                onChange={(e) => setSeverity(e.target.value)}
-                style={{ marginRight: "0.3em" }}
-              />
+            <ToggleButton key={level} value={level} sx={{ textTransform: "none" }}>
               {level}
-            </label>
+            </ToggleButton>
           ))}
-        </div>
+        </ToggleButtonGroup>
       </div>
       <svg ref={svgRef} style={{ width: "100%", height: "400px" }} />
       {clickedPoints.length > 0 && (

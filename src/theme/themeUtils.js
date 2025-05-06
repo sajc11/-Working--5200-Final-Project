@@ -48,3 +48,22 @@ export const getCurrentTheme = (theme) => {
       hoverStroke: text.secondary,
     };
   };
+
+  export const floodDaysChartColors = (theme) => {
+    const custom = theme.palette.custom;
+    const text = theme.palette.text;
+  
+    return {
+      tooltipBg: custom.tooltipBg,
+      tooltipText: custom.tooltipText,
+      axisText: text.primary,
+      floodLines: {
+        Bangladesh: custom.chartAccent || "#0077b6",
+        Philippines: custom.danger || "#f77f00"
+      },
+      pointRadius: {
+        normal: 4,
+        hover: 8
+      }
+    };
+  };

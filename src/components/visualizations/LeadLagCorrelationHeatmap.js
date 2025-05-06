@@ -1,8 +1,21 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, useMemo } from 'react';
 import * as d3 from "d3";
-import { useInView } from "react-intersection-observer";
-import { useResizeObserver } from "../../hooks/useResizeObserver";
+
 import "./ChartStyles.css";
+import { 
+  useTheme, 
+  Box, 
+  ToggleButton, 
+  ToggleButtonGroup,
+  FormControl,
+  InputLabel,
+  Select,
+  MenuItem,
+  Typography
+} from '@mui/material';
+import { leadLagChartColors } from "../../theme/themeUtils";
+import { createTooltip, showTooltip, hideTooltip } from "../../utils/tooltipUtils";
+
 
 const LeadLagCorrelationHeatmap = () => {
   const svgRef = useRef();
@@ -12,6 +25,8 @@ const LeadLagCorrelationHeatmap = () => {
   const { ref: inViewRef, inView } = useInView({ triggerOnce: true });
 
   const { width = 600 } = useResizeObserver(wrapperRef);
+  const theme = useTheme();
+  const colors = leadLagChartColors(theme);
 
   const setRefs = (node) => {
     wrapperRef.current = node;
@@ -69,22 +84,7 @@ const LeadLagCorrelationHeatmap = () => {
     }));
 
     // Tooltip
-    let tooltip = d3.select(wrapperRef.current).select(".tooltip");
-    if (tooltip.empty()) {
-      tooltip = d3
-        .select(wrapperRef.current)
-        .append("div")
-        .attr("class", "tooltip")
-        .style("opacity", 0)
-        .style("position", "absolute")
-        .style("pointer-events", "none")
-        .style("background-color", "rgba(0,0,0,0.7)")
-        .style("color", "#fff")
-        .style("padding", "6px 10px")
-        .style("border-radius", "4px")
-        .style("font-size", "12px")
-        .style("transition", "opacity 0.3s ease");
-    }
+    const tooltip = createTooltip(theme);
 
     const rects = svg
       .selectAll("rect")
@@ -104,24 +104,17 @@ const LeadLagCorrelationHeatmap = () => {
           .attr("stroke-width", 1.5)
           .style("cursor", "pointer");
 
-        tooltip
-          .transition()
-          .duration(200)
-          .style("opacity", 1);
-        tooltip
-          .html(
-            `<strong>${country}</strong><br/>
-             Lag: ${d.x}<br/>
-             ${d.y}<br/>
-             Correlation: ${d.val.toFixed(2)}`
-          )
-          .style("left", `${event.pageX + 12}px`)
-          .style("top", `${event.pageY - 36}px`);
+        showTooltip(
+          tooltip,
+          event,
+          `<strong>${country}</strong><br/>
+           Lag: ${d.x}<br/>
+           ${d.y}<br/>
+           Correlation: ${d.val.toFixed(2)}`
+        );
       })
       .on("mousemove", (event) => {
-        tooltip
-          .style("left", `${event.pageX + 12}px`)
-          .style("top", `${event.pageY - 36}px`);
+        showTooltip(tooltip, event);
       })
       .on("mouseout", (event) => {
         d3.select(event.currentTarget)
@@ -130,10 +123,7 @@ const LeadLagCorrelationHeatmap = () => {
           .attr("stroke", "none")
           .style("cursor", "default");
 
-        tooltip
-          .transition()
-          .duration(300)
-          .style("opacity", 0);
+        hideTooltip(tooltip);
       });
 
     // Fade-in animation for rects
@@ -150,7 +140,7 @@ const LeadLagCorrelationHeatmap = () => {
       .call(d3.axisBottom(x).tickFormat((d) => `Lag ${d}`))
       .selectAll("text")
       .style("font-size", "12px")
-      .style("fill", "#444");
+      .style("fill", colors.axisText);
 
     svg
       .append("g")
@@ -158,21 +148,27 @@ const LeadLagCorrelationHeatmap = () => {
       .call(d3.axisLeft(y))
       .selectAll("text")
       .style("font-size", "12px")
-      .style("fill", "#444");
-  }, [data, country, inView, width]);
+      .style("fill", colors.axisText);
+  }, [data, country, inView, width, theme, colors]);
 
   return (
     <div className="chart-container chart-card" ref={setRefs}>
-      <div className="controls">
-        <label>
-          Country:
-          <select value={country} onChange={(e) => setCountry(e.target.value)}>
-            <option>Bangladesh</option>
-            <option>Maldives</option>
-            <option>Philippines</option>
-          </select>
-        </label>
-      </div>
+      <Box sx={{ mb: 2, px: 1 }}>
+        <FormControl fullWidth variant="outlined" size="small">
+          <InputLabel id="country-select-label">Country</InputLabel>
+          <Select
+            labelId="country-select-label"
+            id="country-select"
+            value={country}
+            label="Country"
+            onChange={(e) => setCountry(e.target.value)}
+          >
+            <MenuItem value="Bangladesh">Bangladesh</MenuItem>
+            <MenuItem value="Maldives">Maldives</MenuItem>
+            <MenuItem value="Philippines">Philippines</MenuItem>
+          </Select>
+        </FormControl>
+      </Box>
       <h3>Lead-Lag Correlation Heatmap</h3>
       <svg ref={svgRef} style={{ width: "100%", height: "450px" }} />
     </div>
