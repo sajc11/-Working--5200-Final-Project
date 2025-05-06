@@ -1,0 +1,23 @@
+[
+    {
+        "Country": "Bangladesh",
+        "Composite Risk Index": 0.4621,
+        "Sea Level": 0.0,
+        "Population Exposure": 0.6931471805599453,
+        "GDP Exposure": 0.6931471805599453
+    },
+    {
+        "Country": "Maldives",
+        "Composite Risk Index": 0.3333,
+        "Sea Level": 1.0,
+        "Population Exposure": 0.0,
+        "GDP Exposure": 0.0
+    },
+    {
+        "Country": "Philippines",
+        "Composite Risk Index": 0.4627,
+        "Sea Level": 0.2082952709773036,
+        "Population Exposure": 0.5122445486723012,
+        "GDP Exposure": 0.6674807423141494
+    }
+]

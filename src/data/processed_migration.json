@@ -1,0 +1,752 @@
+[
+    {
+      "Country": "Bangladesh",
+      "Year": 1975,
+      "Net Migration": -390212.0
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 1976,
+      "Net Migration": -424970.0
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 1977,
+      "Net Migration": -458491.0
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 1978,
+      "Net Migration": -486721.0
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 1979,
+      "Net Migration": -507354.0
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 1980,
+      "Net Migration": -515918.0
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 1981,
+      "Net Migration": -184884.0
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 1982,
+      "Net Migration": -156729.0
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 1983,
+      "Net Migration": -201909.0
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 1984,
+      "Net Migration": -245693.0
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 1985,
+      "Net Migration": -287872.0
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 1986,
+      "Net Migration": -331992.0
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 1987,
+      "Net Migration": -367475.0
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 1988,
+      "Net Migration": -395408.0
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 1989,
+      "Net Migration": -406910.0
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 1990,
+      "Net Migration": -404105.0
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 1991,
+      "Net Migration": -230852.0
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 1992,
+      "Net Migration": -246914.0
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 1993,
+      "Net Migration": -271677.0
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 1994,
+      "Net Migration": -206958.0
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 1995,
+      "Net Migration": -231304.0
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 1996,
+      "Net Migration": -254239.0
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 1997,
+      "Net Migration": -273442.0
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 1998,
+      "Net Migration": -286966.0
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 1999,
+      "Net Migration": -286256.0
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2000,
+      "Net Migration": -512422.0
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2001,
+      "Net Migration": -737740.0
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2002,
+      "Net Migration": -819909.0
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2003,
+      "Net Migration": -896335.0
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2004,
+      "Net Migration": -970264.0
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2005,
+      "Net Migration": -1036635.0
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2006,
+      "Net Migration": -1091865.0
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2007,
+      "Net Migration": -1133553.0
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2008,
+      "Net Migration": -1158420.0
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2009,
+      "Net Migration": -1150194.0
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2010,
+      "Net Migration": -1113727.0
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2011,
+      "Net Migration": -848910.0
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2012,
+      "Net Migration": -829875.0
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2013,
+      "Net Migration": -862944.0
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2014,
+      "Net Migration": -889222.0
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2015,
+      "Net Migration": -909223.0
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2016,
+      "Net Migration": -918770.0
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2017,
+      "Net Migration": -1037176.0
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2018,
+      "Net Migration": -1029069.0
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2019,
+      "Net Migration": -1016796.0
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2020,
+      "Net Migration": -1002522.0
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2021,
+      "Net Migration": -994722.0
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2022,
+      "Net Migration": -549990.0
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2023,
+      "Net Migration": -549918.0
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2024,
+      "Net Migration": -473362.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1975,
+      "Net Migration": -14.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1976,
+      "Net Migration": -101.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1977,
+      "Net Migration": -413.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1978,
+      "Net Migration": -716.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1979,
+      "Net Migration": -958.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1980,
+      "Net Migration": -903.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1981,
+      "Net Migration": -1014.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1982,
+      "Net Migration": -1220.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1983,
+      "Net Migration": -1608.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1984,
+      "Net Migration": -1300.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1985,
+      "Net Migration": -382.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1986,
+      "Net Migration": -175.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1987,
+      "Net Migration": -265.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1988,
+      "Net Migration": -564.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1989,
+      "Net Migration": -610.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1990,
+      "Net Migration": -271.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1991,
+      "Net Migration": -378.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1992,
+      "Net Migration": -522.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1993,
+      "Net Migration": -749.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1994,
+      "Net Migration": -768.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1995,
+      "Net Migration": -302.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1996,
+      "Net Migration": -183.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1997,
+      "Net Migration": -60.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1998,
+      "Net Migration": -94.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1999,
+      "Net Migration": -62.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2000,
+      "Net Migration": 300.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2001,
+      "Net Migration": 560.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2002,
+      "Net Migration": 607.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2003,
+      "Net Migration": 578.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2004,
+      "Net Migration": 668.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2005,
+      "Net Migration": 578.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2006,
+      "Net Migration": 5006.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2007,
+      "Net Migration": 6160.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2008,
+      "Net Migration": 6035.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2009,
+      "Net Migration": 6093.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2010,
+      "Net Migration": 6369.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2011,
+      "Net Migration": 6611.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2012,
+      "Net Migration": 6800.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2013,
+      "Net Migration": 6963.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2014,
+      "Net Migration": 7700.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2015,
+      "Net Migration": 9324.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2016,
+      "Net Migration": 9421.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2017,
+      "Net Migration": 9555.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2018,
+      "Net Migration": 9637.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2019,
+      "Net Migration": 9648.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2020,
+      "Net Migration": 9642.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2021,
+      "Net Migration": 9412.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2022,
+      "Net Migration": -2674.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2023,
+      "Net Migration": -2877.0
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2024,
+      "Net Migration": -2421.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1975,
+      "Net Migration": -220296.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1976,
+      "Net Migration": -115730.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1977,
+      "Net Migration": -123608.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1978,
+      "Net Migration": -140372.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1979,
+      "Net Migration": -154684.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1980,
+      "Net Migration": -179832.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1981,
+      "Net Migration": -134484.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1982,
+      "Net Migration": -19912.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1983,
+      "Net Migration": -10229.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1984,
+      "Net Migration": -48739.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1985,
+      "Net Migration": -171539.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1986,
+      "Net Migration": -209835.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1987,
+      "Net Migration": -68149.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1988,
+      "Net Migration": -147523.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1989,
+      "Net Migration": -235884.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1990,
+      "Net Migration": -63296.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1991,
+      "Net Migration": -413300.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1992,
+      "Net Migration": -50338.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1993,
+      "Net Migration": -298337.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1994,
+      "Net Migration": -326539.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1995,
+      "Net Migration": -280327.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1996,
+      "Net Migration": -128251.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1997,
+      "Net Migration": -145334.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1998,
+      "Net Migration": 178274.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1999,
+      "Net Migration": -18323.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2000,
+      "Net Migration": -33868.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2001,
+      "Net Migration": -247496.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2002,
+      "Net Migration": -268520.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2003,
+      "Net Migration": -248066.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2004,
+      "Net Migration": -273743.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2005,
+      "Net Migration": -326063.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2006,
+      "Net Migration": -566647.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2007,
+      "Net Migration": -225977.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2008,
+      "Net Migration": -498480.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2009,
+      "Net Migration": -164411.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2010,
+      "Net Migration": 13556.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2011,
+      "Net Migration": -240005.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2012,
+      "Net Migration": 95702.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2013,
+      "Net Migration": -218439.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2014,
+      "Net Migration": -196524.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2015,
+      "Net Migration": -390702.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2016,
+      "Net Migration": -309251.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2017,
+      "Net Migration": -263593.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2018,
+      "Net Migration": -163602.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2019,
+      "Net Migration": -6208.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2020,
+      "Net Migration": -47014.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2021,
+      "Net Migration": -85185.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2022,
+      "Net Migration": -221754.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2023,
+      "Net Migration": -164284.0
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2024,
+      "Net Migration": -160373.0
+    }
+  ]

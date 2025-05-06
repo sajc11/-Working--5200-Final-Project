@@ -1,0 +1,1502 @@
+[
+    {
+      "Country": "Bangladesh",
+      "Year": 1975,
+      "Population": 77854351.0,
+      "GDP": 19448348073.4565,
+      "Net Migration": -390212.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 9.836,
+      "Urban Population Growth (%)": 11.127637312929
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 1976,
+      "Population": 79855318.0,
+      "GDP": 10117113333.3333,
+      "Net Migration": -424970.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 10.701,
+      "Urban Population Growth (%)": 10.9664801351212
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 1977,
+      "Population": 81867264.0,
+      "GDP": 9651149301.8746,
+      "Net Migration": -458491.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 11.63,
+      "Urban Population Growth (%)": 10.8133474586855
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 1978,
+      "Population": 83889655.0,
+      "GDP": 13281767142.8571,
+      "Net Migration": -486721.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 12.629,
+      "Urban Population Growth (%)": 10.681091415763
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 1979,
+      "Population": 85935072.0,
+      "GDP": 15565480321.9448,
+      "Net Migration": -507354.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 13.701,
+      "Urban Population Growth (%)": 10.5562733651834
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 1980,
+      "Population": 88016432.0,
+      "GDP": 18138049095.6072,
+      "Net Migration": -515918.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 14.851,
+      "Urban Population Growth (%)": 10.4529864163851
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 1981,
+      "Population": 90303105.0,
+      "GDP": 20249694002.448,
+      "Net Migration": -184884.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 15.801,
+      "Urban Population Growth (%)": 8.76543977723244
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 1982,
+      "Population": 92814507.0,
+      "GDP": 18525399201.5968,
+      "Net Migration": -156729.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 16.212,
+      "Urban Population Growth (%)": 5.31095691484391
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 1983,
+      "Population": 95335155.0,
+      "GDP": 17609048821.5488,
+      "Net Migration": -201909.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 16.631,
+      "Urban Population Growth (%)": 5.23124074183937
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 1984,
+      "Population": 97814966.0,
+      "GDP": 18920840000.0,
+      "Net Migration": -245693.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 17.06,
+      "Urban Population Growth (%)": 5.11470445125715
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 1985,
+      "Population": 100253825.0,
+      "GDP": 22278423076.9231,
+      "Net Migration": -287872.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 17.496,
+      "Urban Population Growth (%)": 4.98633687696953
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 1986,
+      "Population": 102635572.0,
+      "GDP": 21774033333.3333,
+      "Net Migration": -331992.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 17.941,
+      "Urban Population Growth (%)": 4.85956854405228
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 1987,
+      "Population": 104959291.0,
+      "GDP": 24298032258.0645,
+      "Net Migration": -367475.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 18.395,
+      "Urban Population Growth (%)": 4.73783043266168
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 1988,
+      "Population": 107216008.0,
+      "GDP": 26579005558.3652,
+      "Net Migration": -395408.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 18.859,
+      "Urban Population Growth (%)": 4.61843413554954
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 1989,
+      "Population": 109433799.0,
+      "GDP": 28781715188.8919,
+      "Net Migration": -406910.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 19.33,
+      "Urban Population Growth (%)": 4.51422460023934
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 1990,
+      "Population": 111633717.0,
+      "GDP": 31598340778.2164,
+      "Net Migration": -404105.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 19.811,
+      "Urban Population Growth (%)": 4.44824137511541
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 1991,
+      "Population": 113787109.0,
+      "GDP": 30957483949.5798,
+      "Net Migration": -230852.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 20.257,
+      "Urban Population Growth (%)": 4.13691830720748
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 1992,
+      "Population": 115952192.0,
+      "GDP": 31708874594.1645,
+      "Net Migration": -246914.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 20.61,
+      "Urban Population Growth (%)": 3.61247079611315
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 1993,
+      "Population": 118132360.0,
+      "GDP": 33166519417.9894,
+      "Net Migration": -271677.0,
+      "Sea Level (mm)": -198.76075,
+      "Urban Population (%)": 20.966,
+      "Urban Population Growth (%)": 3.5753412328971
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 1994,
+      "Population": 120343179.0,
+      "GDP": 33768660882.793,
+      "Net Migration": -206958.0,
+      "Sea Level (mm)": -56.83425,
+      "Urban Population (%)": 21.328,
+      "Urban Population Growth (%)": 3.56604562108603
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 1995,
+      "Population": 122600370.0,
+      "GDP": 37939748768.6567,
+      "Net Migration": -231304.0,
+      "Sea Level (mm)": -251.52647,
+      "Urban Population (%)": 21.693,
+      "Urban Population Growth (%)": 3.55514181333649
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 1996,
+      "Population": 124862179.0,
+      "GDP": 46438484107.5795,
+      "Net Migration": -254239.0,
+      "Sea Level (mm)": -150.06004,
+      "Urban Population (%)": 22.064,
+      "Urban Population Growth (%)": 3.52382163689494
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 1997,
+      "Population": 127198069.0,
+      "GDP": 48244309133.4895,
+      "Net Migration": -273442.0,
+      "Sea Level (mm)": -101.410106,
+      "Urban Population (%)": 22.438,
+      "Urban Population Growth (%)": 3.53435540869328
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 1998,
+      "Population": 129622332.0,
+      "GDP": 49984559471.3656,
+      "Net Migration": -286966.0,
+      "Sea Level (mm)": -313.4312,
+      "Urban Population (%)": 22.818,
+      "Urban Population Growth (%)": 3.56733618440501
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 1999,
+      "Population": 132108065.0,
+      "GDP": 51270569883.5275,
+      "Net Migration": -286256.0,
+      "Sea Level (mm)": -57.76592,
+      "Urban Population (%)": 23.202,
+      "Urban Population Growth (%)": 3.5683944205951
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2000,
+      "Population": 134544304.0,
+      "GDP": 53369787318.6245,
+      "Net Migration": -512422.0,
+      "Sea Level (mm)": -79.21655,
+      "Urban Population (%)": 23.59,
+      "Urban Population Growth (%)": 3.48576902321487
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2001,
+      "Population": 136805810.0,
+      "GDP": 53991289844.3291,
+      "Net Migration": -737740.0,
+      "Sea Level (mm)": -80.58935000000001,
+      "Urban Population (%)": 24.096,
+      "Urban Population Growth (%)": 3.78919012329527
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2002,
+      "Population": 138933658.0,
+      "GDP": 54724081490.5102,
+      "Net Migration": -819909.0,
+      "Sea Level (mm)": -157.29713,
+      "Urban Population (%)": 24.756,
+      "Urban Population Growth (%)": 4.24560842660015
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2003,
+      "Population": 140970351.0,
+      "GDP": 60158929188.2556,
+      "Net Migration": -896335.0,
+      "Sea Level (mm)": -98.77571,
+      "Urban Population (%)": 25.429,
+      "Urban Population Growth (%)": 4.13754474804158
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2004,
+      "Population": 142902856.0,
+      "GDP": 65108544250.0425,
+      "Net Migration": -970264.0,
+      "Sea Level (mm)": -101.19034,
+      "Urban Population (%)": 26.114,
+      "Urban Population Growth (%)": 4.01967855708384
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2005,
+      "Population": 144715786.0,
+      "GDP": 69476001239.419,
+      "Net Migration": -1036635.0,
+      "Sea Level (mm)": -112.57529,
+      "Urban Population (%)": 26.809,
+      "Urban Population Growth (%)": 3.88727279699365
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2006,
+      "Population": 146405973.0,
+      "GDP": 71795736172.1561,
+      "Net Migration": -1091865.0,
+      "Sea Level (mm)": -47.616534,
+      "Urban Population (%)": 27.517,
+      "Urban Population Growth (%)": 3.76780329062168
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2007,
+      "Population": 147989278.0,
+      "GDP": 79611644974.5571,
+      "Net Migration": -1133553.0,
+      "Sea Level (mm)": -215.24803,
+      "Urban Population (%)": 28.237,
+      "Urban Population Growth (%)": 3.6585584081155
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2008,
+      "Population": 149474264.0,
+      "GDP": 91636997370.9772,
+      "Net Migration": -1158420.0,
+      "Sea Level (mm)": -53.76794,
+      "Urban Population (%)": 28.968,
+      "Urban Population Growth (%)": 3.55430184219139
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2009,
+      "Population": 150873714.0,
+      "GDP": 102475158190.998,
+      "Net Migration": -1150194.0,
+      "Sea Level (mm)": -37.372403,
+      "Urban Population (%)": 29.709,
+      "Urban Population Growth (%)": 3.45771848017416
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2010,
+      "Population": 152201981.0,
+      "GDP": 115275540051.262,
+      "Net Migration": -1113727.0,
+      "Sea Level (mm)": -65.88944,
+      "Urban Population (%)": 30.462,
+      "Urban Population Growth (%)": 3.37952637091381
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2011,
+      "Population": 153591076.0,
+      "GDP": 128607482310.357,
+      "Net Migration": -848910.0,
+      "Sea Level (mm)": 12.595312,
+      "Urban Population (%)": 31.225,
+      "Urban Population Growth (%)": 3.38243094984493
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2012,
+      "Population": 155070101.0,
+      "GDP": 133310747603.483,
+      "Net Migration": -829875.0,
+      "Sea Level (mm)": 21.40033,
+      "Urban Population (%)": 31.993,
+      "Urban Population Growth (%)": 3.38816336921706
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2013,
+      "Population": 156532141.0,
+      "GDP": 149998957434.186,
+      "Net Migration": -862944.0,
+      "Sea Level (mm)": -56.7536,
+      "Urban Population (%)": 32.762,
+      "Urban Population Growth (%)": 3.31362694652739
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2014,
+      "Population": 157964929.0,
+      "GDP": 172886611653.786,
+      "Net Migration": -889222.0,
+      "Sea Level (mm)": -69.96948,
+      "Urban Population (%)": 33.535,
+      "Urban Population Growth (%)": 3.24320415083496
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2015,
+      "Population": 159383179.0,
+      "GDP": 195146608978.131,
+      "Net Migration": -909223.0,
+      "Sea Level (mm)": 36.244802,
+      "Urban Population (%)": 34.308,
+      "Urban Population Growth (%)": 3.17270852858097
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2016,
+      "Population": 160811932.0,
+      "GDP": 265224515675.034,
+      "Net Migration": -918770.0,
+      "Sea Level (mm)": -76.68253999999999,
+      "Urban Population (%)": 35.083,
+      "Urban Population Growth (%)": 3.12624427967519
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2017,
+      "Population": 162186147.0,
+      "GDP": 293732446624.596,
+      "Net Migration": -1037176.0,
+      "Sea Level (mm)": -24.663037,
+      "Urban Population (%)": 35.858,
+      "Urban Population Growth (%)": 3.03591935323805
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2018,
+      "Population": 163523103.0,
+      "GDP": 321362752441.78,
+      "Net Migration": -1029069.0,
+      "Sea Level (mm)": -16.13235,
+      "Urban Population (%)": 36.632,
+      "Urban Population Growth (%)": 2.95650246132498
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2019,
+      "Population": 164913055.0,
+      "GDP": 351231654603.692,
+      "Net Migration": -1016796.0,
+      "Sea Level (mm)": -86.10725,
+      "Urban Population (%)": 37.405,
+      "Urban Population Growth (%)": 2.93463203949941
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2020,
+      "Population": 166298024.0,
+      "GDP": 373979442362.193,
+      "Net Migration": -1002522.0,
+      "Sea Level (mm)": -144.90813,
+      "Urban Population (%)": 38.177,
+      "Urban Population Growth (%)": 2.87919726354917
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2021,
+      "Population": 167658854.0,
+      "GDP": 416271647911.014,
+      "Net Migration": -994722.0,
+      "Sea Level (mm)": 51.226024,
+      "Urban Population (%)": 38.946,
+      "Urban Population Growth (%)": 2.80926009594233
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2022,
+      "Population": 169384897.0,
+      "GDP": 460131688909.301,
+      "Net Migration": -549990.0,
+      "Sea Level (mm)": -38.42523300000001,
+      "Urban Population (%)": 39.711,
+      "Urban Population Growth (%)": 2.9694492210023
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2023,
+      "Population": 171466990.0,
+      "GDP": 437415331040.994,
+      "Net Migration": -549918.0,
+      "Sea Level (mm)": 2.039401,
+      "Urban Population (%)": 40.473,
+      "Urban Population Growth (%)": 3.12240139052793
+    },
+    {
+      "Country": "Bangladesh",
+      "Year": 2024,
+      "Population": null,
+      "GDP": null,
+      "Net Migration": -473362.0,
+      "Sea Level (mm)": -124.56353,
+      "Urban Population (%)": null,
+      "Urban Population Growth (%)": null
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1975,
+      "Population": 143158.0,
+      "GDP": 24540877.6041667,
+      "Net Migration": -14.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 17.304,
+      "Urban Population Growth (%)": 10.266397338987
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1976,
+      "Population": 147525.0,
+      "GDP": 22399467.1052632,
+      "Net Migration": -101.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 18.596,
+      "Urban Population Growth (%)": 10.2069136980401
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1977,
+      "Population": 151930.0,
+      "GDP": 20853788.7115165,
+      "Net Migration": -413.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 19.958,
+      "Urban Population Growth (%)": 10.0090401603175
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1978,
+      "Population": 156159.0,
+      "GDP": 24369109.1415831,
+      "Net Migration": -716.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 20.978,
+      "Urban Population Growth (%)": 7.73042118290556
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1979,
+      "Population": 160360.0,
+      "GDP": 38523364.4859813,
+      "Net Migration": -958.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 21.607,
+      "Urban Population Growth (%)": 5.60911317021482
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1980,
+      "Population": 164835.0,
+      "GDP": 42463576.1589404,
+      "Net Migration": -903.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 22.25,
+      "Urban Population Growth (%)": 5.68537249970608
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1981,
+      "Population": 169532.0,
+      "GDP": 44781456.9536424,
+      "Net Migration": -1014.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 22.905,
+      "Urban Population Growth (%)": 5.70963065078552
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1982,
+      "Population": 174333.0,
+      "GDP": 47911340.1834794,
+      "Net Migration": -1220.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 23.574,
+      "Urban Population Growth (%)": 5.67162294418526
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1983,
+      "Population": 179128.0,
+      "GDP": 57829787.2340426,
+      "Net Migration": -1608.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 24.257,
+      "Urban Population Growth (%)": 5.56987402689227
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1984,
+      "Population": 184198.0,
+      "GDP": 109503546.099291,
+      "Net Migration": -1300.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 24.954,
+      "Urban Population Growth (%)": 5.62463709094332
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1985,
+      "Population": 190169.0,
+      "GDP": 127190757.959989,
+      "Net Migration": -382.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 25.491,
+      "Urban Population Growth (%)": 5.3188592790523
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1986,
+      "Population": 196935.0,
+      "GDP": 141882254.230178,
+      "Net Migration": -175.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 25.57,
+      "Urban Population Growth (%)": 3.80489477977719
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1987,
+      "Population": 203944.0,
+      "GDP": 141223029.383064,
+      "Net Migration": -265.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 25.648,
+      "Urban Population Growth (%)": 3.80315451402429
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1988,
+      "Population": 210885.0,
+      "GDP": 168514513.375071,
+      "Net Migration": -564.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 25.727,
+      "Urban Population Growth (%)": 3.65273993770837
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1989,
+      "Population": 217738.0,
+      "GDP": 189514434.244,
+      "Net Migration": -610.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 25.806,
+      "Urban Population Growth (%)": 3.50442857834135
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1990,
+      "Population": 224762.0,
+      "GDP": 215043969.849246,
+      "Net Migration": -271.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 25.84,
+      "Urban Population Growth (%)": 3.30831445327085
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1991,
+      "Population": 231802.0,
+      "GDP": 244396761.92334,
+      "Net Migration": -378.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 25.776,
+      "Urban Population Growth (%)": 2.83483015324298
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1992,
+      "Population": 238543.0,
+      "GDP": 284875809.039634,
+      "Net Migration": -522.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 25.713,
+      "Urban Population Growth (%)": 2.62307954927714
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1993,
+      "Population": 244884.0,
+      "GDP": 322417837.161971,
+      "Net Migration": -749.0,
+      "Sea Level (mm)": 2.405008,
+      "Urban Population (%)": 25.649,
+      "Urban Population Growth (%)": 2.37310467036267
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1994,
+      "Population": 250822.0,
+      "GDP": 356014932.136461,
+      "Net Migration": -768.0,
+      "Sea Level (mm)": -29.893901,
+      "Urban Population (%)": 25.586,
+      "Urban Population Growth (%)": 2.14994302909146
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1995,
+      "Population": 256649.0,
+      "GDP": 398988954.970263,
+      "Net Migration": -302.0,
+      "Sea Level (mm)": -1.651849,
+      "Urban Population (%)": 25.638,
+      "Urban Population Growth (%)": 2.50061115740673
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1996,
+      "Population": 262347.0,
+      "GDP": 450382327.952421,
+      "Net Migration": -183.0,
+      "Sea Level (mm)": -13.868377,
+      "Urban Population (%)": 26.008,
+      "Urban Population Growth (%)": 3.62791686981993
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1997,
+      "Population": 267707.0,
+      "GDP": 508223602.378929,
+      "Net Migration": -60.0,
+      "Sea Level (mm)": 5.646198,
+      "Urban Population (%)": 26.379,
+      "Urban Population Growth (%)": 3.43860624806657
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1998,
+      "Population": 272723.0,
+      "GDP": 540096397.621071,
+      "Net Migration": -94.0,
+      "Sea Level (mm)": -18.498486,
+      "Urban Population (%)": 26.755,
+      "Urban Population Growth (%)": 3.27222146361619
+    },
+    {
+      "Country": "Maldives",
+      "Year": 1999,
+      "Population": 277412.0,
+      "GDP": 589239753.610875,
+      "Net Migration": -62.0,
+      "Sea Level (mm)": -7.41678,
+      "Urban Population (%)": 27.134,
+      "Urban Population Growth (%)": 3.11142206224327
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2000,
+      "Population": 282019.0,
+      "GDP": 624337145.284622,
+      "Net Migration": 300.0,
+      "Sea Level (mm)": 11.203328,
+      "Urban Population (%)": 27.706,
+      "Urban Population Growth (%)": 3.73293933764447
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2001,
+      "Population": 286767.0,
+      "GDP": 870031676.798793,
+      "Net Migration": 560.0,
+      "Sea Level (mm)": -21.071522,
+      "Urban Population (%)": 28.859,
+      "Urban Population Growth (%)": 5.74697881762619
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2002,
+      "Population": 291616.0,
+      "GDP": 897031250.0,
+      "Net Migration": 607.0,
+      "Sea Level (mm)": -20.288935,
+      "Urban Population (%)": 30.042,
+      "Urban Population Growth (%)": 5.69402171041788
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2003,
+      "Population": 296491.0,
+      "GDP": 1052121054.6875,
+      "Net Migration": 578.0,
+      "Sea Level (mm)": -36.758862,
+      "Urban Population (%)": 31.252,
+      "Urban Population Growth (%)": 5.60651843613304
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2004,
+      "Population": 301413.0,
+      "GDP": 1226829562.5,
+      "Net Migration": 668.0,
+      "Sea Level (mm)": -2.470822,
+      "Urban Population (%)": 32.49,
+      "Urban Population Growth (%)": 5.53166385181474
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2005,
+      "Population": 306429.0,
+      "GDP": 1163362437.5,
+      "Net Migration": 578.0,
+      "Sea Level (mm)": -15.556755,
+      "Urban Population (%)": 33.75,
+      "Urban Population Growth (%)": 5.45556406629811
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2006,
+      "Population": 313851.0,
+      "GDP": 1575200390.625,
+      "Net Migration": 5006.0,
+      "Sea Level (mm)": 4.100873,
+      "Urban Population (%)": 34.794,
+      "Urban Population Growth (%)": 5.43918538099571
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2007,
+      "Population": 324479.0,
+      "GDP": 1868383460.9375,
+      "Net Migration": 6160.0,
+      "Sea Level (mm)": -24.787575,
+      "Urban Population (%)": 35.2,
+      "Urban Population Growth (%)": 4.49099270113166
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2008,
+      "Population": 336170.0,
+      "GDP": 2271646187.5,
+      "Net Migration": 6035.0,
+      "Sea Level (mm)": 26.057146,
+      "Urban Population (%)": 35.61,
+      "Urban Population Growth (%)": 4.69720034739295
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2009,
+      "Population": 348275.0,
+      "GDP": 2345294875.0,
+      "Net Migration": 6093.0,
+      "Sea Level (mm)": 26.149126,
+      "Urban Population (%)": 36.021,
+      "Urban Population Growth (%)": 4.6851064028687
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2010,
+      "Population": 360792.0,
+      "GDP": 2588176054.6875,
+      "Net Migration": 6369.0,
+      "Sea Level (mm)": 21.375574,
+      "Urban Population (%)": 36.434,
+      "Urban Population Growth (%)": 4.67109433102943
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2011,
+      "Population": 373674.0,
+      "GDP": 2774350240.04918,
+      "Net Migration": 6611.0,
+      "Sea Level (mm)": 23.525696,
+      "Urban Population (%)": 36.849,
+      "Urban Population Growth (%)": 4.6406935652471
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2012,
+      "Population": 386818.0,
+      "GDP": 2886163997.20531,
+      "Net Migration": 6800.0,
+      "Sea Level (mm)": 22.59256,
+      "Urban Population (%)": 37.267,
+      "Urban Population Growth (%)": 4.58480153190093
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2013,
+      "Population": 400070.0,
+      "GDP": 3295009237.50107,
+      "Net Migration": 6963.0,
+      "Sea Level (mm)": 20.852571,
+      "Urban Population (%)": 37.685,
+      "Urban Population Growth (%)": 4.48398563882624
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2014,
+      "Population": 413617.0,
+      "GDP": 3697353039.20043,
+      "Net Migration": 7700.0,
+      "Sea Level (mm)": 20.790739,
+      "Urban Population (%)": 38.106,
+      "Urban Population Growth (%)": 4.441369536953
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2015,
+      "Population": 428154.0,
+      "GDP": 4129505319.12921,
+      "Net Migration": 9324.0,
+      "Sea Level (mm)": 8.688087000000001,
+      "Urban Population (%)": 38.529,
+      "Urban Population Growth (%)": 4.55785449987142
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2016,
+      "Population": 443308.0,
+      "GDP": 4409942623.85538,
+      "Net Migration": 9421.0,
+      "Sea Level (mm)": 71.208276,
+      "Urban Population (%)": 38.954,
+      "Urban Population Growth (%)": 4.57537101050229
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2017,
+      "Population": 458287.0,
+      "GDP": 4816426256.52914,
+      "Net Migration": 9555.0,
+      "Sea Level (mm)": 12.603604,
+      "Urban Population (%)": 39.38,
+      "Urban Population Growth (%)": 4.41062656612564
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2018,
+      "Population": 473099.0,
+      "GDP": 5404344162.69888,
+      "Net Migration": 9637.0,
+      "Sea Level (mm)": 40.409215,
+      "Urban Population (%)": 39.808,
+      "Urban Population Growth (%)": 4.26198709245255
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2019,
+      "Population": 487731.0,
+      "GDP": 5726094799.37709,
+      "Net Migration": 9648.0,
+      "Sea Level (mm)": 39.085787,
+      "Urban Population (%)": 40.238,
+      "Urban Population Growth (%)": 4.12035901488311
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2020,
+      "Population": 502118.0,
+      "GDP": 3712604583.36665,
+      "Net Migration": 9642.0,
+      "Sea Level (mm)": 62.38098,
+      "Urban Population (%)": 40.669,
+      "Urban Population Growth (%)": 3.97246450868966
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2021,
+      "Population": 516154.0,
+      "GDP": 5252457369.55218,
+      "Net Migration": 9412.0,
+      "Sea Level (mm)": 123.21316,
+      "Urban Population (%)": 41.102,
+      "Urban Population Growth (%)": 3.8164283391555
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2022,
+      "Population": 524106.0,
+      "GDP": 6177118113.94637,
+      "Net Migration": -2674.0,
+      "Sea Level (mm)": 95.08747,
+      "Urban Population (%)": 41.536,
+      "Urban Population Growth (%)": 2.579224173437
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2023,
+      "Population": 525994.0,
+      "GDP": 6590894301.9579,
+      "Net Migration": -2877.0,
+      "Sea Level (mm)": 54.705177,
+      "Urban Population (%)": 41.971,
+      "Urban Population Growth (%)": 1.40129739627328
+    },
+    {
+      "Country": "Maldives",
+      "Year": 2024,
+      "Population": null,
+      "GDP": null,
+      "Net Migration": -2421.0,
+      "Sea Level (mm)": 53.511277,
+      "Urban Population (%)": null,
+      "Urban Population Growth (%)": null
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1975,
+      "Population": 42120826.0,
+      "GDP": 16875240683.5083,
+      "Net Migration": -220296.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 35.56,
+      "Urban Population Growth (%)": 3.69161136737449
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1976,
+      "Population": 43201488.0,
+      "GDP": 19381055197.2794,
+      "Net Migration": -115730.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 35.917,
+      "Urban Population Growth (%)": 3.53219047647432
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1977,
+      "Population": 44367962.0,
+      "GDP": 22283109803.3521,
+      "Net Migration": -123608.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 36.275,
+      "Urban Population Growth (%)": 3.65607863402746
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1978,
+      "Population": 45575281.0,
+      "GDP": 25762224562.6316,
+      "Net Migration": -140372.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 36.635,
+      "Urban Population Growth (%)": 3.67231243979956
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1979,
+      "Population": 46807103.0,
+      "GDP": 31218296292.1295,
+      "Net Migration": -154684.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 36.997,
+      "Urban Population Growth (%)": 3.65022569618856
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1980,
+      "Population": 48043740.0,
+      "GDP": 36848080898.8112,
+      "Net Migration": -179832.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 37.456,
+      "Urban Population Growth (%)": 3.84069434427967
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1981,
+      "Population": 49311727.0,
+      "GDP": 40499388869.1271,
+      "Net Migration": -134484.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 38.394,
+      "Urban Population Growth (%)": 5.07843532189108
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1982,
+      "Population": 50695707.0,
+      "GDP": 42206011275.1757,
+      "Net Migration": -19912.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 39.343,
+      "Urban Population Growth (%)": 5.20962047172787
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1983,
+      "Population": 52194620.0,
+      "GDP": 37759179894.5298,
+      "Net Migration": -10229.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 40.3,
+      "Urban Population Growth (%)": 5.31715995319535
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1984,
+      "Population": 53726181.0,
+      "GDP": 35730185633.5233,
+      "Net Migration": -48739.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 41.266,
+      "Urban Population Growth (%)": 5.2608447615903
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1985,
+      "Population": 55213006.0,
+      "GDP": 34961486348.2382,
+      "Net Migration": -171539.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 42.235,
+      "Urban Population Growth (%)": 5.0508451377782
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1986,
+      "Population": 56645077.0,
+      "GDP": 33987207294.9432,
+      "Net Migration": -209835.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 43.212,
+      "Urban Population Growth (%)": 4.84755304269695
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1987,
+      "Population": 58157496.0,
+      "GDP": 37791488666.0743,
+      "Net Migration": -68149.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 44.195,
+      "Urban Population Growth (%)": 4.88430957968905
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1988,
+      "Population": 59739052.0,
+      "GDP": 43152128958.6116,
+      "Net Migration": -147523.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 45.183,
+      "Urban Population Growth (%)": 4.89404335219479
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1989,
+      "Population": 61265260.0,
+      "GDP": 48513773720.673,
+      "Net Migration": -235884.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 46.172,
+      "Urban Population Growth (%)": 4.68796616146148
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1990,
+      "Population": 62854666.0,
+      "GDP": 50508286641.5746,
+      "Net Migration": -63296.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 46.986,
+      "Urban Population Growth (%)": 4.30883247079036
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1991,
+      "Population": 64382249.0,
+      "GDP": 51784144942.727,
+      "Net Migration": -413300.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 46.901,
+      "Urban Population Growth (%)": 2.22021236740521
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1992,
+      "Population": 65926125.0,
+      "GDP": 60422328242.1803,
+      "Net Migration": -50338.0,
+      "Sea Level (mm)": null,
+      "Urban Population (%)": 46.815,
+      "Urban Population Growth (%)": 2.18614789757566
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1993,
+      "Population": 67530621.0,
+      "GDP": 62036529147.1831,
+      "Net Migration": -298337.0,
+      "Sea Level (mm)": -144.45366,
+      "Urban Population (%)": 46.73,
+      "Urban Population Growth (%)": 2.22290422811899
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1994,
+      "Population": 69019291.0,
+      "GDP": 73159336915.2718,
+      "Net Migration": -326539.0,
+      "Sea Level (mm)": -103.64932,
+      "Urban Population (%)": 46.645,
+      "Urban Population Growth (%)": 1.99842866877477
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1995,
+      "Population": 70546246.0,
+      "GDP": 84644328727.4825,
+      "Net Migration": -280327.0,
+      "Sea Level (mm)": -126.91431,
+      "Urban Population (%)": 46.56,
+      "Urban Population Growth (%)": 2.00584888959916
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1996,
+      "Population": 72190242.0,
+      "GDP": 94648084429.0341,
+      "Net Migration": -128251.0,
+      "Sea Level (mm)": -99.78903,
+      "Urban Population (%)": 46.475,
+      "Urban Population Growth (%)": 2.1209153298837
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1997,
+      "Population": 73908810.0,
+      "GDP": 94106317565.0846,
+      "Net Migration": -145334.0,
+      "Sea Level (mm)": -95.658615,
+      "Urban Population (%)": 46.39,
+      "Urban Population Growth (%)": 2.16965370367804
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1998,
+      "Population": 75791024.0,
+      "GDP": 74492416329.9142,
+      "Net Migration": 178274.0,
+      "Sea Level (mm)": -167.57023,
+      "Urban Population (%)": 46.305,
+      "Urban Population Growth (%)": 2.3313869005306
+    },
+    {
+      "Country": "Philippines",
+      "Year": 1999,
+      "Population": 77753257.0,
+      "GDP": 85640171045.1254,
+      "Net Migration": -18323.0,
+      "Sea Level (mm)": -3.845707,
+      "Urban Population (%)": 46.22,
+      "Urban Population Growth (%)": 2.3723210010291
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2000,
+      "Population": 79625397.0,
+      "GDP": 83669788254.7279,
+      "Net Migration": -33868.0,
+      "Sea Level (mm)": -17.426796,
+      "Urban Population (%)": 46.135,
+      "Urban Population Growth (%)": 2.1951948362633
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2001,
+      "Population": 81401488.0,
+      "GDP": 78921234457.5487,
+      "Net Migration": -247496.0,
+      "Sea Level (mm)": -24.94794,
+      "Urban Population (%)": 46.05,
+      "Urban Population Growth (%)": 2.02163263234443
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2002,
+      "Population": 83068889.0,
+      "GDP": 84307345887.543,
+      "Net Migration": -268520.0,
+      "Sea Level (mm)": -90.38408,
+      "Urban Population (%)": 45.965,
+      "Urban Population Growth (%)": 1.8429183631649
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2003,
+      "Population": 84731835.0,
+      "GDP": 87039092974.2272,
+      "Net Migration": -248066.0,
+      "Sea Level (mm)": -103.28634,
+      "Urban Population (%)": 45.88,
+      "Urban Population Growth (%)": 1.7970188592038
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2004,
+      "Population": 86394504.0,
+      "GDP": 95001999685.3314,
+      "Net Migration": -273743.0,
+      "Sea Level (mm)": -99.61016,
+      "Urban Population (%)": 45.795,
+      "Urban Population Growth (%)": 1.75782929421418
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2005,
+      "Population": 88015962.0,
+      "GDP": 107419977318.166,
+      "Net Migration": -326063.0,
+      "Sea Level (mm)": -134.63666,
+      "Urban Population (%)": 45.71,
+      "Urban Population Growth (%)": 1.67362961840003
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2006,
+      "Population": 89508986.0,
+      "GDP": 127652926368.069,
+      "Net Migration": -566647.0,
+      "Sea Level (mm)": -27.72509,
+      "Urban Population (%)": 45.625,
+      "Urban Population Growth (%)": 1.49595667298796
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2007,
+      "Population": 91075184.0,
+      "GDP": 155980408673.403,
+      "Net Migration": -225977.0,
+      "Sea Level (mm)": -37.53457,
+      "Urban Population (%)": 45.54,
+      "Urban Population Growth (%)": 1.54815910724662
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2008,
+      "Population": 92699095.0,
+      "GDP": 181624626327.361,
+      "Net Migration": -498480.0,
+      "Sea Level (mm)": -6.34458,
+      "Urban Population (%)": 45.455,
+      "Urban Population Growth (%)": 1.58051153327687
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2009,
+      "Population": 94384250.0,
+      "GDP": 175974755881.372,
+      "Net Migration": -164411.0,
+      "Sea Level (mm)": 22.95351,
+      "Urban Population (%)": 45.371,
+      "Urban Population Growth (%)": 1.61658047139181
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2010,
+      "Population": 96337125.0,
+      "GDP": 208368893151.144,
+      "Net Migration": 13556.0,
+      "Sea Level (mm)": -55.21726,
+      "Urban Population (%)": 45.332,
+      "Urban Population Growth (%)": 1.96196058724375
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2011,
+      "Population": 98248614.0,
+      "GDP": 234216730295.938,
+      "Net Migration": -240005.0,
+      "Sea Level (mm)": 52.193593,
+      "Urban Population (%)": 45.522,
+      "Urban Population Growth (%)": 2.38299131718598
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2012,
+      "Population": 100175512.0,
+      "GDP": 261920540972.102,
+      "Net Migration": 95702.0,
+      "Sea Level (mm)": 26.639802,
+      "Urban Population (%)": 45.712,
+      "Urban Population Growth (%)": 2.35877441524003
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2013,
+      "Population": 102076336.0,
+      "GDP": 283902828581.65,
+      "Net Migration": -218439.0,
+      "Sea Level (mm)": 18.641707,
+      "Urban Population (%)": 45.903,
+      "Urban Population Growth (%)": 2.29667982527197
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2014,
+      "Population": 103767130.0,
+      "GDP": 297483555344.802,
+      "Net Migration": -196524.0,
+      "Sea Level (mm)": -26.9733,
+      "Urban Population (%)": 46.093,
+      "Urban Population Growth (%)": 2.05589334298163
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2015,
+      "Population": 105312992.0,
+      "GDP": 306445871246.718,
+      "Net Migration": -390702.0,
+      "Sea Level (mm)": -50.531007,
+      "Urban Population (%)": 46.284,
+      "Urban Population Growth (%)": 1.89227731588436
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2016,
+      "Population": 106735719.0,
+      "GDP": 318627003012.52,
+      "Net Migration": -309251.0,
+      "Sea Level (mm)": -94.55416,
+      "Urban Population (%)": 46.475,
+      "Urban Population Growth (%)": 1.75372718356756
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2017,
+      "Population": 108119693.0,
+      "GDP": 328480736798.792,
+      "Net Migration": -263593.0,
+      "Sea Level (mm)": -4.294641,
+      "Urban Population (%)": 46.682,
+      "Urban Population Growth (%)": 1.73271429215336
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2018,
+      "Population": 109465287.0,
+      "GDP": 346841896583.515,
+      "Net Migration": -163602.0,
+      "Sea Level (mm)": -0.515547,
+      "Urban Population (%)": 46.907,
+      "Urban Population Growth (%)": 1.71768683143166
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2019,
+      "Population": 110804683.0,
+      "GDP": 376823402244.928,
+      "Net Migration": -6208.0,
+      "Sea Level (mm)": -27.227554,
+      "Urban Population (%)": 47.149,
+      "Urban Population Growth (%)": 1.73074389719995
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2020,
+      "Population": 112081264.0,
+      "GDP": 361751145451.597,
+      "Net Migration": -47014.0,
+      "Sea Level (mm)": -57.13708,
+      "Urban Population (%)": 47.408,
+      "Urban Population Growth (%)": 1.69333383387045
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2021,
+      "Population": 113100950.0,
+      "GDP": 394087359848.11,
+      "Net Migration": -85185.0,
+      "Sea Level (mm)": 42.08522,
+      "Urban Population (%)": 47.684,
+      "Urban Population Growth (%)": 1.48615173414499
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2022,
+      "Population": 113964338.0,
+      "GDP": 404353369604.631,
+      "Net Migration": -221754.0,
+      "Sea Level (mm)": 35.43444,
+      "Urban Population (%)": 47.977,
+      "Urban Population Growth (%)": 1.37306015828637
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2023,
+      "Population": 114891199.0,
+      "GDP": 437146372729.942,
+      "Net Migration": -164284.0,
+      "Sea Level (mm)": 66.22060400000001,
+      "Urban Population (%)": 48.287,
+      "Urban Population Growth (%)": 1.45406572564598
+    },
+    {
+      "Country": "Philippines",
+      "Year": 2024,
+      "Population": null,
+      "GDP": null,
+      "Net Migration": -160373.0,
+      "Sea Level (mm)": -56.575853,
+      "Urban Population (%)": null,
+      "Urban Population Growth (%)": null
+    }
+  ]
