@@ -59,7 +59,8 @@ module.exports = {
         { from: 'public/galleryData.json', to: 'galleryData.json' },
         { from: 'public/images/EDA_imgs', to: 'images/EDA_imgs' },
         { from: 'public/images/general', to: 'images/general' },
-        { from: 'public/scholarship-eda.html', to: 'scholarship-eda.html' }, // ✅ add this
+        { from: 'public/DSAN5200_FinalPaper.pdf', to: 'DSAN5200_FinalPaper.pdf' },
+        { from: 'public/Climate_Vulnerability_Analysis.pdf', to: 'Climate_Vulnerability_Analysis.pdf' },
       ],
     }),
   ],

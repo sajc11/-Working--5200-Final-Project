@@ -1,268 +1,442 @@
-{
-  "images": [
+[
+  {
+    "src": "/images/EDA_imgs/Bd_AvgAnnualPercip.png",
+    "title": "Average Precipitation (mm)",
+    "description": "Line chart showing the average annual precipitation in millimeters from 1950 to 2014.",
+    "type": "line chart",
+    "category": "Climate Indicators",
+    "filters": ["Bangladesh", "Yearly Average", "Precipitation"]
+  },
+  {
+    "src": "/images/EDA_imgs/Bd_ExtremeTempDays.png",
+    "title": "Days With Extreme Temperatures",
+    "description": "Line chart illustrating the number of days with extreme temperatures recorded annually from 1950 to 2014.",
+    "type": "line chart",
+    "category": "Climate Indicators",
+    "filters": ["Bangladesh", "Yearly", "Extreme Temperatures"]
+  },
+  {
+    "src": "/images/EDA_imgs/Bd_GDP.png",
+    "title": "Year-over-Year Growth Rate by Indicator",
+    "description": "Line chart displaying the year-over-year growth rate of GDP from 1976 to 2023. The y-axis is fixed per indicator.",
+    "type": "line chart",
+    "category": "Economic Indicators",
+     "filters": ["Bangladesh", "Growth Rate", "GDP"]
+  },
+  {
+    "src": "/images/EDA_imgs/Bd_MajorFloodsDays_AnnualAvg.png",
+    "title": "High Tide Flood Days Over Time",
+    "description": "Line chart showing the annual average number of major high tide flood days from 1979 to 2015.",
+    "type": "line chart",
+    "category": "Flood Analysis",
+    "filters": ["Bangladesh", "Yearly Average", "Floods", "Major Floods"]
+  },
+  {
+    "src": "/images/EDA_imgs/Bd_MinorFloodsDays_AnnualAvg.png",
+    "title": "High Tide Flood Days Over Time",
+    "description": "Line chart showing the annual average number of minor high tide flood days from 1979 to 2015.",
+    "type": "line chart",
+    "category": "Flood Analysis",
+     "filters": ["Bangladesh", "Yearly Average", "Floods", "Minor Floods"]
+  },
+  {
+    "src": "/images/EDA_imgs/Bd_ModerateFloodsDays_AnnualAvg.png",
+    "title": "High Tide Flood Days Over Time",
+    "description": "Line chart showing the annual average number of moderate high tide flood days from 1979 to 2015.",
+    "type": "line chart",
+    "category": "Flood Analysis",
+     "filters": ["Bangladesh", "Yearly Average", "Floods", "Moderate Floods"]
+  },
+  {
+    "src": "/images/EDA_imgs/Bd_NetMigration_GrowthRate.png",
+    "title": "Year-over-Year Growth Rate by Indicator",
+    "description": "Line chart displaying the year-over-year growth rate of net migration from 1976 to 2023. The y-axis is fixed per indicator.",
+    "type": "line chart",
+    "category": "Demographic Indicators",
+     "filters": ["Bangladesh", "Growth Rate", "Net Migration"]
+  },
+  {
+    "src": "/images/EDA_imgs/Bd_ReconstructionObs.png",
+    "title": "Sea Level Change Over Time",
+    "description": "Line chart showing the reconstructed sea level change in millimeters from 1970 to 2028.",
+    "type": "line chart",
+    "category": "Sea Level Analysis",
+     "filters": ["Bangladesh", "Sea Level", "Reconstruction Obs"]
+  },
+  {
+    "src": "/images/EDA_imgs/Bd_SatAltimetry.png.png",
+    "title": "Sea Level Change Over Time",
+    "description": "Line chart showing the sea level change in millimeters measured by satellite altimetry from 1993 to 2025.",
+    "type": "line chart",
+    "category": "Sea Level Analysis",
+     "filters": ["Bangladesh", "Sea Level", "Satellite Altimetry"]
+  },
+  {
+    "src": "/images/EDA_imgs/Bd_TotPop_GrowthRate.png",
+    "title": "Year-over-Year Growth Rate by Indicator",
+    "description": "Line chart displaying the year-over-year growth rate of total population from 1976 to 2023. The y-axis is fixed per indicator.",
+    "type": "line chart",
+    "category": "Demographic Indicators",
+     "filters": ["Bangladesh", "Growth Rate", "Total Population"]
+  },
+  {
+    "src": "/images/EDA_imgs/Bd_UrbanPop_GrowthRate.png",
+    "title": "Year-over-Year Growth Rate by Indicator",
+    "description": "Line chart displaying the year-over-year growth rate of urban population from 1976 to 2021. The y-axis is fixed per indicator.",
+    "type": "line chart",
+    "category": "Demographic Indicators",
+     "filters": ["Bangladesh", "Growth Rate", "Urban Population"]
+  },
+  {
+    "src": "/images/EDA_imgs/ClimateSocietyLinkages_Bd.png",
+    "title": "Climate-Society Linkages in Bangladesh",
+    "description": "Scatter plots showing the relationship between sea level change and GDP, net migration, total population, and urban population growth in Bangladesh.",
+    "type": "scatter plot",
+    "category": "Climate-Society Analysis",
+     "filters": ["Bangladesh", "Climate-Society Linkages", "Sea Level", "GDP", "Net Migration", "Total Population", "Urban Population"]
+  },
     {
-      "title": "Cyclones in Bangladesh",
-      "place": "Bangladesh",
-      "description": "Visualization of cyclone patterns affecting Bangladesh coastal regions",
-      "path": "public/images/bangladesh/cyclones.png"
-    },
+    "src": "/images/EDA_imgs/ClimateSocietyLinkages_Md.png",
+    "title": "Climate-Society Linkages in Maldives",
+    "description": "Scatter plots showing the relationship between sea level change and GDP, net migration, total population, and urban population growth in the Maldives.",
+    "type": "scatter plot",
+    "category": "Climate-Society Analysis",
+     "filters": ["Maldives", "Climate-Society Linkages", "Sea Level", "GDP", "Net Migration", "Total Population", "Urban Population"]
+  },
     {
-      "title": "Dhaka City Landscape",
-      "place": "Dhaka, Bangladesh",
-      "description": "Aerial view of Dhaka city showing urban development and layout",
-      "path": "public/images/general/bangladesh/dhaka_city.png"
-    },
-    {
-      "title": "Polluted River in Dhaka",
-      "place": "Dhaka, Bangladesh",
-      "description": "Environmental pollution in Dhaka's river system",
-      "path": "public/images/bangladesh/dhaka_polluted_river.png"
-    },
-    {
-      "title": "Waste Management Issues in Dhaka Slums",
-      "place": "Dhaka, Bangladesh",
-      "description": "Waste disposal problems in densely populated slum areas of Dhaka",
-      "path": "public/images/bangladesh/dhaka_slums_waste_problem.png"
-    },
-    {
-      "title": "Water Pollution Crisis in Dhaka",
-      "place": "Dhaka, Bangladesh",
-      "description": "Severe water pollution affecting Dhaka's waterways",
-      "path": "public/images/bangladesh/dhaka_water_pollution.png"
-    },
-    {
-      "title": "Drought Conditions in Bangladesh",
-      "place": "Bangladesh",
-      "description": "Effects of drought on Bangladesh's landscape and agriculture",
-      "path": "public/images/bangladesh/drought.png"
-    },
-    {
-      "title": "Soil Erosion in Bangladesh",
-      "place": "Bangladesh",
-      "description": "Land erosion affecting Bangladesh's coastal and riverine areas",
-      "path": "public/images/bangladesh/erosion.png"
-    },
-    {
-      "title": "Flood Waters in Bangladesh",
-      "place": "Bangladesh",
-      "description": "Extensive flooding across low-lying regions of Bangladesh",
-      "path": "public/images/bangladesh/floor_waters.png"
-    },
-    {
-      "title": "High Population Density",
-      "place": "Bangladesh",
-      "description": "Visualization of Bangladesh's high population density areas",
-      "path": "public/images/bangladesh/high_density_pop.png"
-    },
-    {
-      "title": "Overpopulation Challenges",
-      "place": "Bangladesh",
-      "description": "Impacts of overpopulation in Bangladesh urban centers",
-      "path": "public/images/bangladesh/overpopulation.png"
-    },
-    {
-      "title": "Storm Tide Impacts",
-      "place": "Bangladesh",
-      "description": "Effects of storm tides on Bangladesh's coastal communities",
-      "path": "public/images/bangladesh/storm_tides.png"
-    },
-    {
-      "title": "Tourism Industry Growth 1997-2023",
-      "place": "Maldives",
-      "description": "Visualization of tourism industry expansion in the Maldives over 26 years",
-      "path": "public/images/maldives/1997_2023_industry_boom.png"
-    },
-    {
-      "title": "Maldives Islands Aerial View 1997",
-      "place": "Maldives",
-      "description": "Aerial photograph of Maldives islands in 1997",
-      "path": "public/images/maldives/arial_1997_islands.png"
-    },
-    {
-      "title": "Maldives Islands Aerial View 2020",
-      "place": "Maldives",
-      "description": "Aerial photograph of Maldives islands in 2020 showing development changes",
-      "path": "public/images/maldives/arial_2020_islands.png"
-    },
-    {
-      "title": "Atoll Terraforming Project",
-      "place": "Maldives",
-      "description": "Land reclamation and terraforming activities on Maldivian atolls",
-      "path": "public/images/maldives/atoll_terraform.png"
-    },
-    {
-      "title": "Causeway Protection Against Flood Surge",
-      "place": "Maldives",
-      "description": "Causeway construction to protect against rising sea levels and flood surges",
-      "path": "public/images/maldives/causeway_against_flood_surge.png"
-    },
-    {
-      "title": "Floating Islands Concept",
-      "place": "Maldives",
-      "description": "Innovative floating island technology being implemented in the Maldives",
-      "path": "public/images/maldives/floating_islands.png"
-    },
-    {
-      "title": "Airport Flooding",
-      "place": "Maldives",
-      "description": "Flood waters affecting airport operations in the Maldives",
-      "path": "public/images/maldives/flood_water_airport.png"
-    },
-    {
-      "title": "Human-Made Beach Development",
-      "place": "Maldives",
-      "description": "Artificial beach construction project in the Maldives",
-      "path": "public/images/maldives/human_made_beach.png"
-    },
-    {
-      "title": "Male in the 1960s",
-      "place": "Male, Maldives",
-      "description": "Historical photograph of Male, the capital city of Maldives, in the 1960s",
-      "path": "public/images/maldives/male_1960s.png"
-    },
-    {
-      "title": "Male in 2022",
-      "place": "Male, Maldives",
-      "description": "Recent photograph of Male showing urban development as of 2022",
-      "path": "public/images/maldives/male_2022.png"
-    },
-    {
-      "title": "Preparations for Rising Sea Levels",
-      "place": "Maldives",
-      "description": "Adaptation measures being implemented against rising sea levels",
-      "path": "public/images/maldives/prepare_for_rising_sea.png"
-    },
-    {
-      "title": "Land Reclamation Project",
-      "place": "Maldives",
-      "description": "Ongoing land reclamation project to expand livable land area",
-      "path": "public/images/maldives/reclamation_projj.png"
-    },
-    {
-      "title": "Sand Dredging Operations",
-      "place": "Maldives",
-      "description": "Sand dredging activities for land reclamation in the Maldives",
-      "path": "public/images/maldives/sand_dredging.png"
-    },
-    {
-      "title": "Island Subsidence",
-      "place": "Maldives",
-      "description": "Evidence of island sinking due to environmental factors",
-      "path": "public/images/maldives/sinking.png"
-    },
-    {
-      "title": "Terraforming Activities",
-      "place": "Maldives",
-      "description": "Land modification and terraforming projects to create new habitable space",
-      "path": "public/images/maldives/terraforming.png"
-    },
-    {
-      "title": "Tourism-Dependent Economy",
-      "place": "Maldives",
-      "description": "Visualization of the Maldives' economic dependence on tourism",
-      "path": "public/images/maldives/tourism_dependent.png"
-    },
-    {
-      "title": "Population Density in the Philippines",
-      "place": "Philippines",
-      "description": "Visualization of high population density areas across the Philippines",
-      "path": "public/images/philippines/dense_pop.png"
-    },
-    {
-      "title": "Population Growth Over Time",
-      "place": "Philippines",
-      "description": "Chart showing population growth trends in the Philippines",
-      "path": "public/images/philippines/growth_over_time.png"
-    },
-    {
-      "title": "Happyland - Manila's Worst Slum",
-      "place": "Manila, Philippines",
-      "description": "Conditions in Happyland, one of Manila's most impoverished slum areas",
-      "path": "public/images/philippines/happyland_worst_manila_slum.png"
-    },
-    {
-      "title": "Makeshift Housing and Overpopulation",
-      "place": "Philippines",
-      "description": "Informal settlements resulting from overpopulation in urban areas",
-      "path": "public/images/philippines/makeshift_housing_overpop.png"
-    },
-    {
-      "title": "Manila's Urban Expansion 1994-2020",
-      "place": "Manila, Philippines",
-      "description": "Comparison of Manila's urban development between 1994 and 2020",
-      "path": "public/images/philippines/Manila_1994_2020.png"
-    },
-    {
-      "title": "Manila Bay Cleanup Project",
-      "place": "Manila, Philippines",
-      "description": "Environmental restoration efforts in Manila Bay",
-      "path": "public/images/philippines/manila_bay_cleanup_project.png"
-    },
-    {
-      "title": "Metro Manila Density",
-      "place": "Manila, Philippines",
-      "description": "Urban density visualization of the Metro Manila region",
-      "path": "public/images/philippines/metro_manila_dense.png"
-    },
-    {
-      "title": "Pasig River Condition",
-      "place": "Manila, Philippines",
-      "description": "Environmental state of the Pasig River running through Manila",
-      "path": "public/images/philippines/pasig_river.png"
-    },
-    {
-      "title": "Population Trends 1970-2020",
-      "place": "Philippines",
-      "description": "Five-decade population trend analysis for the Philippines",
-      "path": "public/images/philippines/pop_trends_1970_2020.png"
-    },
-    {
-      "title": "Population Boom and Food Security",
-      "place": "Philippines",
-      "description": "Impact of population growth on food security in the Philippines",
-      "path": "public/images/philippines/population_boom_food_disaster.png"
-    },
-    {
-      "title": "Consequences of Rapid Urbanization",
-      "place": "Philippines",
-      "description": "Effects of accelerated urbanization on Philippine cities",
-      "path": "public/images/philippines/rapid_urbanization_results.png"
-    },
-    {
-      "title": "Rising Sea Level Impacts",
-      "place": "Philippines",
-      "description": "Coastal areas affected by rising sea levels in the Philippines",
-      "path": "public/images/philippines/rising_sea_level.png"
-    },
-    {
-      "title": "Tondo Slum Fire Hazards",
-      "place": "Manila, Philippines",
-      "description": "Fire safety issues in Manila's densely populated Tondo slum area",
-      "path": "public/images/philippines/tondo_slum_fire_hazard.png"
-    },
-    {
-      "title": "Typhoon Flooding in Manila",
-      "place": "Manila, Philippines",
-      "description": "Flooding caused by typhoons in Manila's urban areas",
-      "path": "public/images/philippines/typhoons_manila_flood.png"
-    },
-    {
-      "title": "Plastic Waste Management Crisis",
-      "place": "Philippines",
-      "description": "Challenges in managing plastic waste pollution in the Philippines",
-      "path": "public/images/philippines/waste_management_plastic.png"
-    },
-    {
-      "title": "Water Pollution Issues",
-      "place": "Philippines",
-      "description": "Water pollution affecting Philippine waterways and communities",
-      "path": "public/images/philippines/water_pollution.png"
-    },
-    {
-      "title": "Widespread Flooding",
-      "place": "Philippines",
-      "description": "Extensive flooding across Philippine lowland regions",
-      "path": "public/images/philippines/widespread_floods.png"
-    }
-  ]
-}
+    "src": "/images/EDA_imgs/ClimateSocietyLinkages_Ph.png",
+    "title": "Climate-Society Linkages in Philippines",
+    "description": "Scatter plots showing the relationship between sea level change and GDP, net migration, total population, and urban population growth in the Philippines.",
+    "type": "scatter plot",
+    "category": "Climate-Society Analysis",
+     "filters": ["Philippines", "Climate-Society Linkages", "Sea Level", "GDP", "Net Migration", "Total Population", "Urban Population"]
+  },
+  {
+    "src": "/images/EDA_imgs/CompositeVulnerabilityIndex.png",
+    "title": "Composite Vulnerability Index Over Time",
+    "description": "Line chart showing the composite vulnerability index for Bangladesh, Maldives, and the Philippines from 1993 to 2015.",
+    "type": "line chart",
+    "category": "Vulnerability Analysis",
+     "filters": ["Bangladesh", "Maldives", "Philippines", "Vulnerability Index"]
+  },
+  {
+   "src": "/images/EDA_imgs/FloodDays_TemporalDynamics_GDP_Ph_Bd.png",
+    "title": "Correlation between GDP and Flood Days",
+    "description": "Line chart showing the 10-year rolling correlation between GDP and moderate flood days for Bangladesh and the Philippines.",
+    "type": "line chart",
+    "category": "Flood Analysis",
+     "filters": ["Bangladesh", "Philippines", "Correlation Analysis", "Floods", "GDP"]
+  },
+  {
+    "src": "/images/EDA_imgs/FloodDays_TemporalDynamics_NetMigration_Ph_Bd.png",
+    "title": "Correlation between Net Migration and Flood Days",
+    "description": "Line chart showing the 10-year rolling correlation between net migration and moderate flood days for Bangladesh and the Philippines.",
+    "type": "line chart",
+    "category": "Flood Analysis",
+     "filters": ["Bangladesh", "Philippines", "Correlation Analysis", "Floods", "Net Migration"]
+  },
+  {
+    "src": "/images/EDA_imgs/FloodDays_TemporalDynamics_TotPop_Ph_Bd.png",
+    "title": "Correlation between Total Population and Flood Days",
+    "description": "Line chart showing the 10-year rolling correlation between total population and moderate flood days for Bangladesh and the Philippines.",
+    "type": "line chart",
+    "category": "Flood Analysis",
+     "filters": ["Bangladesh", "Philippines", "Correlation Analysis", "Floods", "Total Population"]
+  },
+  {
+    "src": "/images/EDA_imgs/FloodDays_TemporalDynamics_UrbanPopGrowth_Ph_Bd.png",
+     "title": "Correlation between Urban Population Growth and Flood Days",
+    "description": "Line chart showing the 10-year rolling correlation between urban population growth and moderate flood days for Bangladesh and the Philippines.",
+    "type": "line chart",
+    "category": "Flood Analysis",
+     "filters": ["Bangladesh", "Philippines", "Correlation Analysis", "Floods", "Urban Population"]
+  },
+  {
+    "src": "/images/EDA_imgs/LeadLagCrossCorrelationAnalysis_Bd.png",
+    "title": "Lead-Lag Cross-Correlation Analysis for Bangladesh",
+    "description": "Stem grid showing the cross-correlation between various climate and socio-economic factors in Bangladesh.",
+    "type": "stem grid",
+    "category": "Correlation Analysis",
+     "filters": ["Bangladesh", "Correlation Analysis", "Lead-Lag"]
+  },
+  {
+    "src": "/images/EDA_imgs/LeadLagCrossCorrelationAnalysis_Md.png",
+    "title": "Lead-Lag Cross-Correlation Analysis for Maldives",
+    "description": "Stem grid showing the cross-correlation between various climate and socio-economic factors in the Maldives.",
+    "type": "stem grid",
+    "category": "Correlation Analysis",
+     "filters": ["Maldives", "Correlation Analysis", "Lead-Lag"]
+  },
+  {
+    "src": "/images/EDA_imgs/LeadLagCrossCorrelationAnalysis_Ph.png",
+    "title": "Lead-Lag Cross-Correlation Analysis for Philippines",
+    "description": "Stem grid showing the cross-correlation between various climate and socio-economic factors in the Philippines.",
+    "type": "stem grid",
+    "category": "Correlation Analysis",
+     "filters": ["Philippines", "Correlation Analysis", "Lead-Lag"]
+  },
+  {
+    "src": "/images/EDA_imgs/Md_AvgAnnualPercip.png",
+    "title": "Average Precipitation (mm)",
+    "description": "Line chart showing the average annual precipitation in millimeters from 1950 to 2014.",
+    "type": "line chart",
+    "category": "Climate Indicators",
+    "filters": ["Maldives", "Yearly Average", "Precipitation"]
+  },
+  {
+    "src": "/images/EDA_imgs/Md_GDP.png",
+    "title": "Year-over-Year Growth Rate by Indicator",
+    "description": "Line chart displaying the year-over-year growth rate of GDP from 1976 to 2023. The y-axis is fixed per indicator.",
+    "type": "line chart",
+    "category": "Economic Indicators",
+     "filters": ["Maldives", "Growth Rate", "GDP"]
+  },
+  {
+    "src": "/images/EDA_imgs/Md_NetMigration_GrowthRate.png",
+    "title": "Year-over-Year Growth Rate by Indicator",
+    "description": "Line chart displaying the year-over-year growth rate of net migration from 1976 to 2023. The y-axis is fixed per indicator.",
+    "type": "line chart",
+    "category": "Demographic Indicators",
+     "filters": ["Maldives", "Growth Rate", "Net Migration"]
+  },
+  {
+    "src": "/images/EDA_imgs/Md_ReconstructionObs.png",
+    "title": "Sea Level Change Over Time",
+    "description": "Line chart showing the reconstructed sea level change in millimeters from 1970 to 2028.",
+    "type": "line chart",
+    "category": "Sea Level Analysis",
+     "filters": ["Maldives", "Sea Level", "Reconstruction Obs"]
+  },
+  {
+    "src": "/images/EDA_imgs/Md_SatAltimetry.png",
+    "title": "Sea Level Change Over Time",
+    "description": "Line chart showing the sea level change in millimeters measured by satellite altimetry from 1993 to 2025.",
+    "type": "line chart",
+    "category": "Sea Level Analysis",
+     "filters": ["Maldives", "Sea Level", "Satellite Altimetry"]
+  },
+  {
+    "src": "/images/EDA_imgs/Md_TotPop_GrowthRate.png",
+    "title": "Year-over-Year Growth Rate by Indicator",
+    "description": "Line chart displaying the year-over-year growth rate of total population from 1976 to 2023. The y-axis is fixed per indicator.",
+    "type": "line chart",
+    "category": "Demographic Indicators",
+     "filters": ["Maldives", "Growth Rate", "Total Population"]
+  },
+  {
+    "src": "/images/EDA_imgs/Md_UbranPop_GrowthRate.png",
+    "title": "Year-over-Year Growth Rate by Indicator",
+    "description": "Line chart displaying the year-over-year growth rate of urban population from 1976 to 2021. The y-axis is fixed per indicator.",
+    "type": "line chart",
+    "category": "Demographic Indicators",
+     "filters": ["Maldives", "Growth Rate", "Urban Population"]
+  },
+  {
+    "src": "/images/EDA_imgs/Percip_TemporalDynamics_GDP_All.png",
+    "title": "Correlation between GDP and Precipitation",
+    "description": "Line chart showing the 10-year rolling correlation between GDP and average precipitation for Banglades, the Maldives, and the Philippines.",
+    "type": "line chart",
+    "category": "Climate-Economic Analysis",
+     "filters": ["Bangladesh", "Maldives", "Philippines", "Correlation Analysis", "GDP", "Precipitation"]
+  },
+  {
+    "src": "/images/EDA_imgs/Percip_TemporalDynamics_GDP_Ph_Bd.png",
+    "title": "Correlation between GDP and Precipitation",
+    "description": "Line chart showing the 10-year rolling correlation between GDP and average precipitation for Bangladesh and the Philippines.",
+    "type": "line chart",
+    "category": "Climate-Economic Analysis",
+     "filters": ["Bangladesh", "Philippines", "Correlation Analysis", "GDP", "Precipitation"]
+  },
+  {
+    "src": "/images/EDA_imgs/Percip_TemporalDynamics_NetMigration_All.png",
+    "title": "Correlation between Net Migration and Precipitation",
+    "description": "Line chart showing the 10-year rolling correlation between net migration and average precipitation for Bangladesh, Maldives, and the Philippines.",
+    "type": "line chart",
+    "category": "Climate-Demographic Analysis",
+     "filters": ["Bangladesh", "Maldives", "Philippines", "Correlation Analysis", "Net Migration", "Precipitation"]
+  },
+  {
+    "src": "/images/EDA_imgs/Percip_TemporalDynamics_NetMigration_Ph_Bd.png",
+    "title": "Correlation between Net Migration and Precipitation",
+    "description": "Line chart showing the 10-year rolling correlation between net migration and average precipitation for Bangladesh and the Philippines.",
+    "type": "line chart",
+    "category": "Climate-Demographic Analysis",
+     "filters": ["Bangladesh", "Philippines", "Correlation Analysis", "Net Migration", "Precipitation"]
+  },
+  {
+    "src": "/images/EDA_imgs/Percip_TemporalDynamics_TotPop_All.png",
+    "title": "Correlation between Total Population and Precipitation",
+    "description": "Line chart showing the 10-year rolling correlation between total population and average precipitation for Bangladesh, Maldives, and the Philippines.",
+    "type": "line chart",
+    "category": "Climate-Demographic Analysis",
+     "filters": ["Bangladesh", "Maldives", "Philippines", "Correlation Analysis", "Total Population", "Precipitation"]
+  },
+  {
+    "src": "/images/EDA_imgs/Percip_TemporalDynamics_TotPop_Ph_Bd.png",
+    "title": "Correlation between Total Population and Precipitation",
+    "description": "Line chart showing the 10-year rolling correlation between total population and average precipitation for Bangladesh and the Philippines.",
+    "type": "line chart",
+    "category": "Climate-Demographic Analysis",
+     "filters": ["Bangladesh", "Philippines", "Correlation Analysis", "Total Population", "Precipitation"]
+  },
+  {
+    "src": "/images/EDA_imgs/Percip_TemporalDynamics_UrbanPopGrowth_All.png",
+    "title": "Correlation between Urban Population Growth and Precipitation",
+    "description": "Line chart showing the 10-year rolling correlation between urban population growth and average precipitation for Bangladesh, Maldives, and the Philippines.",
+    "type": "line chart",
+    "category": "Climate-Demographic Analysis",
+     "filters": ["Bangladesh", "Maldives", "Philippines", "Correlation Analysis", "Urban Population", "Precipitation"]
+  },
+  {
+    "src": "/images/EDA_imgs/Percip_TemporalDynamics_UrbanPopGrowth_Ph_Bd.png",
+    "title": "Correlation between Urban Population Growth and Precipitation",
+    "description": "Line chart showing the 10-year rolling correlation between urban population growth and average precipitation for Bangladesh and the Philippines.",
+    "type": "line chart",
+    "category": "Climate-Demographic Analysis",
+     "filters": ["Bangladesh", "Philippines", "Correlation Analysis", "Urban Population", "Precipitation"]
+  },
+  {
+    "src": "/images/EDA_imgs/Ph_AvgAnnualPercip.png",
+    "title": "Average Precipitation (mm)",
+    "description": "Line chart showing the average annual precipitation in millimeters from 1950 to 2014.",
+    "type": "line chart",
+    "category": "Climate Indicators",
+    "filters": ["Philippines", "Yearly Average", "Precipitation"]
+  },
+  {
+    "src": "/images/EDA_imgs/Ph_ExtremeTempDays.png",
+    "title": "Days With Extreme Temperatures",
+    "description": "Line chart illustrating the number of days with extreme temperatures recorded annually from 1970 to 2040.",
+    "type": "line chart",
+    "category": "Climate Indicators",
+     "filters": ["Philippines", "Yearly", "Extreme Temperatures"]
+  },
+  {
+    "src": "/images/EDA_imgs/Ph_GDP.png",
+    "title": "Year-over-Year Growth Rate by Indicator",
+    "description": "Line chart displaying the year-over-year growth rate of GDP from 1976 to 2023. The y-axis is fixed per indicator.",
+    "type": "line chart",
+    "category": "Economic Indicators",
+     "filters": ["Philippines", "Growth Rate", "GDP"]
+  },
+  {
+    "src": "/images/EDA_imgs/Ph_MajorFloodsDays_AnnualAvg.png",
+    "title": "High Tide Flood Days Over Time",
+    "description": "Line chart showing the annual average number of major high tide flood days from 1979 to 2015.",
+    "type": "line chart",
+    "category": "Flood Analysis",
+     "filters": ["Philippines", "Yearly Average", "Floods", "Major Floods"]
+  },
+  {
+    "src": "/images/EDA_imgs/Ph_MinorFloodsDays_AnnualAvg.png",
+    "title": "High Tide Flood Days Over Time",
+    "description": "Line chart showing the annual average number of minor high tide flood days from 1979 to 2015.",
+    "type": "line chart",
+    "category": "Flood Analysis",
+     "filters": ["Philippines", "Yearly Average", "Floods", "Minor Floods"]
+  },
+  {
+    "src": "/images/EDA_imgs/Ph_ModerateFloodsDays_AnnualAvg.png",
+    "title": "High Tide Flood Days Over Time",
+    "description": "Line chart showing the annual average number of moderate high tide flood days from 1979 to 2015.",
+    "type": "line chart",
+    "category": "Flood Analysis",
+     "filters": ["Philippines", "Yearly Average", "Floods", "Moderate Floods"]
+  },
+  {
+    "src": "/images/EDA_imgs/Ph_NetMigration_GrowthRate.png",
+    "title": "Year-over-Year Growth Rate by Indicator",
+    "description": "Line chart displaying the year-over-year growth rate of net migration from 1976 to 2023. The y-axis is fixed per indicator.",
+    "type": "line chart",
+    "category": "Demographic Indicators",
+     "filters": ["Philippines", "Growth Rate", "Net Migration"]
+  },
+  {
+    "src": "/images/EDA_imgs/Ph_ReconstructionObs.png",
+    "title": "Sea Level Change Over Time",
+    "description": "Line chart showing the reconstructed sea level change in millimeters from 1970 to 2028.",
+    "type": "line chart",
+    "category": "Sea Level Analysis",
+     "filters": ["Philippines", "Sea Level", "Reconstruction Obs"]
+  },
+  {
+    "src": "/images/EDA_imgs/Ph_SatAltimetry.png",
+    "title": "Sea Level Change Over Time",
+    "description": "Line chart showing the sea level change in millimeters measured by satellite altimetry from 1993 to 2025.",
+    "type": "line chart",
+    "category": "Sea Level Analysis",
+     "filters": ["Philippines", "Sea Level", "Satellite Altimetry"]
+  },
+  {
+    "src": "/images/EDA_imgs/Ph_TotPop_GrowthRate.png",
+    "title": "Year-over-Year Growth Rate by Indicator",
+    "description": "Line chart displaying the year-over-year growth rate of total population from 1976 to 2023. The y-axis is fixed per indicator.",
+    "type": "line chart",
+    "category": "Demographic Indicators",
+     "filters": ["Philippines", "Growth Rate", "Total Population"]
+  },
+  {
+    "src": "/images/EDA_imgs/Ph_UrbanPop_GrowthRate.png",
+    "title": "Year-over-Year Growth Rate by Indicator",
+    "description": "Line chart displaying the year-over-year growth rate of urban population from 1976 to 2021. The y-axis is fixed per indicator.",
+    "type": "line chart",
+    "category": "Demographic Indicators",
+     "filters": ["Philippines", "Growth Rate", "Urban Population"]
+  },
+  {
+    "src": "/images/EDA_imgs/RollingCorrelationAnalysis_OvrTime.png",
+    "title": "Rolling Correlation Analysis Over Time",
+    "description": "Line chart showing the 10-year rolling correlation between GDP and sea level for Bangladesh, Maldives, and the Philippines.",
+    "type": "line chart",
+    "category": "Climate-Economic Analysis",
+     "filters": ["Bangladesh", "Maldives", "Philippines", "Correlation Analysis", "GDP", "Sea Level"]
+  },
+  {
+    "src": "/images/EDA_imgs/SeaLvl_TemporalDynamics_GDP_all.png",
+    "title": "Correlation between GDP and Sea Level",
+    "description": "Line chart showing the 10-year rolling correlation between GDP and sea level for Bangladesh, Maldives, and the Philippines.",
+    "type": "line chart",
+    "category": "Climate-Economic Analysis",
+     "filters": ["Bangladesh", "Maldives", "Philippines", "Correlation Analysis", "GDP", "Sea Level"]
+  },
+  {
+    "src": "/images/EDA_imgs/SeaLvl_TemporalDynamics_NetMigration_all.png",
+    "title": "Correlation between Net Migration and Sea Level",
+    "description": "Line chart showing the 10-year rolling correlation between net migration and sea level for Bangladesh, Maldives, and the Philippines.",
+    "type": "line chart",
+    "category": "Climate-Demographic Analysis",
+     "filters": ["Bangladesh", "Maldives", "Philippines", "Correlation Analysis", "Net Migration", "Sea Level"]
+  },
+  {
+    "src": "/images/EDA_imgs/SeaLvl_TemporalDynamics_TotPop_all.png",
+    "title": "Correlation between Total Population and Sea Level",
+    "description": "Line chart showing the 10-year rolling correlation between total population and sea level for Bangladesh, Maldives, and the Philippines.",
+    "type": "line chart",
+    "category": "Climate-Demographic Analysis",
+     "filters": ["Bangladesh", "Maldives", "Philippines", "Correlation Analysis", "Total Population", "Sea Level"]
+  },
+  {
+    "src": "/images/EDA_imgs/SeaLvl_TemporalDynamics_UrbanPopGrowth_all.png",
+    "title": "Correlation between Urban Population Growth and Sea Level",
+    "description": "Line chart showing the 10-year rolling correlation between urban population growth and sea level for Bangladesh, Maldives, and the Philippines.",
+    "type": "line chart",
+    "category": "Climate-Demographic Analysis",
+     "filters": ["Bangladesh", "Maldives", "Philippines", "Correlation Analysis", "Urban Population", "Sea Level"]
+  },
+  {
+    "src": "/images/EDA_imgs/StackedArea_VulnerabilityIndex.png",
+    "title": "Stacked Area Chart of Vulnerability Index Over Time",
+    "description": "Stacked area chart showing the composite vulnerability index for Bangladesh, Maldives, and the Philippines from 1993 to 2014.",
+    "type": "stacked area chart",
+    "category": "Vulnerability Analysis",
+     "filters": ["Bangladesh", "Maldives", "Philippines", "Vulnerability Index"]
+  },
+  {
+    "src": "/images/EDA_imgs/VulnerabilityIndex_Heatmap.png",
+    "title": "Heatmap of Vulnerability Index Over Time",
+    "description": "Heatmap showing the composite vulnerability index for Bangladesh, Maldives, and the Philippines from 1993 to 2014.",
+    "type": "heatmap",
+    "category": "Vulnerability Analysis",
+     "filters": ["Bangladesh", "Maldives", "Philippines", "Vulnerability Index"]
+  }
+]

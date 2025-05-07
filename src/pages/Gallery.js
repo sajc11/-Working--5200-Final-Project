@@ -24,7 +24,7 @@ const GalleryPage = () => {
             Visualizations Gallery
           </Typography>
           <Typography variant="subtitle1" color="textSecondary">
-            Browse visual insights from the exploratory data analysis!
+            Browse visual insights from the Exploratory Data Analysis!
           </Typography>
         </motion.div>
       </Box>
