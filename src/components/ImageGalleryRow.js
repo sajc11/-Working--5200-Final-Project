@@ -6,7 +6,7 @@ const ImageGalleryRow = () => {
   // Image data with sources and captions
   const images = [
     {
-      src: 'public/images/general/bangladesh/Dhaka_1986_2025.jpg',
+      src: '/images/general/bangladesh/Dhaka_1986_2025.jpg',
       alt: 'Dhaka, Bangladesh: 1986 vs 2025',
       caption: 'The expansion of Dhaka, Bangladesh, from 1986 to 2025. [Airbus, Maxar Technologies]'
     },

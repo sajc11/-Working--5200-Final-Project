@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState, useMemo } from 'react';
 import * as d3 from "d3";
+import { useInView } from 'react-intersection-observer';
 
 import "./ChartStyles.css";
 import { 
@@ -13,9 +14,11 @@ import {
   MenuItem,
   Typography
 } from '@mui/material';
+import ThemeAwareChartWrapper from '../ui/ThemeAwareChartWrapper';
 
 import { floodDaysChartColors } from "../../theme/themeUtils";
-import { createTooltip,  showTooltip,  hideTooltip } from "../../utils/tooltipUtils";
+import { createTooltip,  showTooltip,  hideTooltip } from "../../d3/tooltipUtils";
+import { useResizeObserver } from "../../hooks/useResizeObserver";
 
 const FloodDaysChart = () => {
   const svgRef = useRef();
@@ -169,21 +172,18 @@ const FloodDaysChart = () => {
   };
 
   return (
-    <div
-      className="chart-container chart-card"
+    <ThemeAwareChartWrapper
+      title="High Tide Flood Days Over Time"
       ref={setRefs}
-      style={{ position: "relative" }}
     >
-      <div
-        className="chart-header"
-        style={{
+      <Box
+        sx={{
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
           marginBottom: "1.5rem",
         }}
       >
-        <h3 style={{ margin: 0 }}>High Tide Flood Days Over Time</h3>
         <ToggleButtonGroup
           value={severity}
           exclusive
@@ -197,7 +197,7 @@ const FloodDaysChart = () => {
             </ToggleButton>
           ))}
         </ToggleButtonGroup>
-      </div>
+      </Box>
       <svg ref={svgRef} style={{ width: "100%", height: "400px" }} />
       {clickedPoints.length > 0 && (
         <div
@@ -235,7 +235,7 @@ const FloodDaysChart = () => {
                   borderRadius: "8px",
                   padding: "0.75rem 1rem",
                   boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
-                  backgroundColor: "#fff",
+                  backgroundColor: "#012f48",
                   position: "relative",
                   minWidth: "220px",
                   flex: "1 1 220px",
@@ -268,7 +268,7 @@ const FloodDaysChart = () => {
           </div>
         </div>
       )}
-    </div>
+    </ThemeAwareChartWrapper>
   );
 };
 

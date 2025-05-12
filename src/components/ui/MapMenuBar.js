@@ -77,10 +77,11 @@ export default function MapMenuBar({
         boxShadow: 3,
         p: 1,
         display: 'flex',
+        flexWrap: 'wrap',
         alignItems: 'center',
         gap: 1,
         transition: 'width 0.3s ease',
-        overflow: 'hidden',
+        overflowX: 'auto',
       }}
       aria-label="Map menu bar"
     >
@@ -92,106 +93,161 @@ export default function MapMenuBar({
 
       {menuOpen && (
         <>
-          <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap', flexGrow: 1, alignItems: 'center' }}>
-            {FILTERS.map(({ label, value }) => (
-              <Tooltip key={value} title={`Toggle ${label} overlay`}>
-                <Chip
-                  label={label}
-                  color={activeOverlays.includes(value) ? 'primary' : 'default'}
-                  onClick={() => handleFilterClick(value)}
-                  variant={activeOverlays.includes(value) ? 'filled' : 'outlined'}
-                  clickable
-                  aria-pressed={activeOverlays.includes(value)}
-                  size="small"
-                  sx={{
-                    transition: 'color 0.3s ease, background-color 0.3s ease',
-                    '&:hover': {
-                      backgroundColor: activeOverlays.includes(value) ? 'primary.dark' : 'action.hover',
-                      color: activeOverlays.includes(value) ? 'primary.contrastText' : 'text.primary',
-                    },
-                  }}
-                />
-              </Tooltip>
-            ))}
-          </Box>
-
-          <Fade in={true} key={selectedYear} timeout={300}>
-            <Box sx={{ minWidth: 100, maxWidth: 120 }}>
-              <FormControl size="small" variant="outlined" fullWidth>
-                <Tooltip title="Select year">
-                  <Select
-                    displayEmpty
-                    value={selectedYear}
-                    onChange={(e) => setSelectedYear(e.target.value)}
-                    input={<TextField size="small" />}
-                    renderValue={(selected) => (selected ? selected : 'Year')}
-                    aria-label="Select year"
-                    MenuProps={{ PaperProps: { style: { maxHeight: 200 } } }}
-                    sx={{ mr: 1, transition: 'all 0.3s ease' }}
-                  >
-                    <MenuItem disabled>
-                      <TextField
-                        size="small"
-                        autoFocus
-                        placeholder="Search year"
-                        value={yearSearch}
-                        onChange={handleYearSearchChange}
-                        onClick={(e) => e.stopPropagation()}
-                        inputProps={{ 'aria-label': 'Search year' }}
-                        fullWidth
-                      />
-                    </MenuItem>
-                    {filteredYears.map((year) => (
-                      <MenuItem key={year} value={year}>
-                        {year}
-                      </MenuItem>
-                    ))}
-                  </Select>
-                </Tooltip>
-              </FormControl>
+          <Box
+            sx={{
+              display: 'flex',
+              flexDirection: 'column',
+              gap: 1,
+              flexGrow: 1,
+              width: '100%',
+            }}
+          >
+            <Box sx={{ width: '100%' }}>
+              <Box
+                component="h3"
+                sx={{
+                  fontSize: '0.9rem',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.05em',
+                  fontWeight: 700,
+                  margin: 0,
+                  marginBottom: '8px',
+                  paddingBottom: '4px',
+                  borderBottom: '2px solid',
+                  borderColor: 'divider',
+                  color: 'text.primary',
+                }}
+              >
+                Data Layers
+              </Box>
+              <Box
+                sx={{
+                  display: 'flex',
+                  gap: 1,
+                  flexWrap: 'wrap',
+                  alignItems: 'center',
+                  minWidth: 180,
+                  marginBottom: 2,
+                }}
+              >
+                {FILTERS.map(({ label, value }) => (
+                  <Tooltip key={value} title={`Toggle ${label} overlay`}>
+                    <Chip
+                      label={label}
+                      color={activeOverlays.includes(value) ? 'primary' : 'default'}
+                      onClick={() => handleFilterClick(value)}
+                      variant={activeOverlays.includes(value) ? 'filled' : 'outlined'}
+                      clickable
+                      aria-pressed={activeOverlays.includes(value)}
+                      size="small"
+                      sx={{
+                        px: 1.5,
+                        transition: 'color 0.3s ease, background-color 0.3s ease',
+                        bgcolor: activeOverlays.includes(value)
+                          ? 'primary.main'
+                          : 'background.paper',
+                        color: activeOverlays.includes(value)
+                          ? 'primary.contrastText'
+                          : 'text.primary',
+                        borderColor: activeOverlays.includes(value)
+                          ? 'primary.main'
+                          : 'divider',
+                        '&:hover': {
+                          bgcolor: activeOverlays.includes(value)
+                            ? 'primary.dark'
+                            : 'action.hover',
+                          color: activeOverlays.includes(value)
+                            ? 'primary.contrastText'
+                            : 'text.primary',
+                          borderColor: activeOverlays.includes(value)
+                            ? 'primary.dark'
+                            : 'primary.main',
+                        },
+                      }}
+                    />
+                  </Tooltip>
+                ))}
+              </Box>
             </Box>
-          </Fade>
 
-          <Tooltip title="Select projection orientation">
-            <ToggleButtonGroup
-              value={projectionCenter}
-              exclusive
-              onChange={handleProjection}
-              aria-label="Projection orientation"
-              size="small"
-              sx={{ mr: 1 }}
-            >
-              {PROJECTIONS.map(({ label, value }) => (
-                <ToggleButton
-                  key={value}
-                  value={value}
-                  aria-label={label}
-                  sx={{
-                    transition: 'border-color 0.3s ease, background-color 0.3s ease',
-                    '&:hover': {
-                      borderColor: 'primary.main',
-                      backgroundColor: 'action.hover',
-                    },
-                  }}
-                >
-                  {label}
-                </ToggleButton>
-              ))}
-            </ToggleButtonGroup>
-          </Tooltip>
+            <Fade in={true} key={selectedYear} timeout={300}>
+              <Box sx={{ minWidth: 100, maxWidth: 120 }}>
+                <FormControl size="small" variant="outlined" fullWidth>
+                  <Tooltip title="Select year">
+                    <Select
+                      displayEmpty
+                      value={selectedYear || ''} // Use empty string instead of null/undefined
+                      onChange={(e) => setSelectedYear(e.target.value)}
+                      renderValue={(selected) => selected || 'Year'}
+                      size="small"
+                      aria-label="Select year"
+                      MenuProps={{ PaperProps: { style: { maxHeight: 200 } } }}
+                      sx={{ mr: 1, transition: 'all 0.3s ease', minWidth: 100 }}
+                    >
+                      <MenuItem disabled>
+                        <TextField
+                          size="small"
+                          autoFocus
+                          placeholder="Search year"
+                          value={yearSearch}
+                          onChange={handleYearSearchChange}
+                          onClick={(e) => e.stopPropagation()}
+                          inputProps={{ 'aria-label': 'Search year' }}
+                          fullWidth
+                        />
+                      </MenuItem>
+                      {filteredYears.map((year) => (
+                        <MenuItem key={year} value={year}>
+                          {year}
+                        </MenuItem>
+                      ))}
+                    </Select>
+                  </Tooltip>
+                </FormControl>
+              </Box>
+            </Fade>
 
-          <Box sx={{ flexGrow: 1 }} />
+            <Tooltip title="Select projection orientation">
+              <ToggleButtonGroup
+                value={projectionCenter}
+                exclusive
+                onChange={handleProjection}
+                aria-label="Projection orientation"
+                size="small"
+                sx={{ mr: 1, flexWrap: 'wrap' }}
+              >
+                {PROJECTIONS.map(({ label, value }) => (
+                  <ToggleButton
+                    key={value}
+                    value={value}
+                    aria-label={label}
+                    sx={{
+                      transition: 'border-color 0.3s ease, background-color 0.3s ease',
+                      '&:hover': {
+                        borderColor: 'primary.main',
+                        backgroundColor: 'action.hover',
+                      },
+                    }}
+                  >
+                    {label}
+                  </ToggleButton>
+                ))}
+              </ToggleButtonGroup>
+            </Tooltip>
 
-          <Tooltip title="Reset all filters">
-            <IconButton
-              onClick={handleResetFilters}
-              aria-label="Reset filters"
-              size="large"
-              color="secondary"
-            >
-              <RestartAltIcon />
-            </IconButton>
-          </Tooltip>
+            <Box sx={{ flexGrow: 1, minWidth: 48 }} />
+
+            <Tooltip title="Reset all filters">
+              <IconButton
+                onClick={handleResetFilters}
+                aria-label="Reset filters"
+                size="large"
+                color="secondary"
+              >
+                <RestartAltIcon />
+              </IconButton>
+            </Tooltip>
+          </Box>
         </>
       )}
     </Box>

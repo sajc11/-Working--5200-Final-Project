@@ -1,578 +1,578 @@
 [
-    {
-      "Year": 1993,
-      "Country": "Bangladesh",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -198.76075
-    },
-    {
-      "Year": 1994,
-      "Country": "Bangladesh",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -56.83425
-    },
-    {
-      "Year": 1995,
-      "Country": "Bangladesh",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -251.52647
-    },
-    {
-      "Year": 1996,
-      "Country": "Bangladesh",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -150.06004
-    },
-    {
-      "Year": 1997,
-      "Country": "Bangladesh",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -101.410106
-    },
-    {
-      "Year": 1998,
-      "Country": "Bangladesh",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -313.4312
-    },
-    {
-      "Year": 1999,
-      "Country": "Bangladesh",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -57.76592
-    },
-    {
-      "Year": 2000,
-      "Country": "Bangladesh",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -79.21655
-    },
-    {
-      "Year": 2001,
-      "Country": "Bangladesh",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -80.58935000000001
-    },
-    {
-      "Year": 2002,
-      "Country": "Bangladesh",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -157.29713
-    },
-    {
-      "Year": 2003,
-      "Country": "Bangladesh",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -98.77571
-    },
-    {
-      "Year": 2004,
-      "Country": "Bangladesh",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -101.19034
-    },
-    {
-      "Year": 2005,
-      "Country": "Bangladesh",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -112.57529
-    },
-    {
-      "Year": 2006,
-      "Country": "Bangladesh",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -47.616534
-    },
-    {
-      "Year": 2007,
-      "Country": "Bangladesh",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -215.24803
-    },
-    {
-      "Year": 2008,
-      "Country": "Bangladesh",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -53.76794
-    },
-    {
-      "Year": 2009,
-      "Country": "Bangladesh",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -37.372403
-    },
-    {
-      "Year": 2010,
-      "Country": "Bangladesh",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -65.88944
-    },
-    {
-      "Year": 2011,
-      "Country": "Bangladesh",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": 12.595312
-    },
-    {
-      "Year": 2012,
-      "Country": "Bangladesh",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": 21.40033
-    },
-    {
-      "Year": 2013,
-      "Country": "Bangladesh",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -56.7536
-    },
-    {
-      "Year": 2014,
-      "Country": "Bangladesh",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -69.96948
-    },
-    {
-      "Year": 2015,
-      "Country": "Bangladesh",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": 36.244802
-    },
-    {
-      "Year": 2016,
-      "Country": "Bangladesh",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -76.68253999999999
-    },
-    {
-      "Year": 2017,
-      "Country": "Bangladesh",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -24.663037
-    },
-    {
-      "Year": 2018,
-      "Country": "Bangladesh",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -16.13235
-    },
-    {
-      "Year": 2019,
-      "Country": "Bangladesh",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -86.10725
-    },
-    {
-      "Year": 2020,
-      "Country": "Bangladesh",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -144.90813
-    },
-    {
-      "Year": 2021,
-      "Country": "Bangladesh",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": 51.226024
-    },
-    {
-      "Year": 2022,
-      "Country": "Bangladesh",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -38.42523300000001
-    },
-    {
-      "Year": 2023,
-      "Country": "Bangladesh",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": 2.039401
-    },
-    {
-      "Year": 2024,
-      "Country": "Bangladesh",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -124.56353
-    },
-    {
-      "Year": 1993,
-      "Country": "Maldives",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": 2.405008
-    },
-    {
-      "Year": 1994,
-      "Country": "Maldives",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -29.893901
-    },
-    {
-      "Year": 1995,
-      "Country": "Maldives",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -1.651849
-    },
-    {
-      "Year": 1996,
-      "Country": "Maldives",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -13.868377
-    },
-    {
-      "Year": 1997,
-      "Country": "Maldives",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": 5.646198
-    },
-    {
-      "Year": 1998,
-      "Country": "Maldives",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -18.498486
-    },
-    {
-      "Year": 1999,
-      "Country": "Maldives",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -7.41678
-    },
-    {
-      "Year": 2000,
-      "Country": "Maldives",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": 11.203328
-    },
-    {
-      "Year": 2001,
-      "Country": "Maldives",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -21.071522
-    },
-    {
-      "Year": 2002,
-      "Country": "Maldives",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -20.288935
-    },
-    {
-      "Year": 2003,
-      "Country": "Maldives",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -36.758862
-    },
-    {
-      "Year": 2004,
-      "Country": "Maldives",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -2.470822
-    },
-    {
-      "Year": 2005,
-      "Country": "Maldives",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -15.556755
-    },
-    {
-      "Year": 2006,
-      "Country": "Maldives",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": 4.100873
-    },
-    {
-      "Year": 2007,
-      "Country": "Maldives",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -24.787575
-    },
-    {
-      "Year": 2008,
-      "Country": "Maldives",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": 26.057146
-    },
-    {
-      "Year": 2009,
-      "Country": "Maldives",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": 26.149126
-    },
-    {
-      "Year": 2010,
-      "Country": "Maldives",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": 21.375574
-    },
-    {
-      "Year": 2011,
-      "Country": "Maldives",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": 23.525696
-    },
-    {
-      "Year": 2012,
-      "Country": "Maldives",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": 22.59256
-    },
-    {
-      "Year": 2013,
-      "Country": "Maldives",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": 20.852571
-    },
-    {
-      "Year": 2014,
-      "Country": "Maldives",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": 20.790739
-    },
-    {
-      "Year": 2015,
-      "Country": "Maldives",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": 8.688087000000001
-    },
-    {
-      "Year": 2016,
-      "Country": "Maldives",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": 71.208276
-    },
-    {
-      "Year": 2017,
-      "Country": "Maldives",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": 12.603604
-    },
-    {
-      "Year": 2018,
-      "Country": "Maldives",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": 40.409215
-    },
-    {
-      "Year": 2019,
-      "Country": "Maldives",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": 39.085787
-    },
-    {
-      "Year": 2020,
-      "Country": "Maldives",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": 62.38098
-    },
-    {
-      "Year": 2021,
-      "Country": "Maldives",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": 123.21316
-    },
-    {
-      "Year": 2022,
-      "Country": "Maldives",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": 95.08747
-    },
-    {
-      "Year": 2023,
-      "Country": "Maldives",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": 54.705177
-    },
-    {
-      "Year": 2024,
-      "Country": "Maldives",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": 53.511277
-    },
-    {
-      "Year": 1993,
-      "Country": "Philippines",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -144.45366
-    },
-    {
-      "Year": 1994,
-      "Country": "Philippines",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -103.64932
-    },
-    {
-      "Year": 1995,
-      "Country": "Philippines",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -126.91431
-    },
-    {
-      "Year": 1996,
-      "Country": "Philippines",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -99.78903
-    },
-    {
-      "Year": 1997,
-      "Country": "Philippines",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -95.658615
-    },
-    {
-      "Year": 1998,
-      "Country": "Philippines",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -167.57023
-    },
-    {
-      "Year": 1999,
-      "Country": "Philippines",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -3.845707
-    },
-    {
-      "Year": 2000,
-      "Country": "Philippines",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -17.426796
-    },
-    {
-      "Year": 2001,
-      "Country": "Philippines",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -24.94794
-    },
-    {
-      "Year": 2002,
-      "Country": "Philippines",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -90.38408
-    },
-    {
-      "Year": 2003,
-      "Country": "Philippines",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -103.28634
-    },
-    {
-      "Year": 2004,
-      "Country": "Philippines",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -99.61016
-    },
-    {
-      "Year": 2005,
-      "Country": "Philippines",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -134.63666
-    },
-    {
-      "Year": 2006,
-      "Country": "Philippines",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -27.72509
-    },
-    {
-      "Year": 2007,
-      "Country": "Philippines",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -37.53457
-    },
-    {
-      "Year": 2008,
-      "Country": "Philippines",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -6.34458
-    },
-    {
-      "Year": 2009,
-      "Country": "Philippines",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": 22.95351
-    },
-    {
-      "Year": 2010,
-      "Country": "Philippines",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -55.21726
-    },
-    {
-      "Year": 2011,
-      "Country": "Philippines",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": 52.193593
-    },
-    {
-      "Year": 2012,
-      "Country": "Philippines",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": 26.639802
-    },
-    {
-      "Year": 2013,
-      "Country": "Philippines",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": 18.641707
-    },
-    {
-      "Year": 2014,
-      "Country": "Philippines",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -26.9733
-    },
-    {
-      "Year": 2015,
-      "Country": "Philippines",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -50.531007
-    },
-    {
-      "Year": 2016,
-      "Country": "Philippines",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -94.55416
-    },
-    {
-      "Year": 2017,
-      "Country": "Philippines",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -4.294641
-    },
-    {
-      "Year": 2018,
-      "Country": "Philippines",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -0.515547
-    },
-    {
-      "Year": 2019,
-      "Country": "Philippines",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -27.227554
-    },
-    {
-      "Year": 2020,
-      "Country": "Philippines",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -57.13708
-    },
-    {
-      "Year": 2021,
-      "Country": "Philippines",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": 42.08522
-    },
-    {
-      "Year": 2022,
-      "Country": "Philippines",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": 35.43444
-    },
-    {
-      "Year": 2023,
-      "Country": "Philippines",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": 66.22060400000001
-    },
-    {
-      "Year": 2024,
-      "Country": "Philippines",
-      "Metric": "Reconstruction Obs",
-      "Sea Level (mm)": -56.575853
-    }
-  ]
+  {
+    "Year": 1993,
+    "Country": "Bangladesh",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -198.76075
+  },
+  {
+    "Year": 1994,
+    "Country": "Bangladesh",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -56.83425
+  },
+  {
+    "Year": 1995,
+    "Country": "Bangladesh",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -251.52647
+  },
+  {
+    "Year": 1996,
+    "Country": "Bangladesh",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -150.06004
+  },
+  {
+    "Year": 1997,
+    "Country": "Bangladesh",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -101.410106
+  },
+  {
+    "Year": 1998,
+    "Country": "Bangladesh",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -313.4312
+  },
+  {
+    "Year": 1999,
+    "Country": "Bangladesh",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -57.76592
+  },
+  {
+    "Year": 2000,
+    "Country": "Bangladesh",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -79.21655
+  },
+  {
+    "Year": 2001,
+    "Country": "Bangladesh",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -80.58935000000001
+  },
+  {
+    "Year": 2002,
+    "Country": "Bangladesh",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -157.29713
+  },
+  {
+    "Year": 2003,
+    "Country": "Bangladesh",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -98.77571
+  },
+  {
+    "Year": 2004,
+    "Country": "Bangladesh",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -101.19034
+  },
+  {
+    "Year": 2005,
+    "Country": "Bangladesh",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -112.57529
+  },
+  {
+    "Year": 2006,
+    "Country": "Bangladesh",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -47.616534
+  },
+  {
+    "Year": 2007,
+    "Country": "Bangladesh",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -215.24803
+  },
+  {
+    "Year": 2008,
+    "Country": "Bangladesh",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -53.76794
+  },
+  {
+    "Year": 2009,
+    "Country": "Bangladesh",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -37.372403
+  },
+  {
+    "Year": 2010,
+    "Country": "Bangladesh",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -65.88944
+  },
+  {
+    "Year": 2011,
+    "Country": "Bangladesh",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": 12.595312
+  },
+  {
+    "Year": 2012,
+    "Country": "Bangladesh",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": 21.40033
+  },
+  {
+    "Year": 2013,
+    "Country": "Bangladesh",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -56.7536
+  },
+  {
+    "Year": 2014,
+    "Country": "Bangladesh",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -69.96948
+  },
+  {
+    "Year": 2015,
+    "Country": "Bangladesh",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": 36.244802
+  },
+  {
+    "Year": 2016,
+    "Country": "Bangladesh",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -76.68253999999999
+  },
+  {
+    "Year": 2017,
+    "Country": "Bangladesh",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -24.663037
+  },
+  {
+    "Year": 2018,
+    "Country": "Bangladesh",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -16.13235
+  },
+  {
+    "Year": 2019,
+    "Country": "Bangladesh",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -86.10725
+  },
+  {
+    "Year": 2020,
+    "Country": "Bangladesh",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -144.90813
+  },
+  {
+    "Year": 2021,
+    "Country": "Bangladesh",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": 51.226024
+  },
+  {
+    "Year": 2022,
+    "Country": "Bangladesh",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -38.42523300000001
+  },
+  {
+    "Year": 2023,
+    "Country": "Bangladesh",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": 2.039401
+  },
+  {
+    "Year": 2024,
+    "Country": "Bangladesh",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -124.56353
+  },
+  {
+    "Year": 1993,
+    "Country": "Maldives",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": 2.405008
+  },
+  {
+    "Year": 1994,
+    "Country": "Maldives",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -29.893901
+  },
+  {
+    "Year": 1995,
+    "Country": "Maldives",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -1.651849
+  },
+  {
+    "Year": 1996,
+    "Country": "Maldives",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -13.868377
+  },
+  {
+    "Year": 1997,
+    "Country": "Maldives",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": 5.646198
+  },
+  {
+    "Year": 1998,
+    "Country": "Maldives",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -18.498486
+  },
+  {
+    "Year": 1999,
+    "Country": "Maldives",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -7.41678
+  },
+  {
+    "Year": 2000,
+    "Country": "Maldives",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": 11.203328
+  },
+  {
+    "Year": 2001,
+    "Country": "Maldives",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -21.071522
+  },
+  {
+    "Year": 2002,
+    "Country": "Maldives",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -20.288935
+  },
+  {
+    "Year": 2003,
+    "Country": "Maldives",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -36.758862
+  },
+  {
+    "Year": 2004,
+    "Country": "Maldives",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -2.470822
+  },
+  {
+    "Year": 2005,
+    "Country": "Maldives",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -15.556755
+  },
+  {
+    "Year": 2006,
+    "Country": "Maldives",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": 4.100873
+  },
+  {
+    "Year": 2007,
+    "Country": "Maldives",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -24.787575
+  },
+  {
+    "Year": 2008,
+    "Country": "Maldives",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": 26.057146
+  },
+  {
+    "Year": 2009,
+    "Country": "Maldives",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": 26.149126
+  },
+  {
+    "Year": 2010,
+    "Country": "Maldives",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": 21.375574
+  },
+  {
+    "Year": 2011,
+    "Country": "Maldives",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": 23.525696
+  },
+  {
+    "Year": 2012,
+    "Country": "Maldives",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": 22.59256
+  },
+  {
+    "Year": 2013,
+    "Country": "Maldives",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": 20.852571
+  },
+  {
+    "Year": 2014,
+    "Country": "Maldives",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": 20.790739
+  },
+  {
+    "Year": 2015,
+    "Country": "Maldives",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": 8.688087000000001
+  },
+  {
+    "Year": 2016,
+    "Country": "Maldives",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": 71.208276
+  },
+  {
+    "Year": 2017,
+    "Country": "Maldives",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": 12.603604
+  },
+  {
+    "Year": 2018,
+    "Country": "Maldives",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": 40.409215
+  },
+  {
+    "Year": 2019,
+    "Country": "Maldives",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": 39.085787
+  },
+  {
+    "Year": 2020,
+    "Country": "Maldives",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": 62.38098
+  },
+  {
+    "Year": 2021,
+    "Country": "Maldives",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": 123.21316
+  },
+  {
+    "Year": 2022,
+    "Country": "Maldives",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": 95.08747
+  },
+  {
+    "Year": 2023,
+    "Country": "Maldives",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": 54.705177
+  },
+  {
+    "Year": 2024,
+    "Country": "Maldives",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": 53.511277
+  },
+  {
+    "Year": 1993,
+    "Country": "Philippines",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -144.45366
+  },
+  {
+    "Year": 1994,
+    "Country": "Philippines",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -103.64932
+  },
+  {
+    "Year": 1995,
+    "Country": "Philippines",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -126.91431
+  },
+  {
+    "Year": 1996,
+    "Country": "Philippines",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -99.78903
+  },
+  {
+    "Year": 1997,
+    "Country": "Philippines",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -95.658615
+  },
+  {
+    "Year": 1998,
+    "Country": "Philippines",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -167.57023
+  },
+  {
+    "Year": 1999,
+    "Country": "Philippines",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -3.845707
+  },
+  {
+    "Year": 2000,
+    "Country": "Philippines",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -17.426796
+  },
+  {
+    "Year": 2001,
+    "Country": "Philippines",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -24.94794
+  },
+  {
+    "Year": 2002,
+    "Country": "Philippines",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -90.38408
+  },
+  {
+    "Year": 2003,
+    "Country": "Philippines",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -103.28634
+  },
+  {
+    "Year": 2004,
+    "Country": "Philippines",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -99.61016
+  },
+  {
+    "Year": 2005,
+    "Country": "Philippines",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -134.63666
+  },
+  {
+    "Year": 2006,
+    "Country": "Philippines",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -27.72509
+  },
+  {
+    "Year": 2007,
+    "Country": "Philippines",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -37.53457
+  },
+  {
+    "Year": 2008,
+    "Country": "Philippines",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -6.34458
+  },
+  {
+    "Year": 2009,
+    "Country": "Philippines",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": 22.95351
+  },
+  {
+    "Year": 2010,
+    "Country": "Philippines",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -55.21726
+  },
+  {
+    "Year": 2011,
+    "Country": "Philippines",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": 52.193593
+  },
+  {
+    "Year": 2012,
+    "Country": "Philippines",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": 26.639802
+  },
+  {
+    "Year": 2013,
+    "Country": "Philippines",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": 18.641707
+  },
+  {
+    "Year": 2014,
+    "Country": "Philippines",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -26.9733
+  },
+  {
+    "Year": 2015,
+    "Country": "Philippines",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -50.531007
+  },
+  {
+    "Year": 2016,
+    "Country": "Philippines",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -94.55416
+  },
+  {
+    "Year": 2017,
+    "Country": "Philippines",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -4.294641
+  },
+  {
+    "Year": 2018,
+    "Country": "Philippines",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -0.515547
+  },
+  {
+    "Year": 2019,
+    "Country": "Philippines",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -27.227554
+  },
+  {
+    "Year": 2020,
+    "Country": "Philippines",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -57.13708
+  },
+  {
+    "Year": 2021,
+    "Country": "Philippines",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": 42.08522
+  },
+  {
+    "Year": 2022,
+    "Country": "Philippines",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": 35.43444
+  },
+  {
+    "Year": 2023,
+    "Country": "Philippines",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": 66.22060400000001
+  },
+  {
+    "Year": 2024,
+    "Country": "Philippines",
+    "Metric": "Reconstruction Obs",
+    "Sea Level (mm)": -56.575853
+  }
+]

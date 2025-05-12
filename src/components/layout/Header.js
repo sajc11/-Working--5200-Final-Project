@@ -54,7 +54,7 @@ const Header = ({ darkMode, toggleDarkMode }) => {
         fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',
       }}
     >
-      {/* TITLE ROW */}
+      {/* TITLE ROW
       <Box
         sx={{
           textAlign: 'center',
@@ -71,7 +71,7 @@ const Header = ({ darkMode, toggleDarkMode }) => {
         <Typography variant="h4" component="h1" gutterBottom sx={{ m: 0 }}>
           CLIMATE RISKS IN RAPIDLY URBANIZING NATIONS
         </Typography>
-      </Box>
+      </Box> */}
 
       {/* NAVIGATION BAR */}
       <Box

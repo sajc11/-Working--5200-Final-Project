@@ -1,177 +1,288 @@
-import React, { useEffect, useRef, useState, useMemo } from 'react';
-import * as d3 from "d3";
-
-import "./ChartStyles.css";
-import { 
-  useTheme, 
-  Box, 
-  ToggleButton, 
-  ToggleButtonGroup,
-  FormControl,
-  InputLabel,
-  Select,
-  MenuItem,
-  Typography
+import React, { useEffect, useRef, useState } from 'react';
+import * as d3 from 'd3';
+import {
+  Box, FormControl, InputLabel, Select, MenuItem,
+  ToggleButton, ToggleButtonGroup, Typography, TextField,
+  FormControlLabel, Checkbox
 } from '@mui/material';
-import { leadLagChartColors } from "../../theme/themeUtils";
-import { createTooltip, showTooltip, hideTooltip } from "../../utils/tooltipUtils";
-
+import { useTheme } from '@mui/material/styles';
+import { useInView } from 'react-intersection-observer';
+import { createTooltip, showTooltip, hideTooltip } from '../../d3/tooltipUtils';
+import { useResizeObserver } from '../../hooks/useResizeObserver';
+import ThemeAwareChartWrapper from '../ui/ThemeAwareChartWrapper';
 
 const LeadLagCorrelationHeatmap = () => {
   const svgRef = useRef();
   const wrapperRef = useRef();
-  const [data, setData] = useState([]);
-  const [country, setCountry] = useState("Bangladesh");
   const { ref: inViewRef, inView } = useInView({ triggerOnce: true });
-
-  const { width = 600 } = useResizeObserver(wrapperRef);
-  const theme = useTheme();
-  const colors = leadLagChartColors(theme);
-
   const setRefs = (node) => {
     wrapperRef.current = node;
     inViewRef(node);
   };
 
-  useEffect(() => {
-    d3.json("/data/processed_lead_lag_correlations.json").then((json) => {
-      setData(json);
-    });
-  }, []);
+  const { width = 600 } = useResizeObserver(wrapperRef);
+  const theme = useTheme();
+
+  const [data, setData] = useState([]);
+  const [country, setCountry] = useState("Bangladesh");
+  const [predictor, setPredictor] = useState("Sea Level (mm)");
+  const [lagRange, setLagRange] = useState([-5, 5]);
+  const [threshold, setThreshold] = useState(false);
 
   useEffect(() => {
-    if (!inView || !data || data.length === 0) return;
+    fetch("/data/processed_lead_lag_correlations.json")
+      .then(res => res.json())
+      .then(json => setData(json));
+  }, []);
+
+  const filteredData = data.filter(d =>
+    d.Country === country &&
+    d.Predictor === predictor &&
+    d.Lag >= lagRange[0] &&
+    d.Lag <= lagRange[1] &&
+    (!threshold || Math.abs(d.Correlation) >= 0.3)
+  );
+
+  const lags = [...new Set(filteredData.map(d => d.Lag))].sort((a, b) => a - b);
+  const targets = [...new Set(filteredData.map(d => d.Target))];
+
+  useEffect(() => {
+    if (!svgRef.current || !inView || filteredData.length === 0) return;
 
     const svg = d3.select(svgRef.current);
     svg.selectAll("*").remove();
 
-    const height = 450;
-    const margin = { top: 40, right: 30, bottom: 60, left: 180 };
+    const panelHeight = 140;
+    const height = targets.length * panelHeight + 140;
+    const margin = { top: 40, right: 70, bottom: 80, left: 100 };
+    const innerWidth = width - margin.left - margin.right;
+    const innerHeight = height - margin.top - margin.bottom;
 
-    svg.attr("viewBox", [0, 0, width, height]);
+    const g = svg
+      .attr("viewBox", `0 0 ${width} ${height}`)
+      .append("g")
+      .attr("transform", `translate(${margin.left},${margin.top})`);
 
-    const filtered = data.filter((d) => d.Country === country);
+    const xScale = d3.scaleBand().domain(lags).range([0, innerWidth]).padding(0.05);
+    const yScale = d3.scaleBand().domain(targets).range([0, innerHeight]).padding(0.05);
+    const colorScale = d3.scaleSequential(d3.interpolateRdBu).domain([1, -1]);
 
-    const predictors = Array.from(new Set(filtered.map((d) => d.Predictor)));
-    const targets = Array.from(new Set(filtered.map((d) => d.Target)));
-    const lags = Array.from(new Set(filtered.map((d) => d.Lag))).sort((a, b) => a - b);
-
-    const labels = [];
-    predictors.forEach((p) => {
-      targets.forEach((t) => labels.push(`${p} → ${t}`));
-    });
-
-    const x = d3
-      .scaleBand()
-      .domain(lags)
-      .range([margin.left, width - margin.right])
-      .padding(0.05);
-
-    const y = d3
-      .scaleBand()
-      .domain(labels)
-      .range([margin.top, height - margin.bottom])
-      .padding(0.05);
-
-    const color = d3
-      .scaleDiverging(d3.interpolateRdBu)
-      .domain([1, 0, -1]);
-
-    const cells = filtered.map((d) => ({
-      x: d.Lag,
-      y: `${d.Predictor} → ${d.Target}`,
-      val: d.Correlation
-    }));
-
-    // Tooltip
     const tooltip = createTooltip(theme);
 
-    const rects = svg
-      .selectAll("rect")
-      .data(cells)
+    // Rectangles
+    g.selectAll("rect")
+      .data(filteredData)
       .join("rect")
-      .attr("x", (d) => x(d.x))
-      .attr("y", (d) => y(d.y))
-      .attr("width", x.bandwidth())
-      .attr("height", y.bandwidth())
-      .attr("fill", (d) => color(d.val))
-      .style("opacity", 0)
-      .on("mouseover", (event, d) => {
-        d3.select(event.currentTarget)
-          .transition()
-          .duration(200)
-          .attr("stroke", "#333")
-          .attr("stroke-width", 1.5)
-          .style("cursor", "pointer");
-
-        showTooltip(
-          tooltip,
-          event,
-          `<strong>${country}</strong><br/>
-           Lag: ${d.x}<br/>
-           ${d.y}<br/>
-           Correlation: ${d.val.toFixed(2)}`
+      .attr("x", d => xScale(d.Lag))
+      .attr("y", d => yScale(d.Target))
+      .attr("width", xScale.bandwidth())
+      .attr("height", yScale.bandwidth())
+      .attr("rx", 4)
+      .style("fill", d => colorScale(d.Correlation))
+      .style("cursor", "pointer")
+      .on("mouseenter", (event, d) => {
+        showTooltip(tooltip, event,
+          `<strong>${d.Target}</strong><br/>Lag: ${d.Lag}<br/>r = ${d.Correlation.toFixed(2)}`
         );
       })
-      .on("mousemove", (event) => {
-        showTooltip(tooltip, event);
-      })
-      .on("mouseout", (event) => {
-        d3.select(event.currentTarget)
-          .transition()
-          .duration(200)
-          .attr("stroke", "none")
-          .style("cursor", "default");
-
-        hideTooltip(tooltip);
-      });
-
-    // Fade-in animation for rects
-    rects
-      .transition()
-      .delay((d, i) => i * 10)
-      .duration(500)
-      .style("opacity", 1);
+      .on("mousemove", (event) => showTooltip(tooltip, event))
+      .on("mouseleave", () => hideTooltip(tooltip));
 
     // Axes
-    svg
-      .append("g")
-      .attr("transform", `translate(0,${height - margin.bottom})`)
-      .call(d3.axisBottom(x).tickFormat((d) => `Lag ${d}`))
+    g.append("g")
+      .attr("transform", `translate(0,${innerHeight})`)
+      .call(d3.axisBottom(xScale).tickFormat(d3.format("d")))
       .selectAll("text")
-      .style("font-size", "12px")
-      .style("fill", colors.axisText);
+      .style("fill", theme.palette.text.primary);
 
-    svg
-      .append("g")
-      .attr("transform", `translate(${margin.left},0)`)
-      .call(d3.axisLeft(y))
+    g.append("g")
+      .call(d3.axisLeft(yScale))
       .selectAll("text")
-      .style("font-size", "12px")
-      .style("fill", colors.axisText);
-  }, [data, country, inView, width, theme, colors]);
+      .style("fill", theme.palette.text.primary);
+
+    // X Axis Label
+    g.append("text")
+      .attr("x", innerWidth / 2)
+      .attr("y", innerHeight + 50)
+      .attr("text-anchor", "middle")
+      .style("fill", theme.palette.text.primary)
+      .style("font-size", "13px")
+      .text("Lag (Years)");
+
+    // Y Axis Label
+    svg.append("text")
+      .attr("transform", `translate(20,${margin.top + innerHeight / 2}) rotate(-90)`)
+      .attr("text-anchor", "middle")
+      .style("fill", theme.palette.text.primary)
+      .style("font-size", "13px")
+      .text("Target Variable");
+
+    // Color Legend
+    const legendWidth = 140;
+    const legendHeight = 10;
+    const defs = svg.append("defs");
+    const gradientId = "color-gradient";
+
+    const gradient = defs.append("linearGradient")
+      .attr("id", gradientId)
+      .attr("x1", "0%").attr("x2", "100%");
+
+    d3.range(0, 1.01, 0.01).forEach(t => {
+      gradient.append("stop")
+        .attr("offset", `${t * 100}%`)
+        .attr("stop-color", d3.interpolateRdBu(t));
+    });
+
+    const legendX = width - margin.right - legendWidth;
+    const legendY = height - 50;
+
+    svg.append("rect")
+      .attr("x", legendX)
+      .attr("y", legendY)
+      .attr("width", legendWidth)
+      .attr("height", legendHeight)
+      .style("fill", `url(#${gradientId})`);
+
+    const legendScale = d3.scaleLinear().domain([-1, 1]).range([0, legendWidth]);
+    const legendAxis = d3.axisBottom(legendScale).ticks(5).tickFormat(d3.format(".1f"));
+
+    svg.append("g")
+      .attr("transform", `translate(${legendX}, ${legendY + legendHeight})`)
+      .call(legendAxis)
+      .selectAll("text")
+      .style("fill", theme.palette.text.primary)
+      .style("font-size", "10px");
+
+  }, [filteredData, width, inView, theme]);
+
+  const countries = [...new Set(data.map(d => d.Country))];
+  const predictors = [...new Set(data.filter(d => d.Country === country).map(d => d.Predictor))];
 
   return (
-    <div className="chart-container chart-card" ref={setRefs}>
-      <Box sx={{ mb: 2, px: 1 }}>
-        <FormControl fullWidth variant="outlined" size="small">
-          <InputLabel id="country-select-label">Country</InputLabel>
-          <Select
-            labelId="country-select-label"
-            id="country-select"
-            value={country}
-            label="Country"
-            onChange={(e) => setCountry(e.target.value)}
-          >
-            <MenuItem value="Bangladesh">Bangladesh</MenuItem>
-            <MenuItem value="Maldives">Maldives</MenuItem>
-            <MenuItem value="Philippines">Philippines</MenuItem>
-          </Select>
-        </FormControl>
+    <ThemeAwareChartWrapper title="Lead-Lag Correlation Heatmap" ref={setRefs}>
+      <Box sx={{ px: { xs: 2, sm: 3 }, pt: 2, pb: 1 }}>
+        <Typography variant="h6" sx={{ 
+          color: theme.palette.text.primary, 
+          marginBottom: '10px',
+          fontWeight: 600,
+          borderBottom: `2px solid ${theme.palette.divider}`,
+          paddingBottom: '8px'
+        }}>
+          Data Filters
+        </Typography>
+        
+        <Box sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          gap: 2,
+          mb: 3
+        }}>
+          <Box>
+            <Typography variant="subtitle2" sx={{ 
+              mb: 1, 
+              fontWeight: 600,
+              color: theme.palette.text.primary,
+              fontSize: '0.9rem',
+              borderBottom: `1px solid ${theme.palette.divider}`,
+              paddingBottom: '4px'
+            }}>
+              Select Country:
+            </Typography>
+            <FormControl size="small" sx={{ minWidth: 160 }}>
+              <InputLabel>Country</InputLabel>
+              <Select value={country} onChange={(e) => setCountry(e.target.value)}>
+                {countries.map(c => <MenuItem key={c} value={c}>{c}</MenuItem>)}
+              </Select>
+            </FormControl>
+          </Box>
+
+          <Box>
+            <Typography variant="subtitle2" sx={{ 
+              mb: 1, 
+              fontWeight: 600,
+              color: theme.palette.text.primary,
+              fontSize: '0.9rem',
+              borderBottom: `1px solid ${theme.palette.divider}`,
+              paddingBottom: '4px'
+            }}>
+              Climate Predictor:
+            </Typography>
+            <ToggleButtonGroup
+              value={predictor}
+              exclusive
+              onChange={(e, val) => val && setPredictor(val)}
+              sx={{
+                '& .MuiToggleButton-root': {
+                  textTransform: 'none',
+                  fontWeight: 500,
+                  py: 0.5,
+                  fontSize: '0.85rem',
+                  '&.Mui-selected': {
+                    backgroundColor: theme.palette.primary.main,
+                    color: theme.palette.primary.contrastText,
+                    fontWeight: 600
+                  },
+                  '&:hover': {
+                    backgroundColor: theme.palette.action.hover,
+                  }
+                }
+              }}
+            >
+              {predictors.map(p => (
+                <ToggleButton key={p} value={p}>
+                  {p}
+                </ToggleButton>
+              ))}
+            </ToggleButtonGroup>
+          </Box>
+
+          <Box>
+            <Typography variant="subtitle2" sx={{ 
+              mb: 1, 
+              fontWeight: 600,
+              color: theme.palette.text.primary,
+              fontSize: '0.9rem',
+              borderBottom: `1px solid ${theme.palette.divider}`,
+              paddingBottom: '4px'
+            }}>
+              Lag Range (Years):
+            </Typography>
+            <Box sx={{ display: 'flex', gap: 1 }}>
+              <TextField
+                type="number"
+                label="Min Lag"
+                size="small"
+                sx={{ mr: 1 }}
+                value={lagRange[0]}
+                onChange={e => setLagRange([+e.target.value, lagRange[1]])}
+              />
+              <TextField
+                type="number"
+                label="Max Lag"
+                size="small"
+                value={lagRange[1]}
+                onChange={e => setLagRange([lagRange[0], +e.target.value])}
+              />
+            </Box>
+          </Box>
+
+          <Box>
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={threshold}
+                  onChange={(e) => setThreshold(e.target.checked)}
+                />
+              }
+              label="Show only significant correlations (|r| ≥ 0.3)"
+              sx={{ ml: 1 }}
+            />
+          </Box>
+        </Box>
       </Box>
-      <h3>Lead-Lag Correlation Heatmap</h3>
-      <svg ref={svgRef} style={{ width: "100%", height: "450px" }} />
-    </div>
+
+      <svg ref={svgRef} style={{ width: "100%", height: `${targets.length * 140 + 140}px` }} />
+    </ThemeAwareChartWrapper>
   );
 };
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Typography, Link as MuiLink, Button } from '@mui/material';
+import { Box, Typography, Link as MuiLink } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import DescriptionIcon from '@mui/icons-material/Description';
 import CollectionsIcon from '@mui/icons-material/Collections';
@@ -51,14 +51,16 @@ const Footer = () => {
             }
           }}
         >
-          <GitHubIcon fontSize="small" />
+          <GitHubIcon fontSize="small" color="#f5f5f5" />
           <Typography variant="body1">View on GitHub</Typography>
         </Box>
 
-        {/* Gallery Link */}
+        {/* Data Gallery Link */}
         <Box 
           component={MuiLink}
           href="/gallerygrid"
+          target="_blank"
+          rel="noopener noreferrer"
           sx={{ 
             display: 'flex',
             alignItems: 'center',
@@ -77,11 +79,11 @@ const Footer = () => {
             }
           }}
         >
-          <CollectionsIcon fontSize="small" />
-          <Typography variant="body1">Data Gallery</Typography>
+          <CollectionsIcon fontSize="small" sx={{color:"text.primary"}} />
+          <Typography variant="body1"sx={{color:"text.primary"}} >Data Gallery</Typography>
         </Box>
-
-        {/* Full EDA Report Link */}
+          
+        {/* EDA Report */}
         <Box 
           component={MuiLink}
           href="/preprocessing-eda.html"
@@ -105,10 +107,11 @@ const Footer = () => {
             }
           }}
         >
-          <DescriptionIcon fontSize="small" />
+          <DescriptionIcon fontSize="small" color="#f5f5f5" />
           <Typography variant="body1">EDA Report</Typography>
         </Box>
 
+        {/* Final Research Paper */}
         <Box 
           component={MuiLink}
           href="/DSAN5200_FinalPaper.pdf"
@@ -132,10 +135,11 @@ const Footer = () => {
             }
           }}
         >
-          <DescriptionIcon fontSize="small" />
+          <DescriptionIcon fontSize="small" color="#f5f5f5" />
           <Typography variant="body1">Research Paper (PDF)</Typography>
         </Box>
       </Box>
+
       <Typography 
         variant="body1" 
         color="textSecondary"

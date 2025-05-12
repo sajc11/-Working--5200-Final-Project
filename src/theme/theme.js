@@ -29,7 +29,7 @@ const getTheme = (mode) =>
             },
             text: {
               primary: '#fdfcdc',
-              secondary: '#F9F8ECFF'
+              secondary: '#fdfcdc'
             },
             custom: {
               tooltipBg: '#003049',

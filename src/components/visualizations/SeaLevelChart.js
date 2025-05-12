@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState, useMemo } from 'react';
 import * as d3 from "d3";
+import { useInView } from 'react-intersection-observer';
 
 import "./ChartStyles.css";
 import { 
@@ -14,9 +15,10 @@ import {
   Typography,
   Button,
 } from '@mui/material';
-  
+import ThemeAwareChartWrapper from '../ui/ThemeAwareChartWrapper';
 import { seaLevelChartColors } from "../../theme/themeUtils";
-import { createTooltip, showTooltip, hideTooltip } from "../../utils/tooltipUtils";
+import { createTooltip, showTooltip, hideTooltip } from "../../d3/tooltipUtils";
+import { useResizeObserver } from "../../hooks/useResizeObserver";
 
 const SeaLevelChart = () => {
     const svgRef = useRef();
@@ -165,51 +167,51 @@ const SeaLevelChart = () => {
     }, [data, inView, metric, country, width, colors]);
 
     return (
-        <div className="chart-container chart-card" ref={setRefs} style={{ position: "relative" }}>
-            <div style={{
-              display: "flex",
-              flexWrap: "wrap",
-              alignItems: "center",
-              justifyContent: "space-between",
-              gap: "1rem",
-              marginBottom: "1rem"
+        <ThemeAwareChartWrapper 
+            title="Sea Level Rise Over Time"
+            ref={setRefs}
+        >
+            <Box sx={{
+                display: "flex",
+                flexWrap: "wrap",
+                alignItems: "center",
+                justifyContent: "space-between",
+                gap: "1rem",
+                marginBottom: "1rem"
             }}>
-              <h3 style={{ fontFamily: "var(--font-header)", margin: 0 }}>
-                Sea Level Rise Over Time
-              </h3>
-              <Box sx={{ display: "flex", gap: 2 }}>
-                <FormControl size="small" sx={{ minWidth: 160 }}>
-                  <InputLabel id="country-select-label">Country</InputLabel>
-                  <Select
-                    labelId="country-select-label"
-                    id="country-select"
-                    value={country}
-                    label="Country"
-                    onChange={(e) => setCountry(e.target.value)}
-                  >
-                    <MenuItem value="Bangladesh">Bangladesh</MenuItem>
-                    <MenuItem value="Maldives">Maldives</MenuItem>
-                    <MenuItem value="Philippines">Philippines</MenuItem>
-                  </Select>
-                </FormControl>
-                <FormControl size="small" sx={{ minWidth: 180 }}>
-                  <InputLabel id="metric-select-label">Metric</InputLabel>
-                  <Select
-                    labelId="metric-select-label"
-                    id="metric-select"
-                    value={metric}
-                    label="Metric"
-                    onChange={(e) => setMetric(e.target.value)}
-                  >
-                    <MenuItem value="Reconstruction Obs">Reconstruction Obs</MenuItem>
-                    <MenuItem value="Satellite Altimetry">Satellite Altimetry</MenuItem>
-                  </Select>
-                </FormControl>
-              </Box>
-            </div>
+                <Box sx={{ display: "flex", gap: 2 }}>
+                    <FormControl size="small" sx={{ minWidth: 160 }}>
+                        <InputLabel id="country-select-label">Country</InputLabel>
+                        <Select
+                            labelId="country-select-label"
+                            id="country-select"
+                            value={country}
+                            label="Country"
+                            onChange={(e) => setCountry(e.target.value)}
+                        >
+                            <MenuItem value="Bangladesh">Bangladesh</MenuItem>
+                            <MenuItem value="Maldives">Maldives</MenuItem>
+                            <MenuItem value="Philippines">Philippines</MenuItem>
+                        </Select>
+                    </FormControl>
+                    <FormControl size="small" sx={{ minWidth: 180 }}>
+                        <InputLabel id="metric-select-label">Metric</InputLabel>
+                        <Select
+                            labelId="metric-select-label"
+                            id="metric-select"
+                            value={metric}
+                            label="Metric"
+                            onChange={(e) => setMetric(e.target.value)}
+                        >
+                            <MenuItem value="Reconstruction Obs">Reconstruction Obs</MenuItem>
+                            <MenuItem value="Satellite Altimetry">Satellite Altimetry</MenuItem>
+                        </Select>
+                    </FormControl>
+                </Box>
+            </Box>
             <svg ref={svgRef} style={{ width: "100%", height: "400px" }} />
             {/* Clicked points display remains unchanged */}
-        </div>
+        </ThemeAwareChartWrapper>
     );
 };
 
