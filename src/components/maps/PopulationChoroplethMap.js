@@ -339,7 +339,7 @@ export default function PopulationChoroplethMap() {
     const g = d3.select(gRef.current);
 
     const zoom = d3.zoom()
-      .scaleExtent([0.5, 10])
+      .scaleExtent([5, 20])
       .translateExtent([
         [-dimensions.width, -dimensions.height],
         [dimensions.width * 2, dimensions.height * 2]
@@ -357,7 +357,7 @@ export default function PopulationChoroplethMap() {
       zoom.transform,
       d3.zoomIdentity
         .translate(dimensions.width / 6, dimensions.height / 6)
-        .scale(1.2)
+        .scale(1.1)
     );
 
     return () => {
@@ -403,7 +403,7 @@ export default function PopulationChoroplethMap() {
         zoomRef.current.transform,
         d3.zoomIdentity
           .translate(dimensions.width / 6, dimensions.height / 6)
-          .scale(1.2)
+          .scale(1.1)
       );
   };
 
@@ -436,25 +436,27 @@ export default function PopulationChoroplethMap() {
         color: theme.palette.text.primary,
       }}
     >
-      <Box sx={{ p: { xs: 3, sm: 4 }, pb: 0 }}>
-        <Typography variant="h5" component="h2" sx={{ fontWeight: 600, color: 'text.primary', mb: 0.5 }}>
+      <Box sx={{ p: { xs: 2, sm: 3 }, pb: 0 }}>
+        <Typography variant="h3" component="h2" sx={{ fontWeight: 600, color: 'text.primary', mb: 0.5 }}>
           Climate Impact Visualization
         </Typography>
-        <Typography variant="subtitle2" color="text.secondary">
+        <Typography variant="body1" color="text.secondary">
           Circle size represents city population. Colors indicate climate impact data. Pan and zoom to explore.
         </Typography>
       </Box>
 
-      <Box sx={{ p: { xs: 3, sm: 4 }, pt: 0, pb: 0 }}>
+      <Box sx={{ p: { xs: 1, sm: 2 }, ml: 2, pb: 0 }}>
         <Typography variant="subtitle1" sx={{ color: theme.palette.text.primary, mb: 1, fontWeight: 600 }}>
           Data Layer:
         </Typography>
+        <Divider sx={{ mb: 2 }} />
         <ToggleButtonGroup
           value={selectedDataLayer}
           exclusive
           onChange={handleToggleDataLayer}
           aria-label="data layer"
           sx={{
+            size: 'xsmall',
             marginBottom: 2,
             '& .MuiToggleButton-root': {
               color: theme.palette.text.primary,
@@ -483,11 +485,13 @@ export default function PopulationChoroplethMap() {
         <Typography variant="subtitle1" sx={{ color: theme.palette.text.primary, mb: 1, mt: 3, fontWeight: 600 }}>
           Toggle Countries:
         </Typography>
+        <Divider sx={{ mb: 2 }} />
         <ToggleButtonGroup
           value={selectedCountries}
           onChange={handleToggleCountries}
           aria-label="select countries"
           sx={{
+            size: 'xsmall',
             marginBottom: 2,
             '& .MuiToggleButton-root': {
               color: theme.palette.text.primary,
@@ -510,10 +514,12 @@ export default function PopulationChoroplethMap() {
           value={projectionCenterKey}
           exclusive
           onChange={handleProjectionToggle}
+          size='xsmall'
           aria-label="projection center"
           sx={{
             marginBottom: 2,
             marginLeft: 2,
+            size: 'xsmall',
             '& .MuiToggleButton-root': {
               color: theme.palette.text.primary,
               borderColor: theme.palette.divider,
@@ -534,8 +540,8 @@ export default function PopulationChoroplethMap() {
           variant="outlined"
           onClick={handleResetZoom}
           sx={{
+            size: 'xsmall',
             mb: 2,
-            ml: 2,
             color: theme.palette.text.primary,
             borderColor: theme.palette.divider,
             '&:hover': {
@@ -568,10 +574,10 @@ export default function PopulationChoroplethMap() {
 
 
       <Box sx={{ px: { xs: 3, sm: 4 }, pb: 4 }}>
-        <Divider sx={{ mb: 2 }} />
         <Typography variant="subtitle1" sx={{ color: theme.palette.text.primary, fontWeight: 600, mb: 2 }}>
           Legend
         </Typography>
+        <Divider sx={{ mb: 2 }} />
         
         {/* Horizontal layout for legends */}
         <Box sx={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', gap: 4, justifyContent: 'space-between' }}>
@@ -580,7 +586,7 @@ export default function PopulationChoroplethMap() {
             <Typography sx={{ color: theme.palette.text.primary, mb: 1 }}>
               Circle Size (Population):
             </Typography>
-            <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%', maxWidth: 300 }}>
+            <Box sx={{ color: theme.palette.text.primary, display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%', maxWidth: 300 }}>
               {[100000, 1000000, 5000000, 9000000].map((pop, i) => {
                 const r = scaleRadius(pop);
                 return (

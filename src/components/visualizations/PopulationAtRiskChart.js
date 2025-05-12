@@ -8,6 +8,9 @@ import {
   Tooltip,
   ResponsiveContainer,
   Legend,
+  BarChart,
+  Bar,
+  Area
 } from 'recharts';
 import {
   useTheme,
@@ -48,7 +51,7 @@ const PopulationAtRiskChart = () => {
   const [scenario, setScenario] = useState("baseline");
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
-  const [metricType, setMetricType] = useState("Risk Index");
+  const [metricType, setMetricType] = useState("Sea Level Risk");
   const [chartType, setChartType] = useState("Line");
   const [yearRange, setYearRange] = useState([1975, 2023]);
   
@@ -166,6 +169,21 @@ const PopulationAtRiskChart = () => {
 
   // Get the filtered data based on current selections
   const filteredData = getFilteredData();
+
+  // Compute unified list of years across all series
+  const unifiedYears = Array.from(new Set(
+    filteredData.flatMap(series => series.values.map(d => d.year))
+  )).sort((a, b) => a - b);
+
+  // Build unified data array for charting
+  const unifiedData = unifiedYears.map(year => {
+    const entry = { year };
+    filteredData.forEach(series => {
+      const match = series.values.find(v => v.year === year);
+      if (match) entry[series.city] = match.value;
+    });
+    return entry;
+  });
 
   // Simulate loading when scenario or selected cities change
   useEffect(() => {
@@ -345,7 +363,7 @@ const PopulationAtRiskChart = () => {
               overflow: 'hidden',
               border: `1px solid ${theme.palette.divider}`,
             }}>
-              {['Line', 'Bar', 'Area'].map((type) => (
+              {['Line', 'Bar'].map((type) => (
                 <Box 
                   key={type}
                   onClick={() => setChartType(type)}
@@ -441,30 +459,63 @@ const PopulationAtRiskChart = () => {
             position: 'relative',
           }}
         >
-          {/* Simple line chart using Recharts */}
+          {/* Dynamic chart rendering based on chartType */}
           <ResponsiveContainer width="100%" height={400}>
-            <LineChart
-              data={filteredData[0]?.values || []}
-              margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
-            >
-              <CartesianGrid strokeDasharray="3 3" />
-              <XAxis dataKey="year" tick={{ fill: theme.palette.text.primary }} />
-              <YAxis tick={{ fill: theme.palette.text.primary }} />
-              <Tooltip contentStyle={{ backgroundColor: theme.palette.background.paper }} />
-              <Legend />
-              {filteredData.map((series, i) => (
-                <Line
-                  key={series.city}
-                  type="monotone"
-                  dataKey="value"
-                  data={series.values}
-                  name={series.city}
-                  stroke={colors.cityPalette[series.city] || theme.palette.primary.main}
-                  strokeWidth={2}
-                  dot={false}
-                />
-              ))}
-            </LineChart>
+            {chartType === 'Line' || chartType === 'Area' ? (
+              <LineChart
+                data={unifiedData}
+                margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
+              >
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="year" tick={{ fill: theme.palette.text.primary }} />
+                <YAxis tick={{ fill: theme.palette.text.primary }} />
+                <Tooltip contentStyle={{ backgroundColor: theme.palette.background.paper }} />
+                <Legend />
+                {filteredData.map(series => (
+                  <React.Fragment key={series.city}>
+                    {chartType === 'Area' && (
+                      <Area
+                        type="monotone"
+                        dataKey={series.city}
+                        name={series.city}
+                        fill={colors.cityPalette[series.city] || theme.palette.primary.main}
+                        stroke={colors.cityPalette[series.city] || theme.palette.primary.main}
+                        strokeWidth={2}
+                      />
+                    )}
+                    {chartType === 'Line' && (
+                      <Line
+                        type="monotone"
+                        dataKey={series.city}
+                        name={series.city}
+                        stroke={colors.cityPalette[series.city] || theme.palette.primary.main}
+                        strokeWidth={2}
+                        dot={false}
+                      />
+                    )}
+                  </React.Fragment>
+                ))}
+              </LineChart>
+            ) : (
+              <BarChart
+                data={unifiedData}
+                margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
+              >
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="year" tick={{ fill: theme.palette.text.primary }} />
+                <YAxis tick={{ fill: theme.palette.text.primary }} />
+                <Tooltip contentStyle={{ backgroundColor: theme.palette.background.paper }} />
+                <Legend />
+                {filteredData.map(series => (
+                  <Bar
+                    key={series.city}
+                    dataKey={series.city}
+                    name={series.city}
+                    fill={colors.cityPalette[series.city] || theme.palette.primary.main}
+                  />
+                ))}
+              </BarChart>
+            )}
           </ResponsiveContainer>
         </Paper>
         
@@ -583,7 +634,7 @@ const PopulationAtRiskChart = () => {
                 border: `1px solid ${theme.palette.divider}`,
               }}
             >
-              <Typography variant="subtitle2" sx={{ mb: 1, fontWeight: 600 }}>
+              <Typography variant="subtitle2" sx={{ color: theme.palette.text.primary, mb: 1, fontWeight: 600 }}>
                 Climate Indicators
               </Typography>
               

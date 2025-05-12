@@ -66,7 +66,7 @@ function createTooltip(theme) {
       .style('position', 'absolute')
       .style('pointer-events', 'none')
       .style('background-color', 'rgba(0,0,0,0.8)')
-      .style('color', '#fff')
+      .style('color', '#F9F8ECFF')
       .style('padding', '8px 12px')
       .style('border-radius', '4px')
       .style('font-size', '12px')

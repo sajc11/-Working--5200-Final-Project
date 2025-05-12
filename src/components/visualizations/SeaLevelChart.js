@@ -183,6 +183,7 @@ const SeaLevelChart = () => {
                     <FormControl size="small" sx={{ minWidth: 160 }}>
                         <InputLabel id="country-select-label">Country</InputLabel>
                         <Select
+                            sx={{ borderColor: theme.palette.primary.main }}
                             labelId="country-select-label"
                             id="country-select"
                             value={country}
@@ -194,9 +195,10 @@ const SeaLevelChart = () => {
                             <MenuItem value="Philippines">Philippines</MenuItem>
                         </Select>
                     </FormControl>
-                    <FormControl size="small" sx={{ minWidth: 180 }}>
+                    <FormControl size="small" sx={{ minWidth: 240 }}>
                         <InputLabel id="metric-select-label">Metric</InputLabel>
                         <Select
+                            sx={{ borderColor: theme.palette.primary.main }}
                             labelId="metric-select-label"
                             id="metric-select"
                             value={metric}

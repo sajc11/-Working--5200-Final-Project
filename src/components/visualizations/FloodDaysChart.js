@@ -12,7 +12,8 @@ import {
   InputLabel,
   Select,
   MenuItem,
-  Typography
+  Typography,
+  Divider
 } from '@mui/material';
 import ThemeAwareChartWrapper from '../ui/ThemeAwareChartWrapper';
 
@@ -92,7 +93,7 @@ const FloodDaysChart = () => {
       .attr("x", width / 2)
       .attr("y", height - 10)
       .attr("fill", colors.axisText)
-      .style("font-size", "14px")
+      .style("font-size", "18px")
       .text("Year");
 
     // Y axis label
@@ -102,7 +103,7 @@ const FloodDaysChart = () => {
       .attr("text-anchor", "middle")
       .attr("transform", `translate(15,${height / 2}) rotate(-90)`)
       .attr("fill", colors.axisText)
-      .style("font-size", "14px")
+      .style("font-size", "18px")
       .text("Flood Days");
 
     const line = d3
@@ -189,10 +190,11 @@ const FloodDaysChart = () => {
           exclusive
           onChange={(e, value) => value && setSeverity(value)}
           size="small"
-          sx={{ ml: 2 }}
+          sx={{ ml: 2, color: theme.palette.text.primary }}
+          aria-label="Severity"
         >
           {["Minor", "Moderate", "Major"].map((level) => (
-            <ToggleButton key={level} value={level} sx={{ textTransform: "none" }}>
+            <ToggleButton key={level} value={level} sx={{ textTransform: "none" , color: theme.palette.text.primary }} aria-label={level}>
               {level}
             </ToggleButton>
           ))}
@@ -208,7 +210,7 @@ const FloodDaysChart = () => {
           }}
         >
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0.5rem" }}>
-            <h4 style={{ margin: 0 }}>Clicked Points</h4>
+            <h4 style={{ margin: 0 , color: theme.palette.text.primary }}>Clicked Points</h4>
             <button
               onClick={handleResetPoints}
               style={{
@@ -235,7 +237,7 @@ const FloodDaysChart = () => {
                   borderRadius: "8px",
                   padding: "0.75rem 1rem",
                   boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
-                  backgroundColor: "#012f48",
+                  backgroundColor: theme.palette.background.paper,
                   position: "relative",
                   minWidth: "220px",
                   flex: "1 1 220px",
@@ -260,7 +262,8 @@ const FloodDaysChart = () => {
                 >
                   &times;
                 </button>
-                <h5 style={{ margin: "0 0 0.3rem 0" }}>{point.Country} - {point.Year}</h5>
+                <h5 style={{ color: theme.palette.text.primary, margin: "0 0 0.3rem 0" }}>{point.Country} - {point.Year}</h5>
+                <Divider style={{ margin: "0.5rem 0" }} />
                 <p style={{ margin: "0.2rem 0" }}><strong>Severity:</strong> {point.Severity}</p>
                 <p style={{ margin: "0.2rem 0" }}><strong>Flood Days:</strong> {point["Flood Days"]}</p>
               </div>
