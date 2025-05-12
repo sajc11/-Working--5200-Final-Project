@@ -161,7 +161,7 @@ const LeadLagCorrelationHeatmap = () => {
   return (
     <ThemeAwareChartWrapper title="Lead-Lag Correlation Heatmap" ref={setRefs}>
       <Box sx={{ px: { xs: 2, sm: 3 }, pt: 2, pb: 1 }}>
-        <Typography variant="h6" sx={{ 
+        <Typography variant="h4" sx={{ 
           color: theme.palette.text.primary, 
           marginBottom: '10px',
           fontWeight: 600,
@@ -173,81 +173,89 @@ const LeadLagCorrelationHeatmap = () => {
         
         <Box sx={{
           display: 'flex',
-          flexDirection: 'column',
+          flexDirection:  'column',
           gap: 2,
           mb: 3
         }}>
-          <Box>
-            <Typography variant="subtitle2" sx={{ 
-              mb: 1, 
-              fontWeight: 600,
-              color: theme.palette.text.primary,
-              fontSize: '0.9rem',
-              borderBottom: `1px solid ${theme.palette.divider}`,
-              paddingBottom: '4px'
-            }}>
-              Select Country:
-            </Typography>
-            <FormControl size="small" sx={{ minWidth: 160 }}>
-              <InputLabel>Country</InputLabel>
-              <Select value={country} onChange={(e) => setCountry(e.target.value)}>
-                {countries.map(c => <MenuItem key={c} value={c}>{c}</MenuItem>)}
-              </Select>
-            </FormControl>
-          </Box>
-
-          <Box>
-            <Typography variant="subtitle2" sx={{ 
-              mb: 1, 
-              fontWeight: 600,
-              color: theme.palette.text.primary,
-              fontSize: '0.9rem',
-              borderBottom: `1px solid ${theme.palette.divider}`,
-              paddingBottom: '4px'
-            }}>
-              Climate Predictor:
-            </Typography>
-            <ToggleButtonGroup
-              value={predictor}
-              exclusive
-              onChange={(e, val) => val && setPredictor(val)}
-              sx={{
-                '& .MuiToggleButton-root': {
-                  textTransform: 'none',
-                  fontWeight: 500,
-                  py: 0.5,
-                  fontSize: '0.85rem',
-                  '&.Mui-selected': {
-                    backgroundColor: theme.palette.primary.main,
-                    color: theme.palette.primary.contrastText,
-                    fontWeight: 600
-                  },
-                  '&:hover': {
-                    backgroundColor: theme.palette.action.hover,
+          <Box sx={{ display: 'flex', flexDirection: { xs: 'column', sm: 'row' }, gap: 2 }}>
+            <Box sx={{ flex: 0.5}}>
+              <Typography variant="subtitle2" sx={{ 
+                mt:2,
+                mb: 1, 
+                fontWeight: 600,
+                color: theme.palette.text.primary,
+                fontSize: '1rem',
+                borderBottom: `1px solid ${theme.palette.divider}`,
+                paddingBottom: '8px'
+              }}>
+                Select Country
+              </Typography>
+              <FormControl size="small" sx={{ pt: 1, minWidth: 230 }}>
+                <InputLabel sx={{ pt: 1 }}>Country</InputLabel>
+                <Select label="Max Lag" value={country} onChange={(e) => setCountry(e.target.value)}>
+                  {countries.map(c => <MenuItem key={c} value={c}>{c}</MenuItem>)}
+                </Select>
+              </FormControl>
+            </Box>
+            <Box sx={{ flex: 1 }}>
+              <Typography variant="subtitle2" sx={{ 
+                mt: 2,
+                mb: 1, 
+                fontWeight: 600,
+                color: theme.palette.text.primary,
+                fontSize: '1rem',
+                borderBottom: `1px solid ${theme.palette.divider}`,
+                paddingBottom: '8px'
+              }}>
+                Climate Predictor
+              </Typography>
+              <ToggleButtonGroup
+                value={predictor}
+                exclusive
+                onChange={(e, val) => val && setPredictor(val)}
+                paddingTop={2}
+                size="small"
+                sx={{
+                  pt: 1,
+                  flexWrap: 'wrap',
+                  '& .MuiToggleButton-root': {
+                    color: theme.palette.text.primary,
+                    textTransform: 'none',
+                    fontWeight: 500,
+                    fontSize: '0.85rem',
+                    '&.Mui-selected': {
+                      backgroundColor: theme.palette.primary.main,
+                      color: theme.palette.primary.contrastText,
+                      fontWeight: 600
+                    },
+                    '&:hover': {
+                      backgroundColor: theme.palette.action.hover,
+                    }
                   }
-                }
-              }}
-            >
-              {predictors.map(p => (
-                <ToggleButton key={p} value={p}>
-                  {p}
-                </ToggleButton>
-              ))}
-            </ToggleButtonGroup>
+                }}
+              >
+                {predictors.map(p => (
+                  <ToggleButton key={p} value={p}>
+                    {p}
+                  </ToggleButton>
+                ))}
+              </ToggleButtonGroup>
+            </Box>
           </Box>
 
           <Box>
             <Typography variant="subtitle2" sx={{ 
+              mt:2,
               mb: 1, 
               fontWeight: 600,
               color: theme.palette.text.primary,
-              fontSize: '0.9rem',
+              fontSize: '1rem',
               borderBottom: `1px solid ${theme.palette.divider}`,
-              paddingBottom: '4px'
+              paddingBottom: '8px'
             }}>
-              Lag Range (Years):
+              Lag Range (Years)
             </Typography>
-            <Box sx={{ display: 'flex', gap: 1 }}>
+            <Box sx={{ pt: 1, display: 'flex', gap: 1 }}>
               <TextField
                 type="number"
                 label="Min Lag"
@@ -265,8 +273,10 @@ const LeadLagCorrelationHeatmap = () => {
               />
             </Box>
           </Box>
-
-          <Box>
+        </Box>
+      </Box>
+      <svg ref={svgRef} style={{ width: "100%", height: `${targets.length * 140 + 190}px` }} />
+      <Box>
             <FormControlLabel
               control={
                 <Checkbox
@@ -278,10 +288,6 @@ const LeadLagCorrelationHeatmap = () => {
               sx={{ ml: 1 }}
             />
           </Box>
-        </Box>
-      </Box>
-
-      <svg ref={svgRef} style={{ width: "100%", height: `${targets.length * 140 + 140}px` }} />
     </ThemeAwareChartWrapper>
   );
 };

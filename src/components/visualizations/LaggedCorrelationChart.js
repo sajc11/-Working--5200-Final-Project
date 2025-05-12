@@ -200,8 +200,8 @@ const LaggedCorrelationChart = () => {
               sx={{ color: 'text.primary' }}
             />
           }
-          label="|r| ≥ 0.3"
-          sx={{ color: 'text.primary' }}
+          label="Show only significant correlations (|r| ≥ 0.3)"
+          sx={{ color: 'text.primary', ml: 0.5 }}
         />
       </Box>
 

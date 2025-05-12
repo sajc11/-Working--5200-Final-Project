@@ -182,6 +182,9 @@ export default function ClimateRiskMap() {
         462: 'Maldives',
         608: 'Philippines'
       };
+      
+      console.log("Selected countries:", selectedCountries);
+      console.log("Country features:", countries.features.map(f => ({ id: f.id, name: countryNameMap[f.id] })));
 
       // Create base map
       g.append('g')
@@ -195,7 +198,7 @@ export default function ClimateRiskMap() {
           if (selectedCountries.includes(countryName)) {
             return getCountryColor(countryName);
           }
-          return theme.palette.mode === 'dark' ? '#E6E6E6' : '#001529';
+          return theme.palette.mode === 'dark' ? 'rgba(230,230,230,0.1)' : 'rgba(0,21,41,0.1)';
         })
         .attr('stroke', theme.palette.mode === 'dark' ? '#184F6AFF' : '#CCCCCC')
         .attr('stroke-width', 0.5)
@@ -360,9 +363,10 @@ export default function ClimateRiskMap() {
             onClick={togglePlayPause}
             startIcon={isPlaying ? <PauseIcon /> : <PlayArrowIcon />}
             sx={{ 
-              py: 0.5, 
-              px: 2,
+              py: 0.3, 
+              px: 1.5,
               textTransform: 'none',
+              fontSize: '0.85rem',
               backgroundColor: theme.palette.primary.main,
               '&:hover': {
                 backgroundColor: theme.palette.primary.dark
@@ -376,9 +380,10 @@ export default function ClimateRiskMap() {
             onClick={resetAnimation}
             startIcon={<RefreshIcon />}
             sx={{ 
-              py: 0.5, 
-              px: 2,
+              py: 0.3, 
+              px: 1.5,
               textTransform: 'none',
+              fontSize: '0.85rem',
               color: theme.palette.text.primary,
               borderColor: theme.palette.primary.main,
               '&:hover': {
@@ -396,7 +401,7 @@ export default function ClimateRiskMap() {
         color: theme.palette.text.primary, 
         marginTop: '15px', 
         marginBottom: '10px',
-        fontWeight: 600,
+        fontWeight: 700,
         borderBottom: `2px solid ${theme.palette.divider}`,
         paddingBottom: '8px'
       }}>
@@ -447,7 +452,7 @@ export default function ClimateRiskMap() {
       <Typography variant="h6" sx={{ 
         color: theme.palette.text.primary, 
         marginBottom: '10px',
-        fontWeight: 600,
+        fontWeight: 700,
         borderBottom: `2px solid ${theme.palette.divider}`,
         paddingBottom: '8px'
       }}>
@@ -494,8 +499,10 @@ export default function ClimateRiskMap() {
         width="100%"
         height="500px"
         style={{ 
-          backgroundColor: '#0A192F',
-          marginBottom: '20px'
+          backgroundColor: theme.palette.mode === 'dark' ? '#0A1929' : '#F5F5F5',
+          marginBottom: '20px',
+          border: `1px solid ${theme.palette.divider}`,
+          borderRadius: '8px'
         }}
       />
 
@@ -505,12 +512,14 @@ export default function ClimateRiskMap() {
         display: 'flex', 
         flexDirection: 'column', 
         p: 2, 
-        borderRadius: '4px', 
+        borderRadius: '8px', 
         backgroundColor: theme.palette.mode === 'dark' ? 'rgba(0,30,60,0.7)' : 'rgba(240,240,240,0.9)',
         color: theme.palette.text.primary,
-        border: `1px solid ${theme.palette.divider}`
+        border: `1px solid ${theme.palette.divider}`,
+        mx: { xs: 3, sm: 4 },
+        mb: 3
       }}>
-        <Typography variant="subtitle1" sx={{ mb: 1, fontWeight: 'bold', color: theme.palette.text.primary }}>
+        <Typography variant="subtitle1" sx={{ mb: 1, fontWeight: 700, color: theme.palette.text.primary }}>
           {legend.title}
         </Typography>
         <Box sx={{ position: 'relative', height: '55px' }}>

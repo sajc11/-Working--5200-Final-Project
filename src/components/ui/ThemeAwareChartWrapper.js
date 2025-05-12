@@ -38,7 +38,6 @@ const ThemeAwareChartWrapper = React.forwardRef(({
           ? '0 8px 16px rgba(0,0,0,0.4)'
           : '0 8px 16px rgba(0,0,0,0.1)',
         maxWidth: 900,
-        margin: 'top: 40, right: 70, bottom: 80, left: 100',
         color: theme.palette.text.primary,
         ...sx
       }}
@@ -50,7 +49,7 @@ const ThemeAwareChartWrapper = React.forwardRef(({
             component="h2" 
             sx={{ 
               fontWeight: 600, 
-              color: '#fff', 
+              color: '#F9F8ECFF', 
               mb: 0.5 
             }}
           >

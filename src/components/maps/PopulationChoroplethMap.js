@@ -186,6 +186,9 @@ export default function PopulationChoroplethMap() {
     // Create new g and subgroups for layering
     const g = svg.append("g").attr("class", "map-layer");
     gRef.current = g.node();
+    
+    // Debug country features
+    console.log("PopulationChoroplethMap - Selected countries:", selectedCountries);
 
     // Layer order: base map, city circles, labels
     const baseLayer = g.append("g").attr("class", "base-layer");
@@ -222,7 +225,7 @@ export default function PopulationChoroplethMap() {
           if (selectedCountries.includes(countryName)) {
             return getCountryColor(countryName);
           }
-          return theme.palette.mode === 'dark' ? '#E6E6E6' : '#001529';
+          return theme.palette.mode === 'dark' ? 'rgba(230,230,230,0.1)' : 'rgba(0,21,41,0.1)';
         })
         .attr('stroke', theme.palette.mode === 'dark' ? '#184F6AFF' : '#CCCCCC')
         .attr('stroke-width', 0.5)

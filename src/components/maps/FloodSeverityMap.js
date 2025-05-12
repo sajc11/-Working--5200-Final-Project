@@ -252,9 +252,6 @@ const FloodSeverityMap = () => {
           // Extract country name from class, e.g. "country-Bangladesh"
           const match = className && className.match(/^country-(.+)$/);
           if (!match) return false;
-          const countryName = match[1].replace(/([A-Z])/g, ' $1').trim().replace(/([A-Z])/g, ' $1').replace(/\s+/g, ' ');
-          // Actually, just use the name directly (no spaces)
-          // Remove path if not in selectedCountries
           // We'll compare by removing spaces from selectedCountries as well
           return !selectedCountries.some(c => c.replace(/\s+/g, '') === match[1]);
         })
@@ -665,7 +662,7 @@ const FloodSeverityMap = () => {
           <Typography variant="h6" sx={{ 
             color: theme.palette.text.primary, 
             marginBottom: '10px',
-            fontWeight: 600,
+            fontWeight: 700,
             borderBottom: `2px solid ${theme.palette.divider}`,
             paddingBottom: '8px'
           }}>
@@ -681,8 +678,8 @@ const FloodSeverityMap = () => {
                   textTransform: 'none',
                   fontSize: '0.85rem',
                   fontWeight: selectedCountries.includes(country) ? 600 : 500,
-                  py: 0.4,
-                  px: 1.2,
+                  py: 0.3,
+                  px: 1,
                   borderRadius: 1,
                   color: selectedCountries.includes(country) ? theme.palette.primary.contrastText : theme.palette.text.primary,
                   borderColor: theme.palette.primary.main,
